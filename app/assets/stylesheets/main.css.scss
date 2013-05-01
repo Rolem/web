@@ -83,6 +83,10 @@
 body {
   background: no-repeat center center fixed;
   background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  color: white;
   font-family: Kautiva, Helvetica;
 }
 
@@ -98,9 +102,56 @@ body {
   margin-top: 30px;
 }
 
+// -----
+// Logo
+// -----
+
+.logo {
+  margin-bottom: 1%;
+}
 
 // -----
-// Pages
+// Navbar Justified
 // -----
 
-// Home
+/* Customize the navbar links to be fill the entire space of the .navbar */
+.navbar .navbar-inner {
+  padding: 0;
+}
+
+.navbar .nav {
+  margin: 0;
+  display: table;
+  width: 100%;
+}
+
+.navbar .nav li {
+  display: table-cell;
+  width: 1%;
+  float: none;
+}
+
+.navbar .nav li a {
+  font-weight: bold;
+  text-align: center;
+  border-left: 1px solid rgba(255, 255, 255, .75);
+  border-right: 1px solid rgba(0, 0, 0, .1);
+}
+
+.navbar .nav li:first-child a {
+  border-left: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.navbar .nav li:last-child a {
+  border-right: 0;
+  border-radius: 0 3px 3px 0;
+}
+
+// -----
+// Navbar
+// -----
+
+.bgnav {
+  background-color: #23211C;
+}

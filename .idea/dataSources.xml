@@ -4,7 +4,7 @@
     <data-source source="LOCAL" name="Rails rolem-web: production" product="" version="" jdbc-version="" driver-name="" driver-version="" uuid="3bf19976-2b38-4bb2-be36-96ab6dea9570">
       <jdbc-driver>org.postgresql.Driver</jdbc-driver>
       <jdbc-url>jdbc:postgresql:rolem-web_production</jdbc-url>
-      <user-name>disruption</user-name>
+      <user-name>rolem-web</user-name>
       <user-password>dfe4dfc5dfd9dfecdfc5dfd8dfd8dfcbdfc7dfc5dfd9df99</user-password>
       <libraries>
         <library>

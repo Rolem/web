@@ -1,4 +1,19 @@
 RolemWeb::Application.routes.draw do
+  # -----------------
+  # Root
+  # -----------------
+  root to: 'static_pages#index'
+
+  # -----------------
+  # Static Pages
+  # -----------------
+  match '/productos', to: 'static_pages#productos'
+  match '/compania', to: 'static_pages#compania'
+  match '/comprar', to: 'static_pages#comprar'
+  match '/contacto', to: 'static_pages#contacto'
+
+
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
