@@ -1,0 +1,106 @@
+@import "bootstrap";
+
+// ----
+//Font Faces
+// ----
+@font-face {
+  font-family: 'Kautiva';
+  src: url('Kautiva.ttf');
+  src: local('Kautiva'), local('Kautiva'), url(Kautiva.ttf) format('truetype')
+}
+@font-face {
+  font-family: 'Kautiva-Bold';
+  src: url('Kautiva-Bold.ttf');
+  src: local('Kautiva-Bold'), local('Kautiva-Bold'), url(Kautiva-Bold.ttf) format('truetype')
+}
+@font-face {
+  font-family: 'Kautiva-Italic';
+  src: url('Kautiva-Italic.ttf');
+  src: local('Kautiva-Italic'), local('Kautiva-Italic'), url(Kautiva-Italic.ttf) format('truetype')
+}
+@font-face {
+  font-family: 'Kautiva-Black';
+  src: url('Kautiva-Black.ttf');
+  src: local('Kautiva-Black'), local('Kautiva-Black'), url(Kautiva-Black.ttf) format('truetype')
+}
+@font-face {
+  font-family: 'Kautiva-Black-Italic';
+  src: url('Kautiva-Black-Italic.ttf');
+  src: local('Kautiva-Black-Italic'), local('Kautiva-Black-Italic'), url(Kautiva-Black-Italic.ttf) format('truetype')
+}
+@font-face {
+  font-family: 'Kautiva-Bold-Italic';
+  src: url('Kautiva-Bold-Italic.ttf');
+  src: local('Kautiva-Bold-Italic'), local('Kautiva-Bold-Italic'), url(Kautiva-Bold-Italic.ttf) format('truetype')
+}
+
+// ----
+// Button
+// ----
+
+/*
+
+.btn-dl.active {
+  color: rgba(255, 255, 255, 0.75);
+}
+//FD3AD8
+.btn-dl {
+  color: white;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+  background-color: #FF01AF;
+  background-image: -moz-linear-gradient(top, #FD3AD8, #D854BF);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#FD3AD8), to(#D854BF));
+  background-image: -webkit-linear-gradient(top, #FD3AD8, #D854BF);
+  background-image: -o-linear-gradient(top, #FD3AD8, #D854BF);
+  background-image: linear-gradient(to bottom, #FD3AD8, #D854BF);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FFFD3AD8', endColorstr='#FFD854BF', GradientType=0);
+  border-color: #D854BF #D854BF #B3015A;
+  border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+  *background-color: #D854BF;
+
+  */
+
+  /* Darken IE7 buttons by default so they stand out more given they won't have borders */
+
+  /*
+  filter: progid:DXImageTransform.Microsoft.gradient(enabled=false);
+}
+.btn-dl:hover, .btn-dl:active, .btn-dl.active, .btn-dl.disabled, .btn-dl[disabled] {
+  color: white;
+  background-color: #D854BF;
+  *background-color: #E60170;
+}
+.btn-dl:active, .btn-dl.active {
+  background-color: #CC0163 \9;
+}
+
+*/
+
+// -----
+// General
+// -----
+body {
+  background: no-repeat center center fixed;
+  background-size: cover;
+  font-family: Kautiva, Helvetica;
+}
+
+.field_with_errors {
+  display: inline;
+}
+
+.errors {
+  margin-top: 30px;
+}
+
+.flash-message {
+  margin-top: 30px;
+}
+
+
+// -----
+// Pages
+// -----
+
+// Home
