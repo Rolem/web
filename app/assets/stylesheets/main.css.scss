@@ -103,6 +103,14 @@ body {
 }
 
 // -----
+// Sign Up / Login
+// -----
+
+.drop-from {
+  color: black;
+}
+
+// -----
 // Logo
 // -----
 
@@ -152,6 +160,8 @@ body {
 // Navbar
 // -----
 
-.bgnav {
+.navbar-inverse {
   background-color: #23211C;
+  margin-bottom: 10px;
 }
+

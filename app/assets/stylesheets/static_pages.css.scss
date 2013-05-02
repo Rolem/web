@@ -5,3 +5,30 @@
 // -----
 // Index
 // -----
+
+//Carousel
+.carousel-indicators {
+  list-style: none;
+  margin: 0;
+  position: absolute;
+  right: 50%;
+  top: 95%;
+  z-index: 5;
+}
+.carousel-indicators .active {
+  background-color: black;
+}
+.carousel-indicators li {
+  display: block;
+  float: left;
+  width: 10px;
+  height: 10px;
+  margin-left: 5px;
+  text-indent: -999px;
+  background-color: #8E8E8E;
+  border-radius: 10px;
+}
+
+.carousel-indicators li:hover {
+  cursor: pointer; cursor:hand;
+}
