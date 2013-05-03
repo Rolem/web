@@ -13,4 +13,19 @@ class StaticPagesController < ApplicationController
 
   def contacto
   end
+
+  def volcano
+  end
+
+  def prodigy
+  end
+
+  def optimus
+  end
+
+  def force
+  end
+
+  def elemento
+  end
 end

@@ -12,6 +12,12 @@ RolemWeb::Application.routes.draw do
   match '/comprar', to: 'static_pages#comprar'
   match '/contacto', to: 'static_pages#contacto'
 
+  match '/productos/volcano', to: 'static_pages#volcano'
+  match '/productos/prodigy', to: 'static_pages#prodigy'
+  match '/productos/optimus', to: 'static_pages#optimus'
+  match '/productos/force', to: 'static_pages#force'
+  match '/productos/elemento', to: 'static_pages#elemento'
+
 
 
   # The priority is based upon order of creation:

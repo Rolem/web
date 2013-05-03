@@ -65,3 +65,53 @@
     color: #FF9F12;
   }
 }
+
+// -----
+// Producto Especifico
+// -----
+
+.white-bg {
+  background-color: white;
+  color: black;
+  height: 460px;
+}
+
+.pc-title {
+  margin-top: 20px;
+}
+
+.pc-height {
+  height: 240px;
+  margin-bottom: 40px;
+}
+
+
+// -----
+// Compañia
+// -----
+
+.black-bg {
+  background-color: #1F1E19;
+  padding: 30px 0;
+}
+
+.left-column {
+  padding-left: 30px;
+}
+
+.right-column {
+  padding-right: 30px;
+}
+
+.compania {
+  font-size: 0.9em;
+  text-align: justify;
+
+  h5 {
+    margin-top: 0;
+  }
+}
+
+// -----
+// Comprar
+// -----

@@ -8,6 +8,16 @@ $(function(){
     function setBG() {
         if (document.URL.match(/productos$/)) {
             dbStyle.backgroundImage = backgnd[ 1 ]
+        } else if (document.URL.match(/productos\/volcano$/)) {
+            dbStyle.backgroundImage = backgnd[ 1 ]
+        } else if (document.URL.match(/productos\/prodigy$/)) {
+            dbStyle.backgroundImage = backgnd[ 1 ]
+        } else if (document.URL.match(/productos\/optimus$/)) {
+            dbStyle.backgroundImage = backgnd[ 1 ]
+        } else if (document.URL.match(/productos\/force$/)) {
+            dbStyle.backgroundImage = backgnd[ 1 ]
+        } else if (document.URL.match(/productos\/elemento$/)) {
+            dbStyle.backgroundImage = backgnd[ 1 ]
         } else if (document.URL.match(/compania$/)) {
             dbStyle.backgroundImage = backgnd[ 1 ]
         } else if (document.URL.match(/comprar$/)) {
