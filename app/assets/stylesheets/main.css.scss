@@ -103,11 +103,37 @@ body {
 }
 
 // -----
+// Social
+// -----
+
+.social {
+  position: fixed;
+  right: 7%;
+  width: 60px;
+}
+
+.social-spacing {
+  margin-right: 5px;
+}
+
+// -----
 // Sign Up / Login
 // -----
 
-.drop-from {
+
+.btn-group > .btn:first-child {
+  border-radius: 0;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+}
+
+.dropdown-menu {
+  border-radius: 0;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
   color: black;
+  left: none; // perroooo no funciona
+  right: 10px;
 }
 
 // -----
@@ -164,4 +190,6 @@ body {
   background-color: #23211C;
   margin-bottom: 10px;
 }
+
+
 
