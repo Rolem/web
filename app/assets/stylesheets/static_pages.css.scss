@@ -40,24 +40,43 @@
   background-color: white;
   color: #B4B4B4;
   margin-bottom: 2px;
-  padding: 5px 0;
+  padding: 40px 0;
 
   h1 {
     font-family: kautiva-black, helvetica;
-    font-size: 2.3em;
+    font-size: 3em;
+  }
+  img {
+    height: 180px;
   }
 }
 
-.volcano-r {
+.elemento-l {
   padding-right: 5%;
+}
+
+.volcano-l {
+  padding-left: 5%;
   text-align: justify;
+
+  h1 {
+    text-align: right;
+  }
+}
+
+.force-r {
+  padding-right: 5%;
 }
 
 .prodigy-l {
   text-align: right;
 }
-.prodigy-r {
+
+.optimus-r {
   padding-right: 5%;
+  h1 {
+    text-align: left;
+  }
 }
 
 .mas-info {

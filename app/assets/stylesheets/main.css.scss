@@ -61,18 +61,18 @@
 
   */
 
-  /* Darken IE7 buttons by default so they stand out more given they won't have borders */
+/* Darken IE7 buttons by default so they stand out more given they won't have borders */
 
-  /*
-  filter: progid:DXImageTransform.Microsoft.gradient(enabled=false);
+/*
+filter: progid:DXImageTransform.Microsoft.gradient(enabled=false);
 }
 .btn-dl:hover, .btn-dl:active, .btn-dl.active, .btn-dl.disabled, .btn-dl[disabled] {
-  color: white;
-  background-color: #D854BF;
-  *background-color: #E60170;
+color: white;
+background-color: #D854BF;
+*background-color: #E60170;
 }
 .btn-dl:active, .btn-dl.active {
-  background-color: #CC0163 \9;
+background-color: #CC0163 \9;
 }
 
 */
@@ -132,8 +132,6 @@ body {
   -webkit-border-radius: 0;
   -moz-border-radius: 0;
   color: black;
-  left: none; // perroooo no funciona
-  right: 10px;
 }
 
 // -----
@@ -193,3 +191,65 @@ body {
 
 
 
+
+
+// ------------
+// Responsive
+// ------------
+// Bootstrap responsive queries
+@import "bootstrap-responsive";
+// Cutom media queries
+
+@media (min-width: 1200px) {
+/*
+.container, .navbar-static-top .container, .navbar-fixed-top .container, .navbar-fixed-bottom .container {
+  width: 940px;
+}
+.offset10 {
+  margin-left: 820px;
+}
+.row {
+  margin-left: -20px;
+}
+.span12 {
+  width: 940px;
+  margin-left: 20px;
+}
+.span2 {
+  width: 140px;
+}      */
+}
+
+
+
+@media (min-width: 980px) and (max-width: 1199px) {
+// Navbar
+
+// Index
+
+
+// Carousel
+
+}
+
+@media (max-width: 979px) {
+// Navbar
+
+}
+
+@media (min-width: 768px) and (max-width: 979px) {
+// Navbar
+
+
+// Index
+
+
+// Carousel
+
+}
+
+
+ricaurte
+j6-k6
+j23 hasta jimnenez
+k10 hasta centro memoria - trasbordo j6
