@@ -40,7 +40,7 @@ module SessionsHelper
   # ========
   def signed_in_user
     unless signed_in?
-      redirect_to root_path, notice: 'Por favor ingresa al sistema.'
+      redirect_to root_path, notice: 'Por favor ingresa para acceder a tu perfil.'
     end
   end
 

@@ -40,7 +40,7 @@ class UsersController < ApplicationController
   private
   def correct_user
     @user = User.find_by_id(params[:id])
-    redirect_to root_path unless current_user? @user
+    redirect_to current_user unless current_user? @user
   end
 
   def not_signed_in_user
