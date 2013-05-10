@@ -191,6 +191,203 @@ body {
 
 
 
+// Place all the styles related to the static_pages controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+// -----
+// Index
+// -----
+
+.carousel-indicators {
+  list-style: none;
+  margin: 0;
+  position: absolute;
+  right: 50%;
+  top: 95%;
+  z-index: 5;
+}
+.carousel-indicators .active {
+  background-color: black;
+}
+.carousel-indicators li {
+  display: block;
+  float: left;
+  width: 10px;
+  height: 10px;
+  margin-left: 5px;
+  text-indent: -999px;
+  background-color: #8E8E8E;
+  border-radius: 10px;
+}
+
+.carousel-indicators li:hover {
+  cursor: pointer; cursor:hand;
+}
+
+// -----
+// Productos
+// -----
+
+.products {
+  background-color: white;
+  color: #B4B4B4;
+  margin-bottom: 2px;
+  padding: 40px 0;
+
+  h1 {
+    font-family: kautiva-black, helvetica;
+    font-size: 3em;
+  }
+  img {
+    height: 180px;
+  }
+}
+
+.elemento-l {
+  padding-right: 5%;
+}
+
+.volcano-l {
+  padding-left: 5%;
+  text-align: justify;
+
+  h1 {
+    text-align: right;
+  }
+}
+
+.force-r {
+  padding-right: 5%;
+}
+
+.prodigy-l {
+  text-align: right;
+}
+
+.optimus-r {
+  padding-right: 5%;
+  h1 {
+    text-align: left;
+  }
+}
+
+.mas-info {
+  a, a:hover, a:visited {
+    color: #FF9F12;
+  }
+}
+
+// -----
+// Producto Especifico
+// -----
+
+.white-bg {
+  background-color: white;
+  color: black;
+  height: 460px;
+}
+
+.pc-title {
+  margin-top: 20px;
+}
+
+.pc-height {
+  height: 240px;
+  margin-bottom: 40px;
+}
+
+.tabs-margin {
+  margin-right: 30px;
+}
+
+.tabs-bg {
+  background-color: white;
+  margin-bottom: 15px;
+
+  ul {
+    list-style-type: none;
+  }
+  li {
+    list-style-type: none;
+  }
+}
+
+.tabs-title {
+  margin-top: 30px;
+}
+
+.thumbnail {
+  height: 60px;
+}
+
+.no-border {
+  border: 0;
+}
+
+.no-border li > a {
+  background-color: #1F1E19;
+  border: 0;
+  border-radius: 0;
+  color: white;
+}
+
+.no-border li > a:hover {
+  background-color: #505050;
+  border: 0;
+  border-radius: 0;
+  color: white;
+}
+
+.no-border .active > a {
+  background-color: #505050;
+  border: 0;
+  border-radius: 0;
+  color: white;
+}
+
+.no-border .active > a:hover {
+  background-color: #505050;
+  border: 0;
+  border-radius: 0;
+  color: white;
+}
+
+
+button a, a:hover, a:visited {
+  color: white;
+  text-decoration: none;
+}
+
+// -----
+// Compañia
+// -----
+
+.black-bg {
+  background-color: #1F1E19;
+  padding: 30px 0;
+}
+
+.left-column {
+  padding-left: 30px;
+}
+
+.right-column {
+  padding-right: 30px;
+}
+
+.compania {
+  font-size: 0.9em;
+  text-align: justify;
+
+  h5 {
+    margin-top: 0;
+  }
+}
+
+// -----
+// Comprar
+// -----
 
 
 // ------------
@@ -201,34 +398,10 @@ body {
 // Cutom media queries
 
 @media (min-width: 1200px) {
-/*
-.container, .navbar-static-top .container, .navbar-fixed-top .container, .navbar-fixed-bottom .container {
-  width: 940px;
-}
-.offset10 {
-  margin-left: 820px;
-}
-.row {
-  margin-left: -20px;
-}
-.span12 {
-  width: 940px;
-  margin-left: 20px;
-}
-.span2 {
-  width: 140px;
-}      */
-}
 
-
+}
 
 @media (min-width: 980px) and (max-width: 1199px) {
-// Navbar
-
-// Index
-
-
-// Carousel
 
 }
 
@@ -238,13 +411,28 @@ body {
 }
 
 @media (min-width: 768px) and (max-width: 979px) {
-// Navbar
 
+// Social
 
-// Index
+  .social-tablet {
+    width: 70px;
+  }
 
+// Productos
 
-// Carousel
+  .pane-tablet {
+    height: 280px;
+  }
 
+  .tabs-title {
+    a {
+      font-size: 0.9em;
+    }
+  }
+
+  .thumbnail {
+    height: 40px;
+  }
 }
+
 
