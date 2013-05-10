@@ -67,6 +67,8 @@ GEM
     factory_girl_rails (4.2.1)
       factory_girl (~> 4.2.0)
       railties (>= 3.0.0)
+    gherkin (2.12.0)
+      multi_json (~> 1.3)
     gherkin (2.12.0-x86-mingw32)
       multi_json (~> 1.3)
     hike (1.2.2)
@@ -82,10 +84,19 @@ GEM
       treetop (~> 1.4.8)
     meta-tags (1.4.1)
       actionpack
+    meta_search (1.1.3)
+      actionpack (~> 3.1)
+      activerecord (~> 3.1)
+      activesupport (~> 3.1)
+      polyamorous (~> 0.5.0)
     mime-types (1.23)
     multi_json (1.7.2)
+    nokogiri (1.5.9)
     nokogiri (1.5.9-x86-mingw32)
+    pg (0.15.1)
     pg (0.15.1-x86-mingw32)
+    polyamorous (0.5.0)
+      activerecord (~> 3.0)
     polyglot (0.3.3)
     rack (1.4.5)
     rack-cache (1.2)
@@ -146,6 +157,7 @@ GEM
       nokogiri (~> 1.3)
 
 PLATFORMS
+  ruby
   x86-mingw32
 
 DEPENDENCIES
@@ -158,6 +170,7 @@ DEPENDENCIES
   factory_girl_rails
   jquery-rails
   meta-tags
+  meta_search (>= 1.1.0.pre)
   pg
   rails (= 3.2.11)
   rspec-rails (~> 2.12.2)

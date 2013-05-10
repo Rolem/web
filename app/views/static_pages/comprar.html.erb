@@ -2,14 +2,49 @@
   <div class="row">
     <div class="span12 white-bg">
       <div class="row ">
-        <div class="span4">
-          COLUMNA UBICACIONES
+        <div class="span3">
+          <div class="direcciones">
+            <h3>Unilago</h3>
+            <p>Carrera 15</p>
+            <h3>Unicentro</h3>
+            <p>Carrera 15 con calle 127</p>
+            <h3>Bulevar</h3>
+            <p>Avenida suba con calle 127</p>
+          </div>
         </div>
-        <div class="span8">
-          COLUMNA MAPA
+        <div class="span9">
+          <div id="map_canvas"></div>
         </div>
       </div>
-
     </div>
   </div>
 </div>
+<script>
+    function initialize() {
+        // Inicialización del mapa
+        var map_canvas = document.getElementById('map_canvas');
+        var map_options = {
+            center: new google.maps.LatLng(4.664757, -74.058323),
+            zoom: 15,
+            mapTypeId: google.maps.MapTypeId.ROADMAP
+        }
+        var map = new google.maps.Map(map_canvas, map_options);
+
+        // Marcador
+        var myLatlng = new google.maps.LatLng(4.664757, -74.058323);
+        var marker = new google.maps.Marker({
+            position: myLatlng,
+            map: map,
+            animation: google.maps.Animation.DROP
+        });
+
+        // Información del marcador
+        var infoWindow = new google.maps.InfoWindow({
+            content: 'Compra aquí. Carrera 15'
+        });
+        google.maps.event.addListener(marker, 'click', function () {
+            infoWindow.open(map, marker);
+        });
+    }
+    google.maps.event.addDomListener(window, 'load', initialize);
+</script>

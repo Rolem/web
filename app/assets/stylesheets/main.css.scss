@@ -297,6 +297,167 @@ body {
   margin-bottom: 40px;
 }
 
+.tabs-padding {
+  padding-right: 30px;
+  width: 430px;
+}
+
+.tabs-bg {
+  background-color: white;
+
+  ul {
+    list-style-type: none;
+  }
+  li {
+    list-style-type: none;
+  }
+}
+
+.tabs-title {
+  margin-top: 30px;
+}
+
+// -----
+// Compañia
+// -----
+
+.black-bg {
+  background-color: #1F1E19;
+  padding: 30px 0;
+}
+
+.left-column {
+  padding-left: 30px;
+}
+
+.right-column {
+  padding-right: 30px;
+}
+
+.compania {
+  font-size: 0.9em;
+  text-align: justify;
+
+  h5 {
+    margin-top: 0;
+  }
+}
+
+// -----
+// Comprar
+// -----
+
+
+// -----
+// Google Maps
+// -----
+.direcciones {
+  margin: 20px;
+}
+
+#map_canvas {
+  height: 460px;
+  width: 100%;
+}
+
+.carousel-indicators {
+  list-style: none;
+  margin: 0;
+  position: absolute;
+  right: 50%;
+  top: 95%;
+  z-index: 5;
+}
+.carousel-indicators .active {
+  background-color: black;
+}
+.carousel-indicators li {
+  display: block;
+  float: left;
+  width: 10px;
+  height: 10px;
+  margin-left: 5px;
+  text-indent: -999px;
+  background-color: #8E8E8E;
+  border-radius: 10px;
+}
+
+.carousel-indicators li:hover {
+  cursor: pointer; cursor:hand;
+}
+
+// -----
+// Productos
+// -----
+
+.products {
+  background-color: white;
+  color: #B4B4B4;
+  margin-bottom: 2px;
+  padding: 40px 0;
+
+  h1 {
+    font-family: kautiva-black, helvetica;
+    font-size: 3em;
+  }
+  img {
+    height: 180px;
+  }
+}
+
+.elemento-l {
+  padding-right: 5%;
+}
+
+.volcano-l {
+  padding-left: 5%;
+  text-align: justify;
+
+  h1 {
+    text-align: right;
+  }
+}
+
+.force-r {
+  padding-right: 5%;
+}
+
+.prodigy-l {
+  text-align: right;
+}
+
+.optimus-r {
+  padding-right: 5%;
+  h1 {
+    text-align: left;
+  }
+}
+
+.mas-info {
+  a, a:hover, a:visited {
+    color: #FF9F12;
+  }
+}
+
+// -----
+// Producto Especifico
+// -----
+
+.white-bg {
+  background-color: white;
+  color: black;
+  height: 460px;
+}
+
+.pc-title {
+  margin-top: 20px;
+}
+
+.pc-height {
+  height: 240px;
+  margin-bottom: 40px;
+}
+
 .tabs-margin {
   margin-right: 30px;
 }
