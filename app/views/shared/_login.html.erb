@@ -1,0 +1,15 @@
+<%= form_tag login_path, method: :post do %>
+    <li>
+      <%= text_field_tag :email, nil, placeholder: 'Correo electrónico' %>
+    </li>
+    <li>
+      <%= text_field_tag :password, nil, placeholder: 'Contraseña' %>
+    </li>
+    <li class="divider"></li>
+    <li>
+      <%= button_tag 'Ingresar', class: 'btn btn-warning' %>
+    </li>
+    <li>
+      <%= link_to '¿No tienes cuenta? Regístrate', new_user_path %>
+    </li>
+<% end %>

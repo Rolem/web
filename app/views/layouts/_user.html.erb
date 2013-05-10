@@ -3,27 +3,25 @@
     <div class="span12 text-center">
       <div class="row">
         <div class="offset9 span2">
-          <div class="btn-group">
-            <button class="btn btn-warning dropdown-toggle" data-toggle="dropdown">
-              Sign Up / Login
-            </button>
-            <ul class="dropdown-menu">
-              <div class="formulario-login">
-                <li>
-                  <%= text_field_tag :email, nil, placeholder: 'Correo electrónico' %>
-                </li>
-                <li>
-                  <%= text_field_tag :password, nil, placeholder: 'Contraseña' %>
-                </li>
-                <li class="divider"></li>
-                <li>
-                  <%= button_tag 'Ingresar', class: 'btn btn-warning' %>
-                </li>
-                <li>
-                  <%= link_to '¿No tienes cuenta? Regístrate', new_user_path %>
-                </li>
-              </div>
-            </ul>
+          <div class="dropdown">
+            <div class="btn-group">
+              <button class="btn btn-warning dropdown-toggle" data-toggle="dropdown">
+                <% if signed_in? %>
+                    Menú
+                <% else %>
+                    Sign Up / Login
+                <% end %>
+              </button>
+              <ul class="dropdown-menu" role="menu">
+                <div class="formulario-login">
+                  <% if signed_in? %>
+                      <%= render 'shared/signout' %>
+                  <% else %>
+                      <%= render 'shared/login' %>
+                  <% end %>
+                </div>
+              </ul>
+            </div>
           </div>
         </div>
         <%= render 'layouts/social' %>

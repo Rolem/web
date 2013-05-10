@@ -9,12 +9,19 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
+<!-- Header -->
 <%= render 'layouts/user' %>
 <%= render 'layouts/logo' %>
 <%= render 'layouts/navbar' %>
-
+<!-- Flash -->
+<%= render partial: 'shared/flash', locals: { flash: flash } %>
+<!-- Main -->
 <%= yield %>
-
+<!-- Footer -->
 <%= render 'layouts/footer' %>
+
+<aside class="container">
+  <%= debug(params) if Rails.env.development? %>
+</aside>
 </body>
 </html>

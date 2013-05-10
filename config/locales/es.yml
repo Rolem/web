@@ -26,6 +26,7 @@ es:
             password:
               blank: "no puede estar en blanco."
               too_short: "está muy corta (mínimo %{count} caracteres)."
+              confirmation: "no coincide."
             password_confirmation:
               blank: "no puede estar en blanco."
             password_digest:

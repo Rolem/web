@@ -337,17 +337,23 @@ button a, a:hover, a:visited {
 .formulario-login {
   padding: 10px 10px 5px 10px;
 
-  li:last-child {
-    margin-top: 10px;
+  form {
+    margin-bottom: 0px;
+
+    li:last-child {
+      margin-top: 10px;
+    }
+
+    button {
+      width: 100%;
+    }
+
+    a {
+      color: #B4B4B4;
+    }
   }
 
-  button {
-    width: 100%;
-  }
 
-  a {
-    color: #B4B4B4;
-  }
 }
 
 .dropdown-menu {
