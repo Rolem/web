@@ -1,0 +1,31 @@
+es:
+  "error":
+    one: "un error"
+    other: "%{count} errores"
+  activerecord:
+    attributes:
+      user:
+        email: "El correo"
+        first_name: "El nombre"
+        last_name: "El apellido"
+        password: "La contraseña"
+        password_confirmation: "La contraseña de confirmación"
+        password_digest: "La contraseña cifrada"
+    errors:
+      models:
+        user:
+          attributes:
+            email:
+              blank: "no puede estar en blanco"
+              invalid: "es inválido"
+            first_name:
+              blank: "no puede estar en blanco"
+            last_name:
+              blank: "no puede estar en blanco"
+            password:
+              blank: "no puede estar en blanco"
+              too_short: "está muy corta"
+            password_confirmation:
+              blank: "no puede estar en blanco"
+            password_digest:
+              blank: "no se pudo guardar"

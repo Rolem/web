@@ -4,8 +4,10 @@ gem 'rails', '3.2.11'
 gem 'pg'
 gem 'jquery-rails'
 gem 'bootstrap-sass'
+gem 'bcrypt-ruby'
 gem 'meta_search',    '>= 1.1.0.pre'
 gem 'meta-tags', :require => 'meta_tags'
+gem 'i18n'
 
 group :development, :test do
   gem 'rspec-rails', '~> 2.12.2'

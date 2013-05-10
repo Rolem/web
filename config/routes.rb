@@ -1,4 +1,5 @@
 RolemWeb::Application.routes.draw do
+
   # -----------------
   # Root
   # -----------------
@@ -17,6 +18,11 @@ RolemWeb::Application.routes.draw do
   match '/productos/optimus', to: 'static_pages#optimus'
   match '/productos/force', to: 'static_pages#force'
   match '/productos/elemento', to: 'static_pages#elemento'
+
+  # -----------------
+  # Static Pages
+  # -----------------
+  resources :users, only: [:new, :create, :edit, :update, :show]
 
 
 
