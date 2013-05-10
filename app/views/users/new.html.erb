@@ -1,0 +1,22 @@
+<div class="container">
+  <div class="row">
+    <div class="offset3 span6 formulario-usuario-contenedor">
+      <div class="formulario-usuario">
+        <h1 class="text-center">Nuevo usuario</h1>
+        <%= form_for @user, html: { class: 'formulario-general' } do |f| %>
+            <%= render 'shared/error_messages', object: f.object %>
+            <div class="control-group">
+              <%= f.text_field :first_name, placeholder: 'Nombres' %>
+              <%= f.text_field :last_name, placeholder: 'Apellidos' %>
+              <%= f.text_field :email, placeholder: 'Correo electrónico' %>
+              <%= f.password_field :password, placeholder: 'Contraseña' %>
+              <%= f.password_field :password_confirmation, placeholder: 'Confirmar contraseña' %>
+            </div>
+            <div class="control-group text-center">
+              <%= f.submit 'Crear usuario', class: 'btn btn-warning' %>
+            </div>
+        <% end %>
+      </div>
+    </div>
+  </div>
+</div>

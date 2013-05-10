@@ -1,4 +1,5 @@
 RolemWeb::Application.routes.draw do
+
   # -----------------
   # Root
   # -----------------
@@ -18,6 +19,16 @@ RolemWeb::Application.routes.draw do
   match '/productos/force', to: 'static_pages#force'
   match '/productos/elemento', to: 'static_pages#elemento'
 
+  # -----------------
+  # Controllers
+  # -----------------
+
+  # User's controller
+  resources :users, only: [:new, :create, :edit, :update, :show]
+
+  # Session's controller
+  match '/login', to: 'sessions#create', as: 'login', via: :post
+  match '/signout', to: 'sessions#destroy', as: 'signout', via: :delete
 
 
   # The priority is based upon order of creation:
