@@ -84,26 +84,6 @@ body {
 }
 
 // --------
-// Sign Up / Login
-// --------
-.btn-group > .btn:first-child {
-  border-radius: 0;
-  -webkit-border-radius: 0;
-  -moz-border-radius: 0;
-}
-
-.formulario-login {
-  padding: 10px 10px;
-}
-
-.dropdown-menu {
-  border-radius: 0;
-  -webkit-border-radius: 0;
-  -moz-border-radius: 0;
-  color: black;
-}
-
-// --------
 // Logo
 // --------
 .logo {
@@ -343,6 +323,40 @@ button a, a:hover, a:visited {
   h5 {
     margin-top: 0;
   }
+}
+
+// --------
+// Sign Up / Login
+// --------
+.btn-group > .btn:first-child {
+  border-radius: 0;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+}
+
+.formulario-login {
+  padding: 10px 10px 5px 10px;
+
+  li:last-child {
+    margin-top: 10px;
+  }
+
+  button {
+    width: 100%;
+  }
+
+  a {
+    color: #B4B4B4;
+  }
+}
+
+.dropdown-menu {
+  border-radius: 0;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  color: black;
+  left: auto;
+  right: 0;
 }
 
 // --------

@@ -16,16 +16,17 @@ es:
         user:
           attributes:
             email:
-              blank: "no puede estar en blanco"
-              invalid: "es inválido"
+              blank: "no puede estar en blanco."
+              invalid: "es inválido."
+              taken: "ya ha sido usado."
             first_name:
-              blank: "no puede estar en blanco"
+              blank: "no puede estar en blanco."
             last_name:
-              blank: "no puede estar en blanco"
+              blank: "no puede estar en blanco."
             password:
-              blank: "no puede estar en blanco"
-              too_short: "está muy corta"
+              blank: "no puede estar en blanco."
+              too_short: "está muy corta (mínimo %{count} caracteres)."
             password_confirmation:
-              blank: "no puede estar en blanco"
+              blank: "no puede estar en blanco."
             password_digest:
-              blank: "no se pudo guardar"
+              blank: "no se pudo guardar."
