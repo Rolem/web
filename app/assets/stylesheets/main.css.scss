@@ -34,52 +34,9 @@
   src: local('Kautiva-Bold-Italic'), local('Kautiva-Bold-Italic'), url(Kautiva-Bold-Italic.ttf) format('truetype')
 }
 
-// ----
-// Button
-// ----
-
-/*
-
-.btn-dl.active {
-  color: rgba(255, 255, 255, 0.75);
-}
-//FD3AD8
-.btn-dl {
-  color: white;
-  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
-  background-color: #FF01AF;
-  background-image: -moz-linear-gradient(top, #FD3AD8, #D854BF);
-  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#FD3AD8), to(#D854BF));
-  background-image: -webkit-linear-gradient(top, #FD3AD8, #D854BF);
-  background-image: -o-linear-gradient(top, #FD3AD8, #D854BF);
-  background-image: linear-gradient(to bottom, #FD3AD8, #D854BF);
-  background-repeat: repeat-x;
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FFFD3AD8', endColorstr='#FFD854BF', GradientType=0);
-  border-color: #D854BF #D854BF #B3015A;
-  border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
-  *background-color: #D854BF;
-
-  */
-
-/* Darken IE7 buttons by default so they stand out more given they won't have borders */
-
-/*
-filter: progid:DXImageTransform.Microsoft.gradient(enabled=false);
-}
-.btn-dl:hover, .btn-dl:active, .btn-dl.active, .btn-dl.disabled, .btn-dl[disabled] {
-color: white;
-background-color: #D854BF;
-*background-color: #E60170;
-}
-.btn-dl:active, .btn-dl.active {
-background-color: #CC0163 \9;
-}
-
-*/
-
-// -----
+// --------
 // General
-// -----
+// --------
 body {
   background: no-repeat center center fixed;
   background-size: cover;
@@ -107,10 +64,15 @@ body {
   @extend .error;
 }
 
-// -----
-// Social
-// -----
+.btn-warning {
+  border-radius: 0;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+}
 
+// --------
+// Social
+// --------
 .social {
   position: fixed;
   right: 7%;
@@ -121,21 +83,17 @@ body {
   margin-right: 5px;
 }
 
-// -----
+// --------
 // Sign Up / Login
-// -----
-
-
+// --------
 .btn-group > .btn:first-child {
   border-radius: 0;
   -webkit-border-radius: 0;
   -moz-border-radius: 0;
 }
 
-.btn-warning {
-  border-radius: 0;
-  -webkit-border-radius: 0;
-  -moz-border-radius: 0;
+.formulario-login {
+  padding: 10px 10px;
 }
 
 .dropdown-menu {
@@ -145,19 +103,17 @@ body {
   color: black;
 }
 
-// -----
+// --------
 // Logo
-// -----
-
+// --------
 .logo {
   margin-bottom: 1%;
 }
 
-// -----
+// --------
 // Navbar Justified
-// -----
+// --------
 
-/* Customize the navbar links to be fill the entire space of the .navbar */
 .navbar .navbar-inner {
   padding: 0;
 }
@@ -191,24 +147,17 @@ body {
   border-radius: 0 3px 3px 0;
 }
 
-// -----
+// --------
 // Navbar
-// -----
-
+// --------
 .navbar-inverse {
   background-color: #23211C;
   margin-bottom: 10px;
 }
 
-
-
-// Place all the styles related to the static_pages controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
-
-// -----
+// --------
 // Index
-// -----
+// --------
 
 .carousel-indicators {
   list-style: none;
@@ -236,9 +185,9 @@ body {
   cursor: pointer; cursor:hand;
 }
 
-// -----
+// --------
 // Productos
-// -----
+// --------
 
 .products {
   background-color: white;
@@ -289,9 +238,9 @@ body {
   }
 }
 
-// -----
+// --------
 // Producto Especifico
-// -----
+// --------
 
 .white-bg {
   background-color: white;
@@ -308,13 +257,13 @@ body {
   margin-bottom: 40px;
 }
 
-.tabs-padding {
-  padding-right: 30px;
-  width: 430px;
+.tabs-margin {
+  margin-right: 30px;
 }
 
 .tabs-bg {
   background-color: white;
+  margin-bottom: 15px;
 
   ul {
     list-style-type: none;
@@ -328,9 +277,51 @@ body {
   margin-top: 30px;
 }
 
-// -----
+.thumbnail {
+  height: 60px;
+}
+
+.no-border {
+  border: 0;
+}
+
+.no-border li > a {
+  background-color: #1F1E19;
+  border: 0;
+  border-radius: 0;
+  color: white;
+}
+
+.no-border li > a:hover {
+  background-color: #505050;
+  border: 0;
+  border-radius: 0;
+  color: white;
+}
+
+.no-border .active > a {
+  background-color: #505050;
+  border: 0;
+  border-radius: 0;
+  color: white;
+}
+
+.no-border .active > a:hover {
+  background-color: #505050;
+  border: 0;
+  border-radius: 0;
+  color: white;
+}
+
+
+button a, a:hover, a:visited {
+  color: white;
+  text-decoration: none;
+}
+
+// --------
 // Compañia
-// -----
+// --------
 
 .black-bg {
   background-color: #1F1E19;
@@ -354,14 +345,9 @@ body {
   }
 }
 
-// -----
-// Comprar
-// -----
-
-
-// -----
+// --------
 // Google Maps
-// -----
+// --------
 .direcciones {
   margin: 20px;
 }
@@ -371,16 +357,9 @@ body {
   width: 100%;
 }
 
-// -----
-// Login
-// -----
-.formulario-login {
-  padding: 10px 10px;
-}
-
-// -----
+// --------
 // Usuarios
-// -----
+// --------
 .formulario-usuario-contenedor {
   background-color: #FFF;
   color: #B4B4B4;
@@ -422,43 +401,16 @@ body {
   }
 }
 
-
 // ------------
 // Responsive
 // ------------
-// Bootstrap responsive queries
 @import "bootstrap-responsive";
-// Cutom media queries
 
 @media (min-width: 1200px) {
-/*
-.container, .navbar-static-top .container, .navbar-fixed-top .container, .navbar-fixed-bottom .container {
-  width: 940px;
-}
-.offset10 {
-  margin-left: 820px;
-}
-.row {
-  margin-left: -20px;
-}
-.span12 {
-  width: 940px;
-  margin-left: 20px;
-}
-.span2 {
-  width: 140px;
-}      */
-}
 
-
+}
 
 @media (min-width: 980px) and (max-width: 1199px) {
-// Navbar
-
-// Index
-
-
-// Carousel
 
 }
 
@@ -468,13 +420,28 @@ body {
 }
 
 @media (min-width: 768px) and (max-width: 979px) {
-// Navbar
 
+// Social
 
-// Index
+  .social-tablet {
+    width: 70px;
+  }
 
+// Productos
 
-// Carousel
+  .pane-tablet {
+    height: 280px;
+  }
 
+  .tabs-title {
+    a {
+      font-size: 0.9em;
+    }
+  }
+
+  .thumbnail {
+    height: 40px;
+  }
 }
+
 
