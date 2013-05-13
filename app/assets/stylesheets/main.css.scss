@@ -64,7 +64,7 @@ body {
   @extend .error;
 }
 
-.btn-warning {
+.btn-warning, btn-danger {
   border-radius: 0;
   -webkit-border-radius: 0;
   -moz-border-radius: 0;
