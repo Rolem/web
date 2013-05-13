@@ -17,7 +17,7 @@
 
 class User < ActiveRecord::Base
   attr_accessible :city, :date_of_birth, :email, :first_name, :gender, :last_name, :password, :password_confirmation,
-                  :social_level
+                  :social_level, :game_genre
 
   has_secure_password
 

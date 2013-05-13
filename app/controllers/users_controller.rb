@@ -26,14 +26,20 @@ class UsersController < ApplicationController
   end
 
   def edit
+    game_client_list
   end
 
   def update
+    game_client_list
     # It checks first that the password is correct
     if @user.authenticate params[:user][:password]
       # Validates all parameters
       params[:user][:password_confirmation] = params[:user][:password]
       params[:user].delete :social_level if params[:user][:social_level].eql? '0'
+      @user.game_clients = Array.new
+      params[:game_client].each do |gc|
+        @user.game_clients.push GameClient.find gc
+      end
 
       if @user.update_attributes(params[:user])
         flash[:success] = 'Perfil actualizado'
@@ -50,6 +56,7 @@ class UsersController < ApplicationController
   def show
   end
 
+
   # ============
   # Internally private methods
   # ============
@@ -63,4 +70,22 @@ class UsersController < ApplicationController
     redirect_to root_path if signed_in?
   end
 
+  def game_client_list
+    # Saves all game clients used by the user
+    used_game_clients = @user.game_clients
+    @game_client_list = used_game_clients
+
+    all_game_clients = GameClient.all
+    # Gets the game clients not used by the user
+    @game_client_list_unused = Array.new
+    all_game_clients.each do |gc|
+      exists = false
+      # Checks if it already exists
+      used_game_clients.each do |ugc|
+        exists = true if ugc.id == gc.id
+      end
+      # Adds the game client if it isn't used
+      @game_client_list_unused.push gc unless exists
+    end
+  end
 end

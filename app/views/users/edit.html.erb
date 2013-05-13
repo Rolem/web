@@ -18,7 +18,8 @@
                   <%= f.text_field :date_of_birth, placeholder: 'Fecha de nacimiento (dd/mm/aaaa)' %>
                   <%= f.text_field :city, placeholder: 'Ciudad' %>
                   <%= f.select :social_level,
-                               options_for_select([['Estrato social', 0], %w(6 6), %w(5 5), %w(4 4), %w(3 3), %w(2 2), %w(1 1), ]) %>
+                               options_for_select([['Estrato social', 0], %w(6 6), %w(5 5), %w(4 4), %w(3 3),
+                                                   %w(2 2), %w(1 1), ]) %>
                   <label class="radio inline">
                     <%= f.radio_button :gender, 'masculino' %>
                     Masculino
@@ -27,6 +28,28 @@
                     <%= f.radio_button :gender, 'femenino' %>
                     Femenino
                   </label>
+                </div>
+                <div class="control-group">
+                  <h4>Gustos</h4>
+                  <h5>¿Cuál es tu género preferido?</h5>
+                  <%= f.select :game_genre,
+                               options_for_select([%w(Acción accion), %w(Aventura aventura), %w(Carreras carreras),
+                                                   %w(Casual casual), %w(Deportes deportes), %w(FPS fps),
+                                                   %w(Independiente independiente), %w(MMO mmo), %w(MOBA moba),
+                                                   %w(RGP rpg), %w(RTS rts), %w(Simulación simulacion) ]) %>
+                  <h5>¿Qué clientes de juegos usas?</h5>
+                  <% @game_client_list.each do |gc| %>
+                      <label class="radio">
+                        <%= check_box_tag "game_client[#{gc.id}]", gc.id, true %>
+                        <%= gc.name %>
+                      </label>
+                  <% end %>
+                  <% @game_client_list_unused.each do |gc| %>
+                      <label class="radio">
+                        <%= check_box_tag "game_client[#{gc.id}]", gc.id %>
+                        <%= gc.name %>
+                      </label>
+                  <% end %>
                 </div>
                 <div class="control-group">
                   <h4>Confirmación de contraseña</h4>
