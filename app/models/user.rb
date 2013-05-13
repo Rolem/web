@@ -27,6 +27,12 @@ class User < ActiveRecord::Base
   before_save { self.email.downcase! }
 
   # ============
+  # Associations
+  # ============
+  has_many :game_client_uses
+  has_many :game_clients, through: :game_client_uses
+
+  # ============
   # Validations
   # ============
   validates :first_name, presence: true
