@@ -37,8 +37,10 @@ class UsersController < ApplicationController
       params[:user][:password_confirmation] = params[:user][:password]
       params[:user].delete :social_level if params[:user][:social_level].eql? '0'
       @user.game_clients = Array.new
-      params[:game_client].each do |gc|
-        @user.game_clients.push GameClient.find gc
+      unless params[:game_client].nil?
+        params[:game_client].each do |gc|
+          @user.game_clients.push GameClient.find gc
+        end
       end
 
       if @user.update_attributes(params[:user])
