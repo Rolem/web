@@ -29,6 +29,22 @@ class UsersController < ApplicationController
   end
 
   def update
+    # It checks first that the password is correct
+    if @user.authenticate params[:user][:password]
+      # Validates all parameters
+      params[:user][:password_confirmation] = params[:user][:password]
+      params[:user].delete :social_level if params[:user][:social_level].eql? '0'
+
+      if @user.update_attributes(params[:user])
+        flash[:success] = 'Perfil actualizado'
+        redirect_to @user
+      else
+        render 'edit'
+      end
+    else
+      @user.errors[:base] << 'La contraseña suministrada es inválida.'
+      render 'edit'
+    end
   end
 
   def show

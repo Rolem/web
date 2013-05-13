@@ -1,2 +1,16 @@
-<h1>Users#show</h1>
-<p>Find me in app/views/users/show.html.erb</p>
+<div class="container">
+  <div class="row">
+    <div class="span12 perfil-contenedor">
+      <div class="row">
+        <div class="span4">
+            <%= render partial: 'navigation', locals: { profile_option: true, receipt_option: false, edit_option: false } %>
+        </div>
+        <div class="span6">
+          <div class="perfil-informacion">
+            <h1>Perfil</h1>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

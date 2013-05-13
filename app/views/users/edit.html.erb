@@ -1,2 +1,44 @@
-<h1>Users#edit</h1>
-<p>Find me in app/views/users/edit.html.erb</p>
+<div class="container">
+  <div class="row">
+    <div class="span12 perfil-contenedor">
+      <div class="row">
+        <div class="span4">
+          <%= render partial: 'navigation', locals: { profile_option: false, receipt_option: false, edit_option: true } %>
+        </div>
+        <div class="span6">
+          <div class="perfil-informacion">
+            <h1>Editar perfil</h1>
+            <%= form_for @user, html: { class: 'formulario-general' } do |f| %>
+                <%= render 'shared/error_messages', object: f.object %>
+                <div class="control-group">
+                  <h4>Información personal</h4>
+                  <%= f.text_field :first_name, placeholder: 'Nombres' %>
+                  <%= f.text_field :last_name, placeholder: 'Apellidos' %>
+                  <%= f.text_field :email, placeholder: 'Correo electrónico' %>
+                  <%= f.text_field :date_of_birth, placeholder: 'Fecha de nacimiento (dd/mm/aaaa)' %>
+                  <%= f.text_field :city, placeholder: 'Ciudad' %>
+                  <%= f.select :social_level,
+                               options_for_select([['Estrato social', 0], %w(6 6), %w(5 5), %w(4 4), %w(3 3), %w(2 2), %w(1 1), ]) %>
+                  <label class="radio inline">
+                    <%= f.radio_button :gender, 'masculino' %>
+                    Masculino
+                  </label>
+                  <label class="radio inline">
+                    <%= f.radio_button :gender, 'femenino' %>
+                    Femenino
+                  </label>
+                </div>
+                <div class="control-group">
+                  <h4>Confirmación de contraseña</h4>
+                  <%= f.password_field :password, placeholder: 'Contraseña' %>
+                </div>
+                <div class="control-group text-right">
+                  <%= f.submit 'Actualizar datos', class: 'btn btn-warning' %>
+                </div>
+            <% end %>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

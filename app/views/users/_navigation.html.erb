@@ -1,0 +1,14 @@
+<div class="perfil-navegacion">
+  <h1>Opciones</h1>
+  <ul class="nav nav-tabs nav-stacked no-border">
+    <li class="<%= 'active' if profile_option %>">
+      <a href="<%= user_path(current_user) %>" class="sharp">Mi perfil<i class="icon-chevron-right pull-right"></i></a>
+    </li>
+    <li class="<%= 'active' if receipt_option %>">
+      <a href="#">Mis facturas<i class="icon-chevron-right pull-right"></i></a>
+    </li>
+    <li class="<%= 'active' if edit_option %>">
+      <a href="<%= edit_user_path(current_user) %>" class="sharp">Editar<i class="icon-chevron-right pull-right"></i></a>
+    </li>
+  </ul>
+</div>
