@@ -1,2 +1,36 @@
-<h1>Users#show</h1>
-<p>Find me in app/views/users/show.html.erb</p>
+<div class="container">
+  <div class="row">
+    <div class="span12 perfil-contenedor">
+      <div class="row">
+        <div class="span4">
+          <%= render partial: 'navigation', locals: { profile_option: true, receipt_option: false, edit_option: false } %>
+        </div>
+        <div class="span6">
+          <div class="perfil-informacion">
+            <h1>Perfil</h1>
+            <h4>Información personal</h4>
+            <p><strong>Nombres:</strong> <%= @user.first_name %></p>
+            <p><strong>Apellidos:</strong>  <%= @user.last_name %></p>
+            <p><strong>Correo electrónico:</strong>  <%= @user.email %></p>
+            <p><strong>Fecha de nacimiento:</strong>  <%= @user.date_of_birth %></p>
+            <p><strong>Ciudad:</strong>  <%= @user.city %></p>
+            <p><strong>Estrato social:</strong>  <%= @user.social_level %></p>
+            <p><strong>Género:</strong>  <%= @user.gender.capitalize %></p>
+            <h4>Gustos</h4>
+            <p><strong>Género preferido:</strong> <%= @user.first_name %></p>
+            <% if @user.game_clients.empty? %>
+                <p><strong>Clientes de juegos usados:</strong> No tienes, te invitamos a que actualices tu perfil.</p>
+            <% else %>
+                <p><strong>Clientes de juegos usados:</strong></p>
+                <ul>
+                  <% @user.game_clients.each do |gc| %>
+                      <li><%= gc.name %></li>
+                  <% end %>
+                </ul>
+            <% end %>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

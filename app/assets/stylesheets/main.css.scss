@@ -293,7 +293,6 @@ body {
   color: white;
 }
 
-
 button a, a:hover, a:visited {
   color: white;
   text-decoration: none;
@@ -369,7 +368,7 @@ button a, a:hover, a:visited {
 // Google Maps
 // --------
 .direcciones {
-  margin: 20px;
+  margin: 30px;
 }
 
 #map_canvas {
@@ -385,7 +384,7 @@ button a, a:hover, a:visited {
   color: #B4B4B4;
 
   .formulario-usuario {
-    padding: 22px 32px 20px 20px;
+    padding: 22px 20px 20px;
 
     form {
       margin-bottom: 0px;
@@ -395,9 +394,13 @@ button a, a:hover, a:visited {
 
 .formulario-general {
   input[type="text"], input[type="password"] {
+    width: 97.5%;
+    background-color: #CCC;
+    color: #000;
+  }
+
+  select {
     width: 100%;
-    background-color: #A3A3A3;
-    color: #FFF;
   }
 
   input[type="text"]:focus, input[type="password"]:focus {
@@ -408,16 +411,45 @@ button a, a:hover, a:visited {
   }
 
   ::-webkit-input-placeholder { /* WebKit browsers */
-    color: #DDD;
+    color: #777;
   }
   :-moz-placeholder { /* Mozilla Firefox 4 to 18 */
-    color: #DDD;
+    color: #777;
   }
   ::-moz-placeholder { /* Mozilla Firefox 19+ */
-    color: #DDD;
+    color: #777;
   }
   :-ms-input-placeholder { /* Internet Explorer 10+ */
-    color: #DDD;
+    color: #777;
+  }
+}
+
+.perfil-contenedor {
+  background-color: #FFF;
+  color: #B4B4B4;
+
+  .perfil-navegacion {
+    margin: 30px;
+
+    .no-border li > a:hover {
+      background-color: #505050;
+      border: 1px solid #ddd;
+      color: white;
+    }
+
+    .no-border {
+      a.sharp {
+        border-radius: 0;
+      }
+    }
+  }
+
+  .perfil-informacion {
+    margin: 30px;
+
+    .control-group {
+      margin-bottom: 30px;
+    }
   }
 }
 
