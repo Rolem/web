@@ -25,6 +25,10 @@ RolemWeb::Application.routes.draw do
 
   # User's controller
   resources :users, only: [:new, :create, :edit, :update, :show]
+  match '/users/:id/receipts', to: 'users#receipts', as: 'user_receipts'
+
+  # receipts' controller
+  resources :receipts, only: [:new, :create, :destroy]
 
   # Session's controller
   match '/login', to: 'sessions#create', as: 'login', via: :post

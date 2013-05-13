@@ -1,0 +1,25 @@
+<div class="container">
+  <div class="row">
+    <div class="span12 perfil-contenedor">
+      <div class="row">
+        <div class="span4">
+          <%= render partial: 'navigation', locals: { profile_option: false, receipt_option: true, edit_option: false } %>
+        </div>
+        <div class="span6">
+          <div class="perfil-informacion">
+            <h1>Mis computadores</h1>
+            <% if @user.receipts.empty? %>
+                <p>No tienes computadores registrados. Regístralos para hacer válida tu garantía.</p>
+            <% else %>
+                <% @user.receipts.each do |r| %>
+                    <%= render 'receipts/display_receipt', object: r %>
+                    <hr/>
+                <% end %>
+            <% end %>
+            <%= link_to 'Agregar producto', new_receipt_path(user_id: current_user.id), class: 'btn btn-warning' %>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

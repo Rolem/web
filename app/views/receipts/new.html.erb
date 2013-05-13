@@ -1,0 +1,25 @@
+<div class="container">
+  <div class="row">
+    <div class="offset3 span6 formulario-usuario-contenedor">
+      <div class="formulario-usuario">
+        <h1 class="text-center">Nuevo computador</h1>
+        <%= form_for @receipt, html: { class: 'formulario-general' } do |f| %>
+            <%= render 'shared/error_messages', object: f.object %>
+            <div class="control-group">
+              <%= f.select :model,
+                           options_for_select([%w(Elemento Elemento), %w(Volcano Volcano), %w(Force Force),
+                                               %w(Prodigy Prodigy), %w(Optimus Optimus)]) %>
+              <%= f.text_field :guarantee_number, placeholder: 'Número de serie' %>
+              <%= f.text_field :city, placeholder: 'Ciudad de compra' %>
+              <%= f.text_field :place, placeholder: 'Lugar de compra' %>
+              <%= f.text_field :date_of_purchase, placeholder: 'Fecha de compra (dd/mm/aaaa)' %>
+              <%= f.hidden_field :user_id %>
+            </div>
+            <div class="control-group text-center">
+              <%= f.submit 'Agregar computador', class: 'btn btn-warning' %>
+            </div>
+        <% end %>
+      </div>
+    </div>
+  </div>
+</div>

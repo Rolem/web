@@ -11,6 +11,12 @@ es:
         password: "La contraseña"
         password_confirmation: "La contraseña de confirmación"
         password_digest: "La contraseña cifrada"
+      receipt:
+        city: "La ciudad de compra"
+        date_of_purchase: "La fecha de compra"
+        guarantee_number: "El número de garantía"
+        model: "El modelo del computador"
+        place: "El lugar de compra"
     errors:
       models:
         user:
@@ -31,3 +37,15 @@ es:
               blank: "no puede estar en blanco."
             password_digest:
               blank: "no se pudo guardar."
+        receipt:
+          attributes:
+            city:
+              blank: "no puede estar en blanco."
+            date_of_purchase:
+              blank: "no puede estar en blanco."
+            guarantee_number:
+              blank: "no puede estar en blanco."
+            model:
+              blank: "no puede estar en blanco."
+            place:
+              blank: "no puede estar en blanco."

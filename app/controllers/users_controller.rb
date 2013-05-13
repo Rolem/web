@@ -58,6 +58,9 @@ class UsersController < ApplicationController
   def show
   end
 
+  def receipts
+    @receipts = current_user.receipts
+  end
 
   # ============
   # Internally private methods

@@ -31,6 +31,7 @@ class User < ActiveRecord::Base
   # ============
   has_many :game_client_uses
   has_many :game_clients, through: :game_client_uses
+  has_many :receipts
 
   # ============
   # Validations
