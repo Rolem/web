@@ -5,38 +5,36 @@ RolemWeb::Application.routes.draw do
   # -----------------
   root to: 'static_pages#index'
 
-  # -----------------
-  # Static Pages
-  # -----------------
-  match '/productos', to: 'static_pages#productos'
-  match '/compania', to: 'static_pages#compania'
-  match '/comprar', to: 'static_pages#comprar'
-  match '/contacto', to: 'static_pages#contacto'
+  scope '(:locale)', :locale => /es|en/ do
+    # -----------------
+    # Static Pages
+    # -----------------
+    match '/productos', to: 'static_pages#productos'
+    match '/compania', to: 'static_pages#compania'
+    match '/comprar', to: 'static_pages#comprar'
+    match '/contacto', to: 'static_pages#contacto'
 
-  match '/productos/volcano', to: 'static_pages#volcano'
-  match '/productos/prodigy', to: 'static_pages#prodigy'
-  match '/productos/optimus', to: 'static_pages#optimus'
-  match '/productos/force', to: 'static_pages#force'
-  match '/productos/elemento', to: 'static_pages#elemento'
+    match '/productos/volcano', to: 'static_pages#volcano'
+    match '/productos/prodigy', to: 'static_pages#prodigy'
+    match '/productos/optimus', to: 'static_pages#optimus'
+    match '/productos/force', to: 'static_pages#force'
+    match '/productos/elemento', to: 'static_pages#elemento'
 
-  match '/en_ingles', to: 'static_pages#english', as: 'english'
-  match '/en_espaniol', to: 'static_pages#spanish', as: 'spanish'
+    # -----------------
+    # Controllers
+    # -----------------
 
-  # -----------------
-  # Controllers
-  # -----------------
+    # User's controller
+    resources :users, only: [:new, :create, :edit, :update, :show]
+    match '/users/:id/receipts', to: 'users#receipts', as: 'user_receipts'
 
-  # User's controller
-  resources :users, only: [:new, :create, :edit, :update, :show]
-  match '/users/:id/receipts', to: 'users#receipts', as: 'user_receipts'
+    # receipts' controller
+    resources :receipts, only: [:new, :create, :destroy]
 
-  # receipts' controller
-  resources :receipts, only: [:new, :create, :destroy]
-
-  # Session's controller
-  match '/login', to: 'sessions#create', as: 'login', via: :post
-  match '/signout', to: 'sessions#destroy', as: 'signout', via: :delete
-
+    # Session's controller
+    match '/login', to: 'sessions#create', as: 'login', via: :post
+    match '/signout', to: 'sessions#destroy', as: 'signout', via: :delete
+  end
 
   # The priority is based upon order of creation:
   # first created -> highest priority.

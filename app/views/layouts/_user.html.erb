@@ -4,9 +4,9 @@
       <div class="row">
         <div class="span1">
           <% if I18n.locale ==  :en %>
-              <%= link_to 'Español', spanish_path, class: 'locale' %>
+              <%= link_to 'Español', root_path(locale: 'es'), class: 'locale' %>
           <% else %>
-              <%= link_to 'English', english_path, class: 'locale' %>
+              <%= link_to 'English', root_path(locale: 'en'), class: 'locale' %>
           <% end %>
         </div>
         <div class="offset8 span2">
