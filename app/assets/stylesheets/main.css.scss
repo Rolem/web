@@ -127,6 +127,15 @@ body {
   border-radius: 0 3px 3px 0;
 }
 
+.locale {
+  color: #fe9c39;
+}
+
+.locale:hover, .locale:active {
+  color: #fe9c39;
+  text-decoration: underline;
+}
+
 // --------
 // Navbar
 // --------

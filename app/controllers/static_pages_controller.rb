@@ -28,4 +28,14 @@ class StaticPagesController < ApplicationController
 
   def elemento
   end
+
+  def in_english
+    I18n.locale = :en
+    redirect_to root_path
+  end
+
+  def in_spanish
+    I18n.locale = :es
+    redirect_to root_path
+  end
 end

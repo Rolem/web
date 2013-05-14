@@ -2,7 +2,14 @@
   <div class="row">
     <div class="span12 text-center">
       <div class="row">
-        <div class="offset9 span2">
+        <div class="span1">
+          <% if I18n.locale ==  :en %>
+              <%= link_to 'Español', spanish_path, class: 'locale' %>
+          <% else %>
+              <%= link_to 'English', english_path, class: 'locale' %>
+          <% end %>
+        </div>
+        <div class="offset8 span2">
           <div class="dropdown">
             <div class="btn-group">
               <button class="btn btn-warning dropdown-toggle" data-toggle="dropdown">
