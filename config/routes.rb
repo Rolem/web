@@ -19,8 +19,8 @@ RolemWeb::Application.routes.draw do
   match '/productos/force', to: 'static_pages#force'
   match '/productos/elemento', to: 'static_pages#elemento'
 
-  match '/in_english', to: 'static_pages#in_english', as: 'english'
-  match '/en_espaniol', to: 'static_pages#in_spanish', as: 'spanish'
+  match '/en_ingles', to: 'static_pages#english', as: 'english'
+  match '/en_espaniol', to: 'static_pages#spanish', as: 'spanish'
 
   # -----------------
   # Controllers

@@ -1,5 +1,9 @@
 class StaticPagesController < ApplicationController
   def index
+    if @locale_set
+      spanish
+      @locale_set = true
+    end
   end
 
   def productos
@@ -29,12 +33,12 @@ class StaticPagesController < ApplicationController
   def elemento
   end
 
-  def in_english
+  def english
     I18n.locale = :en
     redirect_to root_path
   end
 
-  def in_spanish
+  def spanish
     I18n.locale = :es
     redirect_to root_path
   end
