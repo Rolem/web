@@ -17,7 +17,11 @@ class UsersController < ApplicationController
   def create
     @user = User.new params[:user]
     if @user.save
-      flash[:success] = 'Te has registrado exitosamente. Ahora ayúdanos completando tu perfil. ¡Gracias!'
+      if I18n.locale == :es
+        flash[:success] = 'Te has registrado exitosamente. Ahora ayúdanos completando tu perfil. ¡Gracias!'
+      else
+        flash[:success] = 'You\'ve been registered successfully. Please help us by completing your profile. Thank you!'
+      end
       sign_in @user
       redirect_to @user
     else
@@ -44,13 +48,21 @@ class UsersController < ApplicationController
       end
 
       if @user.update_attributes(params[:user])
-        flash[:success] = 'Perfil actualizado'
+        if I18n.locale == :es
+          flash[:success] = 'Perfil actualizado.'
+        else
+          flash[:success] = 'Profile updated.'
+        end
         redirect_to @user
       else
         render 'edit'
       end
     else
-      @user.errors[:base] << 'La contraseña suministrada es inválida.'
+      if I18n.locale == :es
+        @user.errors[:base] << 'La contraseña suministrada es inválida.'
+      else
+        @user.errors[:base] << 'The password supplied is invalid.'
+      end
       render 'edit'
     end
   end
