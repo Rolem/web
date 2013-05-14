@@ -36,9 +36,9 @@
           <div class="tabs-margin">
             <div class="tabbable tabs-title">
               <ul class="nav nav-tabs no-border">
-                <li class="active border-tabs"><a href="#pane1" data-toggle="tab">DESCRIPCIÓN</a></li>
-                <li><a href="#pane2" data-toggle="tab">ESPECIFICACIONES</a></li>
-                <li><a href="#pane3" data-toggle="tab">DESCARGAS</a></li>
+                <li class="active border-tabs"><a href="#pane1" data-toggle="tab"><%= t('misc.description.one', count: 1) %></a></li>
+                <li><a href="#pane2" data-toggle="tab"><%= t('misc.specifications.one', count: 1) %></a></li>
+                <li><a href="#pane3" data-toggle="tab"><%= t('misc.downloads.one', count: 1) %></a></li>
               </ul>
               <div class="tab-content tabs-bg">
                 <div id="pane1" class="tab-pane active pane-tablet">
@@ -100,7 +100,7 @@
               </div><!-- /.tab-content -->
             </div><!-- /.tabbable -->
             <button class="btn btn-warning pull-right">
-              <%= link_to '¿Dónde comprar?', comprar_path, class:'btn-comprar' %>
+              <%= link_to t('misc.where to buy.one', count: 1), comprar_path, class:'btn-comprar' %>
             </button>
           </div>
 

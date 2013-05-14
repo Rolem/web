@@ -1,7 +1,94 @@
 es:
-  "error":
-    one: "un error"
-    other: "%{count} errores"
+  misc:
+    navbar:
+      home:
+        one: "INICIO"
+      products:
+        one: "PRODUCTOS"
+      company:
+        one: "COMPAÑÍA"
+      where to buy:
+        one: "¿DÓNDE COMPRAR?"
+      contact:
+        one: "CONTACTO"
+    form:
+      log in:
+        one: "Ingresar"
+      log out:
+        one: "Cerrar sesión"
+      new user:
+        one: "Nuevo usuario"
+      create user:
+        one: "Crear usuario"
+      delete:
+        one: "Eliminar"
+      add computer:
+        one: "Agregar computador"
+      password:
+        one: "Contraseña"
+      email:
+        one: "Correo electrónico"
+      names:
+        one: "Nombres"
+      last name:
+        one: "Apellidos"
+      confirm password:
+        one: "Confirmar contraseña"
+      date of birth:
+        one: "Fecha de nacimiento"
+      city:
+        one: "Ciudad"
+      social level:
+        one: "Estrato social"
+      gender:
+        one: "Género"
+      serial number:
+        one: "Número de serie"
+      city of purchase:
+        one: "Ciudad de compra"
+      place of purchase:
+        one: "Lugar de compra"
+      date of purchase:
+        one: "Fecha de compra"
+      date format:
+        one: "(dd/mm/aaaa)"
+    error:
+      one: "un error"
+      other: "%{count} errores"
+    the form has:
+      one: "El formulario tiene"
+    more information:
+      one: "MÁS INFORMACIÓN"
+    no account:
+      one: "¿No tienes cuenta? Regístrate"
+    my profile:
+      one: "Mi perfil"
+    my computers:
+      one: "Mis computadores"
+    edit profile:
+      one: "Editar perfil"
+    options:
+      one: "Opciones"
+    masculino:
+      one: "Masculino"
+    femenino:
+      one: "Femenino"
+    personal information:
+      one: "Información personal"
+    likes:
+      one: "Gustos"
+    favorite genre:
+      one: "Género preferido"
+    used game clients:
+      one: "Clientes de juegos usados"
+    description:
+      one: "DESCRIPCIÓN"
+    specifications:
+      one: "ESPECIFICACIONES"
+    downloads:
+      one: "DESCARGAS"
+    where to buy:
+      one: "¿Dónde comprar?"
   activerecord:
     attributes:
       user:

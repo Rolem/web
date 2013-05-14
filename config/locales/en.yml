@@ -2,4 +2,91 @@
 # See https://github.com/svenfuchs/rails-i18n/tree/master/rails%2Flocale for starting points.
 
 en:
-  hello: "Hello world"
+  misc:
+    navbar:
+      home:
+        one: "HOME"
+      products:
+        one: "PRODUCTS"
+      company:
+        one: "COMPANY"
+      where to buy:
+        one: "WHERE TO BUY?"
+      contact:
+        one: "CONTACT"
+    form:
+      log in:
+        one: "Log in"
+      log out:
+        one: "Log out"
+      new user:
+        one: "New user"
+      create user:
+        one: "Create user"
+      delete:
+        one: "Delete"
+      add computer:
+        one: "Add computer"
+      email:
+        one: "Email"
+      password:
+        one: "Password"
+      names:
+        one: "Names"
+      last name:
+        one: "Last names"
+      confirm password:
+        one: "Confirm password"
+      date of birth:
+        one: "Date of birth"
+      city:
+        one: "City"
+      social level:
+        one: "Social level"
+      serial number:
+        one: "Serial number"
+      city of purchase:
+        one: "City of purchase"
+      place of purchase:
+        one: "Place of purchase"
+      date of purchase:
+        one: "Date of purchase"
+      date format:
+        one: "(dd/mm/yyyy)"
+    error:
+      one: "one error"
+      other: "%{count} errors"
+    the form has:
+      one: "The form has"
+    more information:
+      one: "MORE INFORMATION"
+    no account:
+      one: "Don't have an account? Register"
+    my profile:
+      one: "My profile"
+    my computers:
+      one: "My computers"
+    edit profile:
+      one: "Edit profile"
+    options:
+      one: "Options"
+    masculino:
+      one: "Male"
+    femenino:
+      one: "Female"
+    personal information:
+      one: "Personal information"
+    likes:
+      one: "Likes"
+    favorite genre:
+      one: "Favorite genre"
+    used game clients:
+      one: "Used game clients"
+    description:
+      one: "DESCRIPTION"
+    specifications:
+      one: "SPECIFICATIONS"
+    downloads:
+      one: "DOWNLOADS"
+    where to buy:
+      one: "Where to buy?"

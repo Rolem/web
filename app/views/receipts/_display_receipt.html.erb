@@ -1,8 +1,8 @@
 <h4><%= object.model %></h4>
-<p><strong>Número de serie:</strong> <%= object.guarantee_number %></p>
-<p><strong>Ciudad de compra:</strong> <%= object.city %></p>
-<p><strong>Lugar de compra:</strong> <%= object.place %></p>
-<p><strong>Fecha de compra:</strong> <%= object.date_of_purchase %></p>
+<p><strong><%= t('misc.form.serial number.one', count: 1) %>:</strong> <%= object.guarantee_number %></p>
+<p><strong><%= t('misc.form.city of purchase.one', count: 1) %>:</strong> <%= object.city %></p>
+<p><strong><%= t('misc.form.place of purchase.one', count: 1) %>:</strong> <%= object.place %></p>
+<p><strong><%= t('misc.form.date of purchase.one', count: 1) %>:</strong> <%= object.date_of_purchase %></p>
 <%= form_tag receipt_path(object.id), controller: 'receipts', method: :delete do %>
-    <%= submit_tag 'Eliminar', class: 'btn btn-small btn-danger' %>
+    <%= submit_tag t('misc.form.delete.one', count: 1), class: 'btn btn-small btn-danger' %>
 <% end %>

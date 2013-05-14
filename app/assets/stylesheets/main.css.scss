@@ -133,6 +133,10 @@ body {
 .navbar-inverse {
   background-color: #23211C;
   margin-bottom: 10px;
+
+  .nav > li > a:hover, .nav > li > a:focus {
+    background-color: #fe9c39;
+  }
 }
 
 // --------

@@ -9,14 +9,15 @@
               <%= f.select :model,
                            options_for_select([%w(Elemento Elemento), %w(Volcano Volcano), %w(Force Force),
                                                %w(Prodigy Prodigy), %w(Optimus Optimus)]) %>
-              <%= f.text_field :guarantee_number, placeholder: 'Número de serie' %>
-              <%= f.text_field :city, placeholder: 'Ciudad de compra' %>
-              <%= f.text_field :place, placeholder: 'Lugar de compra' %>
-              <%= f.text_field :date_of_purchase, placeholder: 'Fecha de compra (dd/mm/aaaa)' %>
+              <%= f.text_field :guarantee_number, placeholder: t('misc.form.serial number.one', count: 1) %>
+              <%= f.text_field :city, placeholder: t('misc.form.city of purchase.one', count: 1) %>
+              <%= f.text_field :place, placeholder: t('misc.form.place of purchase.one', count: 1) %>
+              <%= f.text_field :date_of_purchase, placeholder:
+                      "#{t('misc.form.date of birth.one', count: 1)} #{t('misc.form.date format.one', count: 1)}" %>
               <%= f.hidden_field :user_id %>
             </div>
             <div class="control-group text-center">
-              <%= f.submit 'Agregar computador', class: 'btn btn-warning' %>
+              <%= f.submit t('misc.form.add computer.one', count: 1), class: 'btn btn-warning' %>
             </div>
         <% end %>
       </div>

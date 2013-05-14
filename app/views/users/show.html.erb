@@ -7,21 +7,28 @@
         </div>
         <div class="span6">
           <div class="perfil-informacion">
-            <h1>Perfil</h1>
-            <h4>Información personal</h4>
-            <p><strong>Nombres:</strong> <%= @user.first_name %></p>
-            <p><strong>Apellidos:</strong>  <%= @user.last_name %></p>
-            <p><strong>Correo electrónico:</strong>  <%= @user.email %></p>
-            <p><strong>Fecha de nacimiento:</strong>  <%= @user.date_of_birth %></p>
-            <p><strong>Ciudad:</strong>  <%= @user.city %></p>
-            <p><strong>Estrato social:</strong>  <%= @user.social_level %></p>
-            <p><strong>Género:</strong>  <%= @user.gender %></p>
-            <h4>Gustos</h4>
-            <p><strong>Género preferido:</strong> <%= @user.first_name %></p>
+            <h1><%= t('misc.my profile.one', count: 1) %></h1>
+            <h4><%= t('misc.personal information.one', count: 1) %></h4>
+            <p><strong><%= t('misc.form.names.one', count: 1) %>:</strong> <%= @user.first_name %></p>
+            <p><strong><%= t('misc.form.last name.one', count: 1) %>:</strong>  <%= @user.last_name %></p>
+            <p><strong><%= t('misc.form.email.one', count: 1) %>:</strong>  <%= @user.email %></p>
+            <p><strong><%= t('misc.form.date of birth.one', count: 1) %>:</strong>  <%= @user.date_of_birth %></p>
+            <p><strong><%= t('misc.form.city.one', count: 1) %>:</strong>  <%= @user.city %></p>
+            <p><strong><%= t('misc.form.social level.one', count: 1) %>:</strong>  <%= @user.social_level %></p>
+            <p><strong><%= t('misc.form.gender.one', count: 1) %>:</strong>  <%= t("misc.#{@user.gender}.one", count: 1) %></p>
+            <h4><%= t('misc.likes.one', count: 1) %></h4>
+            <p><strong><%= t('misc.favorite genre.one', count: 1) %>:</strong> <%= @user.first_name %></p>
             <% if @user.game_clients.empty? %>
-                <p><strong>Clientes de juegos usados:</strong> No tienes, te invitamos a que actualices tu perfil.</p>
+                <p>
+                  <strong><%= t('misc.used game clients.one', count: 1) %>:</strong>
+                  <% if I18n.locale == :es %>
+                      No tienes, te invitamos a que actualices tu perfil.
+                  <% else %>
+                      You don't have any. Please update your profile.
+                  <% end %>
+                </p>
             <% else %>
-                <p><strong>Clientes de juegos usados:</strong></p>
+                <p><strong><%= t('misc.used game clients.one', count: 1) %>:</strong></p>
                 <ul>
                   <% @user.game_clients.each do |gc| %>
                       <li><%= gc.name %></li>

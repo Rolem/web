@@ -2,18 +2,18 @@
   <div class="row">
     <div class="offset3 span6 formulario-usuario-contenedor">
       <div class="formulario-usuario">
-        <h1 class="text-center">Nuevo usuario</h1>
+        <h1 class="text-center"><%= t('misc.form.new user.one', count: 1) %></h1>
         <%= form_for @user, html: { class: 'formulario-general' } do |f| %>
             <%= render 'shared/error_messages', object: f.object %>
             <div class="control-group">
-              <%= f.text_field :first_name, placeholder: 'Nombres' %>
-              <%= f.text_field :last_name, placeholder: 'Apellidos' %>
-              <%= f.text_field :email, placeholder: 'Correo electrónico' %>
-              <%= f.password_field :password, placeholder: 'Contraseña' %>
-              <%= f.password_field :password_confirmation, placeholder: 'Confirmar contraseña' %>
+              <%= f.text_field :first_name, placeholder: t('misc.form.names.one', count: 1) %>
+              <%= f.text_field :last_name, placeholder: t('misc.form.last name.one', count: 1) %>
+              <%= f.text_field :email, placeholder: t('misc.form.email.one', count: 1) %>
+              <%= f.password_field :password, placeholder: t('misc.form.password.one', count: 1) %>
+              <%= f.password_field :password_confirmation, placeholder: t('misc.form.confirm password.one', count: 1) %>
             </div>
             <div class="control-group text-center">
-              <%= f.submit 'Crear usuario', class: 'btn btn-warning' %>
+              <%= f.submit t('misc.form.create user.one', count: 1), class: 'btn btn-warning' %>
             </div>
         <% end %>
       </div>

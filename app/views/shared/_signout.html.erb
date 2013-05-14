@@ -1,9 +1,9 @@
 <%= form_tag signout_path, method: :delete do %>
     <li>
-      <%= link_to 'Mi perfil', current_user %>
+      <%= link_to t('misc.my profile.one', count: 1), current_user %>
     </li>
     <li class="divider"></li>
     <li>
-      <%= button_tag 'Cerrar sesión', class: 'btn btn-warning' %>
+      <%= button_tag t('misc.form.log out.one', count: 1), class: 'btn btn-warning' %>
     </li>
 <% end %>
