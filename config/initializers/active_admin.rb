@@ -208,3 +208,7 @@ ActiveAdmin.setup do |config|
 
 
 end
+
+ActiveAdmin.after_load do
+  I18n.reload!
+end
