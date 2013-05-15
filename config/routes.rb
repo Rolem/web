@@ -13,6 +13,7 @@ RolemWeb::Application.routes.draw do
     match '/compania', to: 'static_pages#compania'
     match '/comprar', to: 'static_pages#comprar'
     match '/contacto', to: 'static_pages#contacto'
+    match '/submit_contact', to: 'static_pages#submit_contact', via: :post, as: 'submit_contact'
 
     match '/productos/volcano', to: 'static_pages#volcano'
     match '/productos/prodigy', to: 'static_pages#prodigy'

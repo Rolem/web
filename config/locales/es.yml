@@ -12,6 +12,8 @@ es:
       contact:
         one: "CONTACTO"
     form:
+      send:
+        one: "Enviar"
       log in:
         one: "Ingresar"
       log out:
@@ -52,6 +54,10 @@ es:
         one: "Fecha de compra"
       date format:
         one: "(dd/mm/aaaa)"
+      full name:
+        one: "Nombre completo"
+      message:
+        one: "Escribe tu mensaje acá..."
     error:
       one: "un error"
       other: "%{count} errores"
