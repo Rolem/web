@@ -96,3 +96,18 @@ en:
       one: "DOWNLOADS"
     where to buy:
       one: "Where to buy?"
+  activerecord:
+    attributes:
+      user:
+        email: "Email"
+        first_name: "First name"
+        last_name: "Last name"
+        password: "Password"
+        password_confirmation: "Password confirmation"
+        password_digest: "Password digest"
+      receipt:
+        city: "City of purchase"
+        date_of_purchase: "Date of purchase"
+        guarantee_number: "Gurantee number"
+        model: "Computer model"
+        place: "Place of purchase"

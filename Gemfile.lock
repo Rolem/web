@@ -203,6 +203,7 @@ DEPENDENCIES
   cucumber-rails
   database_cleaner
   factory_girl_rails
+  i18n
   jquery-rails
   meta-tags
   meta_search (>= 1.1.0.pre)
