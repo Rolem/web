@@ -3,12 +3,12 @@ module SessionsHelper
   # ========
   # Sign in/out
   # ========
-  def sign_in(user)
+  def custom_sign_in(user)
     cookies[:user] = user.id
     self.current_user = user
   end
 
-  def sign_out
+  def custom_sign_out
     self.current_user = nil
     cookies.delete :user
   end

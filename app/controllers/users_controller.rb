@@ -22,7 +22,7 @@ class UsersController < ApplicationController
       else
         flash[:success] = 'You\'ve been registered successfully. Please help us by completing your profile. Thank you!'
       end
-      sign_in @user
+      custom_sign_in @user
       redirect_to @user
     else
       render 'new'

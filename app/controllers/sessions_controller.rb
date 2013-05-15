@@ -7,7 +7,7 @@ class SessionsController < ApplicationController
     user = User.find_by_email email
 
     if user && user.authenticate(password)
-      sign_in user
+      custom_sign_in user
       redirect_to user
     else
       if I18n.locale == :es
@@ -20,7 +20,7 @@ class SessionsController < ApplicationController
   end
 
   def destroy
-    sign_out
+    custom_sign_out
     redirect_to root_path
   end
 end

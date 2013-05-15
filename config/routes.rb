@@ -37,6 +37,12 @@ RolemWeb::Application.routes.draw do
     match '/signout', to: 'sessions#destroy', as: 'signout', via: :delete
   end
 
+  # -----------------
+  # Active Admin
+  # -----------------
+  devise_for :admin_users, ActiveAdmin::Devise.config
+  ActiveAdmin.routes(self)
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 

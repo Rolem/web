@@ -8,6 +8,7 @@ gem 'bcrypt-ruby'
 gem 'meta_search',    '>= 1.1.0.pre'
 gem 'meta-tags', :require => 'meta_tags'
 gem 'i18n'
+gem 'activeadmin'
 
 group :development, :test do
   gem 'rspec-rails', '~> 2.12.2'
