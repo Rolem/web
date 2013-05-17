@@ -19,7 +19,8 @@
 <%= yield %>
 <!-- Footer -->
 <%= render 'layouts/footer' %>
-
+<%= render 'layouts/chat' %>
+<%= render 'layouts/feedback' %>
 <aside class="container">
   <%= debug(params) if Rails.env.development? %>
 </aside>
