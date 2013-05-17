@@ -8,25 +8,39 @@
               <h2>ROLEM ELEMENTO</h2>
             </div>
           </div>
-          <div class="row text-center">
+          <div class="row">
             <div class="span6">
-              <%=	image_tag 'elemento.jpg', alt: 'Elemento', class:'pc-height'  %>
+              <a href="<%= image_path 'elemento1.jpg' %>" class="zoomableImage" rel="gal1">
+                <%=	image_tag 'elemento1.jpg', alt: 'Elemento', class:'pc-height'  %>
+              </a>
             </div>
           </div>
           <div class="row ">
             <div class="span6">
               <div class="row">
                 <div class="offset1 span1">
-                  <%=	image_tag 'elemento1.jpg', alt: 'Elemento', class:'thumbnail'  %>
+                  <a class="zoomThumbActive" href="javascript:void(0);"
+                     rel="{gallery: 'gal1', smallimage:'<%= image_path('elemento1.jpg') %>', largeimage:'<%= image_path('elemento1.jpg') %>'}">
+                    <%=	image_tag 'elemento1.jpg', alt: 'Elemento', class:'thumbnail'  %>
+                  </a>
                 </div>
                 <div class="span1">
-                  <%=	image_tag 'elemento2.jpg', alt: 'Elemento', class:'thumbnail'  %>
+                  <a href="javascript:void(0);"
+                     rel="{gallery: 'gal1', smallimage:'<%= image_path('elemento2.jpg') %>', largeimage:'<%= image_path('elemento2.jpg') %>'}">
+                    <%=	image_tag 'elemento2.jpg', alt: 'Elemento', class:'thumbnail'  %>
+                  </a>
                 </div>
                 <div class="span1">
-                  <%=	image_tag 'elemento3.jpg', alt: 'Elemento', class:'thumbnail'  %>
+                  <a href="javascript:void(0);"
+                     rel="{gallery: 'gal1', smallimage:'<%= image_path('elemento3.jpg') %>', largeimage:'<%= image_path('elemento3.jpg') %>'}">
+                    <%=	image_tag 'elemento3.jpg', alt: 'Elemento', class:'thumbnail'  %>
+                  </a>
                 </div>
                 <div class="span1">
-                  <%=	image_tag 'elemento4.jpg', alt: 'Elemento', class:'thumbnail'  %>
+                  <a href="javascript:void(0);"
+                     rel="{gallery: 'gal1', smallimage:'<%= image_path('elemento4.jpg') %>', largeimage:'<%= image_path('elemento4.jpg') %>'}">
+                    <%=	image_tag 'elemento4.jpg', alt: 'Elemento', class:'thumbnail'  %>
+                  </a>
                 </div>
               </div>
             </div>
@@ -109,3 +123,20 @@
     </div>
   </div>
 </div>
+
+<script>
+    $(document).ready(function(){
+        var options = {
+            zoomType: 'standard',
+            lens:true,
+            preloadImages: true,
+            alwaysOn:false,
+            zoomWidth: 300,
+            zoomHeight: 300,
+            xOffset:215,
+            yOffset:0,
+            position:'left'
+        };
+        $('.zoomableImage').jqzoom(options);
+    });
+</script>

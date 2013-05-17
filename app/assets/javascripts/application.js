@@ -11,8 +11,10 @@
 // GO AFTER THE REQUIRES BELOW.
 //
 //= require jquery
+//= require jquery-migrate
 //= require jquery_ujs
 //= require bootstrap
+//= require jqzoom-core
 //= require_tree .
 
 $(document).ready(function () {
