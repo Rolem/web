@@ -10,23 +10,37 @@
           </div>
           <div class="row text-center">
             <div class="span6">
-              <%=	image_tag 'optimus.jpg', alt: 'Optimus', class:'pc-height'  %>
+              <a href="<%= image_path 'optimus1.jpg' %>" class="zoomableImage" rel="gal1" title="Optimus">
+                <%=	image_tag 'optimus1.jpg', alt: 'Optimus', class:'pc-height', title: 'Optimus' %>
+              </a>
             </div>
           </div>
           <div class="row ">
             <div class="span6">
               <div class="row">
                 <div class="offset1 span1">
-                  <%=	image_tag 'optimus1.jpg', alt: 'Optimus', class:'thumbnail'  %>
+                  <a class="zoomThumbActive" href="javascript:void(0);"
+                     rel="{gallery: 'gal1', smallimage:'<%= image_path('optimus1.jpg') %>', largeimage:'<%= image_path('optimus1.jpg') %>'}">
+                    <%=	image_tag 'optimus1.jpg', alt: 'Optimus', class:'thumbnail'  %>
+                  </a>
                 </div>
                 <div class="span1">
-                  <%=	image_tag 'optimus2.jpg', alt: 'Optimus', class:'thumbnail'  %>
+                  <a href="javascript:void(0);"
+                     rel="{gallery: 'gal1', smallimage:'<%= image_path('optimus2.jpg') %>', largeimage:'<%= image_path('optimus2.jpg') %>'}">
+                    <%=	image_tag 'optimus2.jpg', alt: 'Optimus', class:'thumbnail'  %>
+                  </a>
                 </div>
                 <div class="span1">
-                  <%=	image_tag 'optimus3.jpg', alt: 'Optimus', class:'thumbnail'  %>
+                  <a href="javascript:void(0);"
+                     rel="{gallery: 'gal1', smallimage:'<%= image_path('optimus3.jpg') %>', largeimage:'<%= image_path('optimus3.jpg') %>'}">
+                    <%=	image_tag 'optimus3.jpg', alt: 'Optimus', class:'thumbnail'  %>
+                  </a>
                 </div>
                 <div class="span1">
-                  <%=	image_tag 'optimus4.jpg', alt: 'Optimus', class:'thumbnail'  %>
+                  <a href="javascript:void(0);"
+                     rel="{gallery: 'gal1', smallimage:'<%= image_path('optimus4.jpg') %>', largeimage:'<%= image_path('optimus4.jpg') %>'}">
+                    <%=	image_tag 'optimus4.jpg', alt: 'Optimus', class:'thumbnail'  %>
+                  </a>
                 </div>
               </div>
             </div>
@@ -108,3 +122,4 @@
     </div>
   </div>
 </div>
+<%= render 'zoom' %>

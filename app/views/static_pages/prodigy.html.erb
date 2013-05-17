@@ -10,23 +10,37 @@
           </div>
           <div class="row text-center">
             <div class="span6">
-              <%=	image_tag 'prodigy.jpg', alt: 'Prodigy', class:'pc-height'  %>
+              <a href="<%= image_path 'prodigy1.jpg' %>" class="zoomableImage" rel="gal1" title="Prodigy">
+                <%=	image_tag 'prodigy1.jpg', alt: 'Prodigy', class:'pc-height', title: 'Prodigy' %>
+              </a>
             </div>
           </div>
           <div class="row ">
             <div class="span6">
               <div class="row">
                 <div class="offset1 span1">
-                  <%=	image_tag 'prodigy1.jpg', alt: 'Prodigy', class:'thumbnail'  %>
+                  <a class="zoomThumbActive" href="javascript:void(0);"
+                     rel="{gallery: 'gal1', smallimage:'<%= image_path('prodigy1.jpg') %>', largeimage:'<%= image_path('prodigy1.jpg') %>'}">
+                    <%=	image_tag 'prodigy1.jpg', alt: 'Prodigy', class:'thumbnail'  %>
+                  </a>
                 </div>
                 <div class="span1">
-                  <%=	image_tag 'prodigy2.jpg', alt: 'Prodigy', class:'thumbnail'  %>
+                  <a href="javascript:void(0);"
+                     rel="{gallery: 'gal1', smallimage:'<%= image_path('prodigy2.jpg') %>', largeimage:'<%= image_path('prodigy2.jpg') %>'}">
+                    <%=	image_tag 'prodigy2.jpg', alt: 'Prodigy', class:'thumbnail'  %>
+                  </a>
                 </div>
                 <div class="span1">
-                  <%=	image_tag 'prodigy3.jpg', alt: 'Prodigy', class:'thumbnail'  %>
+                  <a href="javascript:void(0);"
+                     rel="{gallery: 'gal1', smallimage:'<%= image_path('prodigy3.jpg') %>', largeimage:'<%= image_path('prodigy3.jpg') %>'}">
+                    <%=	image_tag 'prodigy3.jpg', alt: 'Prodigy', class:'thumbnail'  %>
+                  </a>
                 </div>
                 <div class="span1">
-                  <%=	image_tag 'prodigy4.jpg', alt: 'Prodigy', class:'thumbnail'  %>
+                  <a href="javascript:void(0);"
+                     rel="{gallery: 'gal1', smallimage:'<%= image_path('prodigy4.jpg') %>', largeimage:'<%= image_path('prodigy4.jpg') %>'}">
+                    <%=	image_tag 'prodigy4.jpg', alt: 'Prodigy', class:'thumbnail'  %>
+                  </a>
                 </div>
               </div>
             </div>
@@ -108,3 +122,4 @@
     </div>
   </div>
 </div>
+<%= render 'zoom' %>
