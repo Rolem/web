@@ -10,8 +10,8 @@
           </div>
           <div class="row">
             <div class="span6">
-              <a href="<%= image_path 'elemento1.jpg' %>" class="zoomableImage" rel="gal1">
-                <%=	image_tag 'elemento1.jpg', alt: 'Elemento', class:'pc-height'  %>
+              <a href="<%= image_path 'elemento1.jpg' %>" class="zoomableImage" rel="gal1" title="Elemento">
+                <%=	image_tag 'elemento1.jpg', alt: 'Elemento', class:'pc-height', title: 'Elemento' %>
               </a>
             </div>
           </div>
@@ -123,20 +123,4 @@
     </div>
   </div>
 </div>
-
-<script>
-    $(document).ready(function(){
-        var options = {
-            zoomType: 'standard',
-            lens:true,
-            preloadImages: true,
-            alwaysOn:false,
-            zoomWidth: 300,
-            zoomHeight: 300,
-            xOffset:215,
-            yOffset:0,
-            position:'left'
-        };
-        $('.zoomableImage').jqzoom(options);
-    });
-</script>
+<%= render 'zoom' %>
