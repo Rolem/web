@@ -14,9 +14,9 @@
                   <h4><%= t('misc.personal information.one', count: 1) %></h4>
                   <%= f.text_field :first_name, placeholder: t('misc.form.names.one', count: 1) %>
                   <%= f.text_field :last_name, placeholder: t('misc.form.last name.one', count: 1) %>
-                  <%= f.text_field :email, placeholder: t('misc.form.email.one', count: 1) %>
+                  <%= f.email_field :email, placeholder: t('misc.form.email.one', count: 1) %>
                   <%= f.text_field :date_of_birth, placeholder:
-                          "#{t('misc.form.date of birth.one', count: 1)} #{t('misc.form.date format.one', count: 1)}" %>
+                          "#{t('misc.form.date of birth.one', count: 1)} #{t('misc.form.date format.one', count: 1)}", type: 'date' %>
                   <%= f.text_field :city, placeholder: t('misc.form.city.one', count: 1) %>
                   <%= f.select :social_level,
                                options_for_select([[t('misc.form.social level.one', count: 1), 0], %w(6 6), %w(5 5), %w(4 4), %w(3 3),

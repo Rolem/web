@@ -8,7 +8,7 @@
             <div class="control-group">
               <%= f.text_field :first_name, placeholder: t('misc.form.names.one', count: 1) %>
               <%= f.text_field :last_name, placeholder: t('misc.form.last name.one', count: 1) %>
-              <%= f.text_field :email, placeholder: t('misc.form.email.one', count: 1) %>
+              <%= f.email_field :email, placeholder: t('misc.form.email.one', count: 1) %>
               <%= f.password_field :password, placeholder: t('misc.form.password.one', count: 1) %>
               <%= f.password_field :password_confirmation, placeholder: t('misc.form.confirm password.one', count: 1) %>
             </div>

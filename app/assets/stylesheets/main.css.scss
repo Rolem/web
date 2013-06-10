@@ -406,17 +406,32 @@ button a, a:hover, a:visited {
 }
 
 .formulario-general {
-  input[type="text"], input[type="password"], textarea {
-    width: 97.5%;
+  input[type="text"], input[type="password"], input[type="email"], textarea {
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
     background-color: #CCC;
     color: #000;
   }
 
   select {
     width: 100%;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
   }
 
-  input[type="text"]:focus, input[type="password"]:focus, textarea:focus {
+  input[type="date"] {
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+  }
+
+  input[type="text"]:focus, input[type="password"]:focus, input[type="email"]:focus, textarea:focus {
     border-color: #777;
     -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(119, 119, 119, 0.6);
     -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(119, 119, 119, 0.6);
