@@ -5,13 +5,13 @@
         <div class="span6">
           <div class="row text-center">
             <div class="span6 pc-title">
-              <h2>ROLEM PRODIGY</h2>
+              <h2>ROLEM OPTIMUS</h2>
             </div>
           </div>
           <div class="row text-center">
             <div class="span6">
-              <a href="<%= image_path 'prodigy1.jpg' %>" class="zoomableImage" rel="gal1" title="Prodigy">
-                <%=	image_tag 'prodigy1.jpg', alt: 'Prodigy', class:'pc-height', title: 'Prodigy' %>
+              <a href="<%= image_path 'optimus1.jpg' %>" class="zoomableImage" rel="gal1" title="Optimus">
+                <%=	image_tag 'optimus1.jpg', alt: 'Optimus', class:'pc-height', title: 'Optimus' %>
               </a>
             </div>
           </div>
@@ -20,26 +20,26 @@
               <div class="row">
                 <div class="offset1 span1">
                   <a class="zoomThumbActive" href="javascript:void(0);"
-                     rel="{gallery: 'gal1', smallimage:'<%= image_path('prodigy1.jpg') %>', largeimage:'<%= image_path('prodigy1.jpg') %>'}">
-                    <%=	image_tag 'prodigy1.jpg', alt: 'Prodigy', class:'thumbnail'  %>
+                     rel="{gallery: 'gal1', smallimage:'<%= image_path('optimus1.jpg') %>', largeimage:'<%= image_path('optimus1.jpg') %>'}">
+                    <%=	image_tag 'optimus1.jpg', alt: 'Optimus', class:'thumbnail'  %>
                   </a>
                 </div>
                 <div class="span1">
                   <a href="javascript:void(0);"
-                     rel="{gallery: 'gal1', smallimage:'<%= image_path('prodigy2.jpg') %>', largeimage:'<%= image_path('prodigy2.jpg') %>'}">
-                    <%=	image_tag 'prodigy2.jpg', alt: 'Prodigy', class:'thumbnail'  %>
+                     rel="{gallery: 'gal1', smallimage:'<%= image_path('optimus2.jpg') %>', largeimage:'<%= image_path('optimus2.jpg') %>'}">
+                    <%=	image_tag 'optimus2.jpg', alt: 'Optimus', class:'thumbnail'  %>
                   </a>
                 </div>
                 <div class="span1">
                   <a href="javascript:void(0);"
-                     rel="{gallery: 'gal1', smallimage:'<%= image_path('prodigy3.jpg') %>', largeimage:'<%= image_path('prodigy3.jpg') %>'}">
-                    <%=	image_tag 'prodigy3.jpg', alt: 'Prodigy', class:'thumbnail'  %>
+                     rel="{gallery: 'gal1', smallimage:'<%= image_path('optimus3.jpg') %>', largeimage:'<%= image_path('optimus3.jpg') %>'}">
+                    <%=	image_tag 'optimus3.jpg', alt: 'Optimus', class:'thumbnail'  %>
                   </a>
                 </div>
                 <div class="span1">
                   <a href="javascript:void(0);"
-                     rel="{gallery: 'gal1', smallimage:'<%= image_path('prodigy4.jpg') %>', largeimage:'<%= image_path('prodigy4.jpg') %>'}">
-                    <%=	image_tag 'prodigy4.jpg', alt: 'Prodigy', class:'thumbnail'  %>
+                     rel="{gallery: 'gal1', smallimage:'<%= image_path('optimus4.jpg') %>', largeimage:'<%= image_path('optimus4.jpg') %>'}">
+                    <%=	image_tag 'optimus4.jpg', alt: 'Optimus', class:'thumbnail'  %>
                   </a>
                 </div>
               </div>
@@ -50,9 +50,9 @@
           <div class="tabs-margin">
             <div class="tabbable tabs-title">
               <ul class="nav nav-tabs no-border">
-                <li class="active border-tabs"><a href="#pane1" data-toggle="tab"><%= t('misc.description.one', count: 1) %></a></li>
-                <li><a href="#pane2" data-toggle="tab"><%= t('misc.specifications.one', count: 1) %></a></li>
-                <li><a href="#pane3" data-toggle="tab"><%= t('misc.downloads.one', count: 1) %></a></li>
+                <li class="active border-tabs"><a href="#pane1" data-toggle="tab">DESCRIPCIÓN</a></li>
+                <li><a href="#pane2" data-toggle="tab">ESPECIFICACIONES</a></li>
+                <li><a href="#pane3" data-toggle="tab">DESCARGAS</a></li>
               </ul>
               <div class="tab-content tabs-bg">
                 <div id="pane1" class="tab-pane active pane-tablet">
@@ -76,7 +76,7 @@
                       <td>Intel Core i5 3470 Quad-Core 3.2 GHz/3.6 GHz Turbo Boost 2.0</td>
                     </tr>
                     <tr>
-                      <td>SISTEMAOPERATIVO</td>
+                      <td>SO</td>
                       <td>Windows 8 - 64bit</td>
                     </tr>
                     <tr>
@@ -103,7 +103,7 @@
                       </td>
                     </tr>
                     <tr>
-                      <td>UNIDADÓPTICA</td>
+                      <td>UNIDAD ÓPTICA</td>
                       <td>Quemador de DVD 24x Doble Capa con tecnologia E-GREEN</td>
                     </tr>
                   </table>
@@ -114,7 +114,7 @@
               </div><!-- /.tab-content -->
             </div><!-- /.tabbable -->
             <button class="btn btn-warning pull-right">
-              <%= link_to t('misc.where to buy.one', count: 1), comprar_path, class:'btn-comprar' %>
+              <%= link_to '¿Dónde comprar?', comprar_path, class:'btn-comprar' %>
             </button>
           </div>
         </div>

@@ -64,8 +64,6 @@ en:
       other: "%{count} errors"
     the form has:
       one: "The form has"
-    more information:
-      one: "MORE INFORMATION"
     no account:
       one: "Don't have an account? Register"
     my profile:
@@ -88,14 +86,6 @@ en:
       one: "Favorite genre"
     used game clients:
       one: "Used game clients"
-    description:
-      one: "DESCRIPTION"
-    specifications:
-      one: "SPECIFICATIONS"
-    downloads:
-      one: "DOWNLOADS"
-    where to buy:
-      one: "Where to buy?"
   activerecord:
     attributes:
       user:

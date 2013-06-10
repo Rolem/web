@@ -63,8 +63,6 @@ es:
       other: "%{count} errores"
     the form has:
       one: "El formulario tiene"
-    more information:
-      one: "MÁS INFORMACIÓN"
     no account:
       one: "¿No tienes cuenta? Regístrate"
     my profile:
@@ -87,14 +85,6 @@ es:
       one: "Género preferido"
     used game clients:
       one: "Clientes de juegos usados"
-    description:
-      one: "DESCRIPCIÓN"
-    specifications:
-      one: "ESPECIFICACIONES"
-    downloads:
-      one: "DESCARGAS"
-    where to buy:
-      one: "¿Dónde comprar?"
   time:
     am: am
     formats:
