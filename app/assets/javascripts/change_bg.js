@@ -20,6 +20,8 @@ $(function(){
             dbStyle.backgroundImage = backgnd[ 1 ]
         } else if (document.URL.match(/compania$/)) {
             dbStyle.backgroundImage = backgnd[ 1 ]
+        } else if (document.URL.match(/noticias$/)) {
+            dbStyle.backgroundImage = backgnd[ 1 ]
         } else if (document.URL.match(/comprar$/)) {
             dbStyle.backgroundImage = backgnd[ 1 ]
         } else if (document.URL.match(/contacto$/)) {

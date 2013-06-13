@@ -11,6 +11,8 @@ es:
         one: "¿DÓNDE COMPRAR?"
       contact:
         one: "CONTACTO"
+      news:
+        one: "NOTICIAS"
     form:
       send:
         one: "Enviar"

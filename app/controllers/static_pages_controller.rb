@@ -30,6 +30,9 @@ class StaticPagesController < ApplicationController
   def elemento
   end
 
+  def noticias
+  end
+
   def submit_contact
     @contact_information = ContactInformation.new full_name: params[:full_name],
                                                   email: params[:email],
