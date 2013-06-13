@@ -327,23 +327,31 @@ button a, a:hover, a:visited {
 
 .black-bg {
   background-color: #1F1E19;
-  padding: 30px 0;
+  padding: 15px 0;
 }
 
-.left-column {
-  padding-left: 30px;
-}
-
-.right-column {
+.contenido-compania {
   padding-right: 30px;
 }
 
-.compania {
-  font-size: 0.9em;
-  text-align: justify;
+.compania-navegacion {
+  margin: 0 30px;
 
-  h5 {
-    margin-top: 0;
+  .no-border li > a.sharp {
+    border-radius: 0;
+  }
+
+  .no-border li > a:hover {
+    background-color: #505050;
+    border: 1px solid #ddd;
+    color: white;
+  }
+
+  .no-border li.active, .no-border li > a:hover, .no-border li > a:active {
+    i {
+      @extend .icon-white;
+      opacity: 1;
+    }
   }
 }
 
