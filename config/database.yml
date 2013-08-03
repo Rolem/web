@@ -47,11 +47,9 @@ test:
   password: NosForramos3
 
 production:
-  adapter: postgresql
+ adapter: postgresql
   encoding: unicode
+  database: rolem-web_production
   pool: 5
-  database: d619valt8a8nn2
-  username: szptuwwwkslqmp
-  password: Gj7B65R1BvZbJJoFjpWl4-AMbb
-  host: ec2-54-235-152-226.compute-1.amazonaws.com
-  port: 5432
+  username: disruption
+  password: NosForramos3
