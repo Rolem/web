@@ -14,6 +14,7 @@ group :development, :test do
   gem 'rspec-rails', '~> 2.12.2'
   gem 'annotate'
   gem 'sqlite3'
+  gem 'jquery-rails', '2.3.0'
 end
 
 group :test do
