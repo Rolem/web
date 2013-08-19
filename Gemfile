@@ -13,6 +13,7 @@ gem 'bcrypt-ruby', '~> 3.0.0'
 group :development, :test do
   gem 'rspec-rails', '~> 2.12.2'
   gem 'annotate'
+  gem 'sqlite3'
 end
 
 group :test do
