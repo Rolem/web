@@ -5,9 +5,9 @@
         <div class="span1">
           <% if I18n.locale ==  :en %>
               <%= link_to 'Español', root_path(locale: 'es'), class: 'locale' %>
-          <!--<% else %>
+          <!-- <% lse %>
               <%= link_to 'English', root_path(locale: 'en'), class: 'locale' %>
-          <% end %>-->
+          <% nd %> -->
         </div>
         <div class="offset8 span2">
           <div class="dropdown">
@@ -16,7 +16,7 @@
                 <% if signed_in? %>
                     Menú
                 <% else %>
-                    Sign Up / Login
+                    Registrarse/Ingresar
                 <% end %>
               </button>
               <ul class="dropdown-menu" role="menu">
