@@ -1,6 +1,6 @@
 <div class="container">
   <div class="row">
-    <div class="span12 white-bg">
+    <div class="span12 white-bg" style="height:auto; padding-bottom:50px;">
       <div class="row">
         <div class="span6">
           <div class="row text-center">
@@ -10,8 +10,8 @@
             <br>
             <br>
           </div>
-          <div class="row text-center">
-            <div class="span6"   style="margin-left:220px;">
+          <div class="row-center">
+            <div class=" span6">
               <a href="<%= image_path 'prodigy1.jpg' %>" class="zoomableImage" rel="gal1" title="Prodigy">
                 <%=	image_tag 'prodigy1.jpg', alt: 'Prodigy', class:'pc-height', title: 'Prodigy' %>
               </a>
@@ -42,6 +42,24 @@
                   <a href="javascript:void(0);"
                      rel="{gallery: 'gal1', smallimage:'<%= image_path('prodigy4.jpg') %>', largeimage:'<%= image_path('prodigy4.jpg') %>'}">
                     <%=	image_tag 'prodigy4.jpg', alt: 'Prodigy', class:'thumbnail'  %>
+                  </a>
+                </div>
+                <div class="span1">
+                  <a href="javascript:void(0);"
+                     rel="{gallery: 'gal1', smallimage:'<%= image_path('prodigy5.jpg') %>', largeimage:'<%= image_path('prodigy5.jpg') %>'}">
+                    <%= image_tag 'prodigy5.jpg', alt: 'Prodigy', class:'thumbnail'  %>
+                  </a>
+                </div>
+                <div class="offset2  span1">
+                  <a href="javascript:void(0);"
+                     rel="{gallery: 'gal1', smallimage:'<%= image_path('prodigy6.png') %>', largeimage:'<%= image_path('prodigy6.png') %>'}">
+                    <%= image_tag 'prodigy6.png', alt: 'Prodigy', class:'thumbnail'  %>
+                  </a>
+                </div>
+                <div class="span1">
+                  <a href="javascript:void(0);"
+                     rel="{gallery: 'gal1', smallimage:'<%= image_path('prodigy7.png') %>', largeimage:'<%= image_path('prodigy7.png') %>'}">
+                    <%= image_tag 'prodigy7.png', alt: 'Prodigy', class:'thumbnail'  %>
                   </a>
                 </div>
               </div>
@@ -75,7 +93,7 @@
                     </tr>-->
                     <tr>
                       <td>PROCESADOR:</td>
-                      <td> Intel Core i7 Cuarta Generación 4 Núcleos / 8 Hilos, 3.5 GHz / 3.9 GHz Turbo Boost 2.0.</td>
+                      <td> Intel Core i7 4770k Cuarta Generación 4 Núcleos / 8 Hilos, 3.5 GHz / 3.9 GHz Turbo Boost 2.0.</td>
                     </tr>
                     <tr>
                       <td>SO:</td>
@@ -110,7 +128,23 @@
                   </table>
                 </div>
                 <div id="pane3" class="tab-pane pane-tablet">
-                  <h4>Pane 3 Content</h4>
+                  <h4>Controladores: </h4>
+                  <table>
+                    <!--<tr>
+                      <td>PUNTAJE 3D MARK</td>
+                      <td>P/D</td>
+                    </tr>-->
+                    <tr>
+                      <td>GPU:</td>
+                      <td> <a href="http://www.geforce.com/drivers ">Nvidia GeForce</a></td>
+                    </tr>
+                    <tr>
+                      <td>REFRIGERACIÓN:</td>
+                      <td><a href="http://www.corsair.com/us/hydro-series-h80i-high-performance-liquid-cpu-cooler.html">Hydro Series™</a></td>
+                    </tr>
+                  </table>
+
+
                 </div>
               </div><!-- /.tab-content -->
             </div><!-- /.tabbable -->
