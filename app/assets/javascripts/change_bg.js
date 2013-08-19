@@ -1,7 +1,7 @@
 $(function(){
     var dbStyle = document.body.style,
         backgnd = [
-            "url('/assets/bg-texture.jpg')",
+            "url('/assets/bg-texture.png')",
             "url('/assets/bg-texture.png')"
         ];
 
