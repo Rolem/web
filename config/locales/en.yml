@@ -16,6 +16,8 @@ en:
         one: "CONTACT"
       news:
         one: "NEWS"
+      porquepc:
+        one: "WHY PC?"
     form:
       send:
         one: "Send"

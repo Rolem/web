@@ -15,6 +15,9 @@ class StaticPagesController < ApplicationController
   def contacto
   end
 
+  def porquepc    
+  end
+
   def volcano
   end
 

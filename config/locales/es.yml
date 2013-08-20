@@ -13,6 +13,8 @@ es:
         one: "CONTACTO"
       news:
         one: "NOTICIAS"
+      porquepc:
+        one: "¿POR QUÉ PC?"
     form:
       send:
         one: "Enviar"

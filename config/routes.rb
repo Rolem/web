@@ -14,6 +14,7 @@ RolemWeb::Application.routes.draw do
     match '/comprar', to: 'static_pages#comprar'
     match '/contacto', to: 'static_pages#contacto'
     match '/noticias', to: 'static_pages#noticias'
+    match '/por_que_pc', to: 'static_pages#porquepc'
     match '/submit_contact', to: 'static_pages#submit_contact', via: :post, as: 'submit_contact'
 
     match '/productos/volcano', to: 'static_pages#volcano'
