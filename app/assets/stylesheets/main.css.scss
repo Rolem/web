@@ -318,10 +318,10 @@ body {
   color: white;
 }
 
-button a, a:hover, a:visited {
-  color: white;
-  text-decoration: none;
-}
+
+  a:link {text-decoration: none; color:#505050 ;}
+  a:visited {text-decoration: none; color:#505050  ;}
+  a:hover {text-decoration: none; color: #606060  ;}
 
 // --------
 // Compañia

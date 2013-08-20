@@ -1,7 +1,7 @@
 $(function(){
     var dbStyle = document.body.style,
         backgnd = [
-            "url('/assets/bg-texture.png')",
+            "url('/assets/skyrim_rolem.jpg')",
             "url('/assets/bg-texture.png')"
         ];
 
