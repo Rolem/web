@@ -70,6 +70,7 @@ body {
   border-radius: 0;
   -webkit-border-radius: 0;
   -moz-border-radius: 0;
+  color:white ;
 }
 
 // --------
@@ -184,7 +185,7 @@ body {
 // Noticias
 // --------
 .noticias {
-  background-color: #1F1E19;
+  background-color: white;
   color: #B4B4B4;
   margin-bottom: 2px;
   padding: 10px 25px;
@@ -319,9 +320,9 @@ body {
 }
 
 
-  a:link {text-decoration: none; color:#505050 ;}
-  a:visited {text-decoration: none; color:#505050  ;}
-  a:hover {text-decoration: none; color: #606060  ;}
+  a:link {text-decoration: none; color:#FF9F12;}
+  a:visited {text-decoration: none; color:#FF9F12;}
+  a:hover {text-decoration: none; color:#FF9F12;}
 
 // --------
 // Compañia
@@ -526,7 +527,7 @@ body {
 // Social
 
   .social-tablet {
-    width: 70px;
+    width: 150px;
   }
 
 // Productos
