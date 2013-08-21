@@ -25,17 +25,19 @@
         var map_canvas = document.getElementById('map_canvas');
         var map_options = {
             center: new google.maps.LatLng(4.664757, -74.058323),
-            zoom: 15,
+            zoom: 14,
             mapTypeId: google.maps.MapTypeId.ROADMAP
         }
         var map = new google.maps.Map(map_canvas, map_options);
 
         // Marcador
+        var image = '/assets/marcador.png';
         var myLatlng = new google.maps.LatLng(4.664757, -74.058323);
         var marker = new google.maps.Marker({
             position: myLatlng,
             map: map,
-            animation: google.maps.Animation.DROP
+            animation: google.maps.Animation.DROP,
+            icon: image
         });
 
         // Información del marcador
