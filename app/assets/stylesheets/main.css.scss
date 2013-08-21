@@ -320,9 +320,13 @@ body {
 }
 
 
-  a:link {text-decoration: none; color:#FF9F12;}
-  a:visited {text-decoration: none; color:#FF9F12;}
-  a:hover {text-decoration: none; color:#FF9F12;}
+  .noti:link {text-decoration: none; color:#FF9F12;}
+  .noti:visited {text-decoration: none; color:#FF9F12;}
+  .noti:hover {text-decoration: none; color:#FF9F12;}
+
+  a:link {text-decoration: none; color:white;}
+  a:visited {text-decoration: none; color:white;}
+  a:hover {text-decoration: none; color:white;}
 
 // --------
 // Compañia
