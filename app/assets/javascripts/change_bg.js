@@ -26,9 +26,11 @@ $(function(){
             dbStyle.backgroundImage = backgnd[ 1 ]
         } else if (document.URL.match(/contacto$/)) {
             dbStyle.backgroundImage = backgnd[ 1 ]
+        } else if (document.URL.match(/por_que_pc$/)) {
+            dbStyle.backgroundImage = backgnd[ 1 ]
         } else {
             dbStyle.backgroundImage = backgnd[ 0 ]
-        }
+        } 
     }
 
     setBG();

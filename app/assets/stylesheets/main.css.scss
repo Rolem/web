@@ -184,7 +184,7 @@ body {
 // Noticias
 // --------
 .noticias {
-  background-color: #FFF;
+  background-color: #1F1E19;
   color: #B4B4B4;
   margin-bottom: 2px;
   padding: 10px 25px;
@@ -334,6 +334,7 @@ body {
 
 .contenido-compania {
   padding-right: 30px;
+  color:#B4B4B4;
 }
 
 .compania-navegacion {
@@ -346,7 +347,7 @@ body {
   .no-border li > a:hover {
     background-color: #505050;
     border: 1px solid #ddd;
-    color: white;
+    color: #B4B4B4;
   }
 
   .no-border li.active, .no-border li > a:hover, .no-border li > a:active {
@@ -402,6 +403,7 @@ body {
 // --------
 .direcciones {
   margin: 30px;
+  color: #B4B4B4;
 }
 
 #map_canvas {
@@ -413,7 +415,7 @@ body {
 // Usuarios
 // --------
 .formulario-usuario-contenedor {
-  background-color: #FFF;
+  background-color: black-bg;
   color: #B4B4B4;
 
   .formulario-usuario {
