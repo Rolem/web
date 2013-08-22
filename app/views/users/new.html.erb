@@ -12,7 +12,7 @@
               <%= f.password_field :password, placeholder: t('misc.form.password.one', count: 1) %>
               <%= f.password_field :password_confirmation, placeholder: t('misc.form.confirm password.one', count: 1) %>
             </div>
-            <p style="color:#1F1E19;">Al hacer click en "Registrar Usuario", usted reconoce que ha leido y acepta nuestra <a href="" ><%= link_to privacidad_path do %><b style="color:#FF9F12">Politica de Privacidad.</b><% end -%></a></p>
+            <p style="color:#1F1E19;">Al hacer click en "Registrar Usuario", usted reconoce que ha leido y acepta nuestra <a href="" ><%= link_to privacidad_path, :target => '_blank' do %><b style="color:#FF9F12">Politica de Privacidad.</b><% end -%></a></p>
             <div class="control-group text-center">
               <%= f.submit t('misc.form.create user.one', count: 1), class: 'btn btn-warning' %>
             </div>
