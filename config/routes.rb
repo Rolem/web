@@ -22,6 +22,7 @@ RolemWeb::Application.routes.draw do
     match '/productos/optimus', to: 'static_pages#optimus'
     match '/productos/force', to: 'static_pages#force'
     match '/productos/elemento', to: 'static_pages#elemento'
+    match '/privacidad', to: 'static_pages#privacidad'
 
     # -----------------
     # Controllers
