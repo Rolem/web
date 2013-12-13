@@ -1,3 +1,7 @@
+<<<<<<< HEAD
+=======
+
+>>>>>>> d9e2b517a797d63d78748f4ee95aedc6c071267c
 $(function(){
     var dbStyle = document.body.style,
         backgnd = [
@@ -8,6 +12,11 @@ $(function(){
     function setBG() {
         if (document.URL.match(/productos$/)) {
             dbStyle.backgroundImage = backgnd[ 1 ]
+<<<<<<< HEAD
+=======
+        } else if (document.URL.match(/es\/productos$/)) {
+            dbStyle.backgroundImage = backgnd[ 1 ]
+>>>>>>> d9e2b517a797d63d78748f4ee95aedc6c071267c
         } else if (document.URL.match(/productos\/volcano$/)) {
             dbStyle.backgroundImage = backgnd[ 1 ]
         } else if (document.URL.match(/productos\/prodigy$/)) {
