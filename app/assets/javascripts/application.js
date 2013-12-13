@@ -16,6 +16,7 @@
 //= require bootstrap
 //= require jqzoom-core
 //= require_tree .
+//= require turbolinks
 
 $(document).ready(function () {
     $('.carousel').carousel('cycle');

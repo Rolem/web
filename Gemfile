@@ -10,6 +10,7 @@ gem 'activeadmin'
 gem 'i18n'
 gem 'bcrypt-ruby', '~> 3.0.0'
 gem 'ayah_integration'
+gem 'turbolinks'
 
 group :development, :test do
   gem 'rspec-rails', '~> 2.12.2'
