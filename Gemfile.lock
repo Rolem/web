@@ -1,5 +1,6 @@
 GEM
   remote: https://rubygems.org/
+  remote: https://rubygems.org/
   specs:
     actionmailer (3.2.11)
       actionpack (= 3.2.11)
@@ -14,18 +15,17 @@ GEM
       rack-cache (~> 1.2)
       rack-test (~> 0.6.1)
       sprockets (~> 2.2.1)
-    activeadmin (0.6.0)
-      arbre (>= 1.0.1)
-      bourbon (>= 1.0.0)
-      devise (>= 1.1.2)
-      fastercsv
-      formtastic (>= 2.0.0)
-      inherited_resources (>= 1.3.1)
-      jquery-rails (>= 1.0.0)
-      kaminari (>= 0.13.0)
-      meta_search (>= 0.9.2)
-      rails (>= 3.0.0)
-      sass (>= 3.1.0)
+    activeadmin (0.6.2)
+      arbre (~> 1.0)
+      bourbon (>= 1.0.0, < 4)
+      devise (>= 1.5.4, < 4)
+      formtastic (~> 2.0)
+      inherited_resources (~> 1.3)
+      jquery-rails (>= 1.0.0, < 3)
+      kaminari (~> 0.13)
+      meta_search (~> 1.0)
+      rails (>= 3.0.0, < 4)
+      sass (~> 3.1)
     activemodel (3.2.11)
       activesupport (= 3.2.11)
       builder (~> 3.0.0)
@@ -40,27 +40,24 @@ GEM
     activesupport (3.2.11)
       i18n (~> 0.6)
       multi_json (~> 1.0)
-    annotate (2.5.0)
-      rake
+    annotate (2.6.0)
+      activerecord (>= 2.3.0)
+      rake (>= 0.8.7)
     arbre (1.0.1)
       activesupport (>= 3.0.0)
-    arel (3.0.2)
+    arel (3.0.3)
+    atomic (1.1.14)
     ayah_integration (0.6.3)
       json
       rest-client
-    bcrypt-ruby (3.0.1)
     bcrypt-ruby (3.0.1-x86-mingw32)
-<<<<<<< HEAD
-    bootstrap-sass (2.3.2.1)
-=======
     bootstrap-sass (2.3.1.3)
->>>>>>> d9e2b517a797d63d78748f4ee95aedc6c071267c
       sass (~> 3.2)
     bourbon (3.1.8)
       sass (>= 3.2.0)
       thor
     builder (3.0.4)
-    capybara (2.1.0)
+    capybara (2.2.0)
       mime-types (>= 1.16)
       nokogiri (>= 1.3.3)
       rack (>= 1.0.0)
@@ -73,43 +70,41 @@ GEM
       coffee-script-source
       execjs
     coffee-script-source (1.6.3)
-    cucumber (1.3.6)
+    cucumber (1.3.10)
       builder (>= 2.1.2)
       diff-lcs (>= 1.1.3)
-      gherkin (~> 2.12.0)
-      multi_json (~> 1.7.5)
+      gherkin (~> 2.12)
+      multi_json (>= 1.7.5, < 2.0)
       multi_test (>= 0.0.2)
-    cucumber-rails (1.3.1)
+    cucumber-rails (1.4.0)
       capybara (>= 1.1.2)
       cucumber (>= 1.2.0)
       nokogiri (>= 1.5.0)
-      rails (~> 3.0)
-    database_cleaner (1.1.1)
-    devise (3.0.3)
+      rails (>= 3.0.0)
+    database_cleaner (1.2.0)
+    devise (3.2.2)
       bcrypt-ruby (~> 3.0)
       orm_adapter (~> 0.1)
       railties (>= 3.2.6, < 5)
+      thread_safe (~> 0.1)
       warden (~> 1.2.3)
     diff-lcs (1.1.3)
     erubis (2.7.0)
-    execjs (2.0.0)
-    factory_girl (4.2.0)
+    execjs (2.0.2)
+    factory_girl (4.3.0)
       activesupport (>= 3.0.0)
-    factory_girl_rails (4.2.1)
-      factory_girl (~> 4.2.0)
+    factory_girl_rails (4.3.0)
+      factory_girl (~> 4.3.0)
       railties (>= 3.0.0)
-    fastercsv (1.5.5)
     formtastic (2.2.1)
       actionpack (>= 3.0)
-    gherkin (2.12.1)
-      multi_json (~> 1.3)
-    gherkin (2.12.1-x86-mingw32)
+    gherkin (2.12.2-x86-mingw32)
       multi_json (~> 1.3)
     has_scope (0.6.0.rc)
       actionpack (>= 3.2, < 5)
       activesupport (>= 3.2, < 5)
     hike (1.2.3)
-    i18n (0.6.5)
+    i18n (0.6.9)
     inherited_resources (1.4.1)
       has_scope (~> 0.6.0.rc)
       responders (~> 1.0.0.rc)
@@ -117,8 +112,8 @@ GEM
     jquery-rails (2.3.0)
       railties (>= 3.0, < 5.0)
       thor (>= 0.14, < 2.0)
-    json (1.8.0)
-    kaminari (0.14.1)
+    json (1.8.1)
+    kaminari (0.15.0)
       actionpack (>= 3.0.0)
       activesupport (>= 3.0.0)
     mail (2.4.4)
@@ -132,17 +127,14 @@ GEM
       activerecord (~> 3.1)
       activesupport (~> 3.1)
       polyamorous (~> 0.5.0)
-    mime-types (1.24)
-    mini_portile (0.5.1)
-    multi_json (1.7.9)
+    mime-types (1.25.1)
+    mini_portile (0.5.2)
+    multi_json (1.8.2)
     multi_test (0.0.2)
-    nokogiri (1.6.0)
-      mini_portile (~> 0.5.0)
     nokogiri (1.6.0-x86-mingw32)
       mini_portile (~> 0.5.0)
-    orm_adapter (0.4.0)
-    pg (0.16.0)
-    pg (0.16.0-x86-mingw32)
+    orm_adapter (0.5.0)
+    pg (0.17.0-x86-mingw32)
     polyamorous (0.5.0)
       activerecord (~> 3.0)
     polyglot (0.3.3)
@@ -171,7 +163,7 @@ GEM
     rake (10.1.0)
     rdoc (3.12.2)
       json (~> 1.4)
-    responders (1.0.0.rc)
+    responders (1.0.0)
       railties (>= 3.2, < 5)
     rest-client (1.6.7)
       mime-types (>= 1.16)
@@ -186,7 +178,7 @@ GEM
       rspec-core (~> 2.12.0)
       rspec-expectations (~> 2.12.0)
       rspec-mocks (~> 2.12.0)
-    sass (3.2.10)
+    sass (3.2.12)
     sass-rails (3.2.6)
       railties (~> 3.2.0)
       sass (>= 3.1.10)
@@ -196,29 +188,26 @@ GEM
       multi_json (~> 1.0)
       rack (~> 1.0)
       tilt (~> 1.1, != 1.3.0)
-    sqlite3 (1.3.8)
     sqlite3 (1.3.8-x86-mingw32)
     thor (0.18.1)
+    thread_safe (0.1.3)
+      atomic
     tilt (1.4.1)
     treetop (1.4.15)
       polyglot
       polyglot (>= 0.3.1)
-<<<<<<< HEAD
-=======
     turbolinks (2.0.0)
       coffee-rails
->>>>>>> d9e2b517a797d63d78748f4ee95aedc6c071267c
-    tzinfo (0.3.37)
-    uglifier (2.1.2)
+    tzinfo (0.3.38)
+    uglifier (2.3.3)
       execjs (>= 0.3.0)
-      multi_json (~> 1.0, >= 1.0.2)
+      json (>= 1.8.0)
     warden (1.2.3)
       rack (>= 1.0)
     xpath (2.0.0)
       nokogiri (~> 1.3)
 
 PLATFORMS
-  ruby
   x86-mingw32
 
 DEPENDENCIES
@@ -226,11 +215,7 @@ DEPENDENCIES
   annotate
   ayah_integration
   bcrypt-ruby (~> 3.0.0)
-<<<<<<< HEAD
-  bootstrap-sass
-=======
   bootstrap-sass (~> 2.3.1.0)
->>>>>>> d9e2b517a797d63d78748f4ee95aedc6c071267c
   capybara
   coffee-rails (~> 3.2.2)
   cucumber-rails
@@ -243,12 +228,7 @@ DEPENDENCIES
   pg
   rails (= 3.2.11)
   rspec-rails (~> 2.12.2)
-<<<<<<< HEAD
-  sass-rails (~> 3.2.6)
-  sqlite3
-=======
   sass-rails (~> 3.2)
   sqlite3
   turbolinks
->>>>>>> d9e2b517a797d63d78748f4ee95aedc6c071267c
   uglifier (>= 1.3.0)

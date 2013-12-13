@@ -5,7 +5,7 @@
         <div class="span1">
           <% if I18n.locale ==  :en %>
               <%= link_to 'Español', root_path(locale: 'es'), class: 'locale' %>
-          <!-- <% lse %> -->
+          <% else %>
               <%= link_to 'English', root_path(locale: 'en'), class: 'locale' %>
           <% end %> 
         </div>

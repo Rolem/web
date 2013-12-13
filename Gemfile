@@ -1,10 +1,9 @@
-<<<<<<< HEAD
+
 source 'https://rubygems.org'
 
 gem 'rails', '3.2.11'
 gem 'pg'
 gem 'jquery-rails', '2.3.0'
-gem 'bootstrap-sass'
 gem 'meta_search',    '>= 1.1.0.pre'
 gem 'meta-tags', :require => 'meta_tags'
 gem 'activeadmin'
@@ -27,10 +26,9 @@ group :test do
 end
 
 group :assets do
-  gem 'sass-rails',   '~> 3.2.6'
   gem 'coffee-rails', '~> 3.2.2'
   gem 'uglifier', '>= 1.3.0'
-=======
+end
 source 'https://rubygems.org'
 
 gem 'rails', '3.2.11'
@@ -63,5 +61,5 @@ end
 group :assets do
   gem 'coffee-rails', '~> 3.2.2'
   gem 'uglifier', '>= 1.3.0'
->>>>>>> d9e2b517a797d63d78748f4ee95aedc6c071267c
+
 end
