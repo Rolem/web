@@ -1,0 +1,107 @@
+# Sample localization file for English. Add more files in this directory for other locales.
+# See https://github.com/svenfuchs/rails-i18n/tree/master/rails%2Flocale for starting points.
+
+en:
+  misc:
+    navbar:
+      home:
+        one: "HOME"
+      products:
+        one: "PRODUCTS"
+      company:
+        one: "COMPANY"
+      where to buy:
+        one: "WHERE TO BUY?"
+      contact:
+        one: "CONTACT"
+      news:
+        one: "NEWS"
+      porquepc:
+        one: "WHY PC?"
+    form:
+      send:
+        one: "Send"
+      log in:
+        one: "Log in"
+      log out:
+        one: "Log out"
+      new user:
+        one: "New user"
+      create user:
+        one: "Create user"
+      delete:
+        one: "Delete"
+      add computer:
+        one: "Add computer"
+      email:
+        one: "Email"
+      password:
+        one: "Password"
+      names:
+        one: "Names"
+      last name:
+        one: "Last names"
+      confirm password:
+        one: "Confirm password"
+      date of birth:
+        one: "Date of birth"
+      city:
+        one: "City"
+      social level:
+        one: "Social level"
+      serial number:
+        one: "Serial number"
+      city of purchase:
+        one: "City of purchase"
+      place of purchase:
+        one: "Place of purchase"
+      date of purchase:
+        one: "Date of purchase"
+      date format:
+        one: "(dd/mm/yyyy)"
+      full name:
+        one: "Full name"
+      message:
+        one: "Your message goes here..."
+    error:
+      one: "one error"
+      other: "%{count} errors"
+    the form has:
+      one: "The form has"
+    no account:
+      one: "Don't have an account? Register"
+    my profile:
+      one: "My profile"
+    my computers:
+      one: "My computers"
+    edit profile:
+      one: "Edit profile"
+    options:
+      one: "Options"
+    masculino:
+      one: "Male"
+    femenino:
+      one: "Female"
+    personal information:
+      one: "Personal information"
+    likes:
+      one: "Likes"
+    favorite genre:
+      one: "Favorite genre"
+    used game clients:
+      one: "Used game clients"
+  activerecord:
+    attributes:
+      user:
+        email: "Email"
+        first_name: "First name"
+        last_name: "Last name"
+        password: "Password"
+        password_confirmation: "Password confirmation"
+        password_digest: "Password digest"
+      receipt:
+        city: "City of purchase"
+        date_of_purchase: "Date of purchase"
+        guarantee_number: "Gurantee number"
+        model: "Computer model"
+        place: "Place of purchase"

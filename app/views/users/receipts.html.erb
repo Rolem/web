@@ -1,0 +1,31 @@
+<div class="container">
+  <div class="row">
+    <div class="span12 perfil-contenedor">
+      <div class="row">
+        <div class="span4">
+          <%= render partial: 'navigation', locals: { profile_option: false, receipt_option: true, edit_option: false } %>
+        </div>
+        <div class="span6">
+          <div class="perfil-informacion">
+            <h1><%= t('misc.my computers.one', count: 1) %></h1>
+            <% if @user.receipts.empty? %>
+                <p>
+                  <% if I18n.locale == :es %>
+                      No tienes computadores registrados. Regístralos para hacer válida tu garantía.
+                  <% else %>
+                      You don't have any registered computers. Register them to make your guarantee valid.
+                  <% end %>
+                </p>
+            <% else %>
+                <% @user.receipts.each do |r| %>
+                    <%= render 'receipts/display_receipt', object: r %>
+                    <hr/>
+                <% end %>
+            <% end %>
+            <%= link_to t('misc.form.add computer.one', count: 1), new_receipt_path(user_id: current_user.id), class: 'btn btn-warning' %>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

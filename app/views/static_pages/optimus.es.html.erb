@@ -1,0 +1,126 @@
+<div class="container">
+  <div class="row">
+    <div class="span12 white-bg">
+      <div class="row">
+        <div class="span6">
+          <div class="row text-center">
+            <div class="span6 pc-title">
+              <h2>ROLEM OPTIMUS</h2>
+            </div>
+          </div>
+          <div class="row text-center">
+            <div class="span6">
+              <a href="<%= image_path 'optimus1.jpg' %>" class="zoomableImage" rel="gal1" title="Optimus">
+                <%=	image_tag 'optimus1.jpg', alt: 'Optimus', class:'pc-height', title: 'Optimus' %>
+              </a>
+            </div>
+          </div>
+          <div class="row ">
+            <div class="span6">
+              <div class="row">
+                <div class="offset1 span1">
+                  <a class="zoomThumbActive" href="javascript:void(0);"
+                     rel="{gallery: 'gal1', smallimage:'<%= image_path('optimus1.jpg') %>', largeimage:'<%= image_path('optimus1.jpg') %>'}">
+                    <%=	image_tag 'optimus1.jpg', alt: 'Optimus', class:'thumbnail'  %>
+                  </a>
+                </div>
+                <div class="span1">
+                  <a href="javascript:void(0);"
+                     rel="{gallery: 'gal1', smallimage:'<%= image_path('optimus2.jpg') %>', largeimage:'<%= image_path('optimus2.jpg') %>'}">
+                    <%=	image_tag 'optimus2.jpg', alt: 'Optimus', class:'thumbnail'  %>
+                  </a>
+                </div>
+                <div class="span1">
+                  <a href="javascript:void(0);"
+                     rel="{gallery: 'gal1', smallimage:'<%= image_path('optimus3.jpg') %>', largeimage:'<%= image_path('optimus3.jpg') %>'}">
+                    <%=	image_tag 'optimus3.jpg', alt: 'Optimus', class:'thumbnail'  %>
+                  </a>
+                </div>
+                <div class="span1">
+                  <a href="javascript:void(0);"
+                     rel="{gallery: 'gal1', smallimage:'<%= image_path('optimus4.jpg') %>', largeimage:'<%= image_path('optimus4.jpg') %>'}">
+                    <%=	image_tag 'optimus4.jpg', alt: 'Optimus', class:'thumbnail'  %>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="span6">
+          <div class="tabs-margin">
+            <div class="tabbable tabs-title">
+              <ul class="nav nav-tabs no-border">
+                <li class="active border-tabs"><a href="#pane1" data-toggle="tab">DESCRIPCIÓN</a></li>
+                <li><a href="#pane2" data-toggle="tab">ESPECIFICACIONES</a></li>
+                <li><a href="#pane3" data-toggle="tab">DESCARGAS</a></li>
+              </ul>
+              <div class="tab-content tabs-bg">
+                <div id="pane1" class="tab-pane active pane-tablet">
+                  <ul>
+                    <li>• Disco Duro de alta capacidad más Solid-State Cache Para tiempos de respuesta instantáneos.</li>
+                    <li>• Da el salto a la GeForce® GTX 650 TI Boost para disfrutar de los más veloces juegos de pc de última generación a una calidad excepcional.</li>
+                    <li>• Chasis con tan solo 24 cm de altura.</li>
+                    <li>• Alta conectividad por medio de Wi-Fi y USB 3.0.</li>
+                    <li>• Reproductor de DVD con quemador. Multimedia sin límites.</li>
+                  </ul>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+                </div>
+                <div id="pane2" class="tab-pane pane-tablet">
+                  <table>
+                    <tr>
+                      <td>PUNTAJE 3D MARK</td>
+                      <td>P/D</td>
+                    </tr>
+                    <tr>
+                      <td>PROCESADOR</td>
+                      <td>Intel Core i5 3470 Quad-Core 3.2 GHz/3.6 GHz Turbo Boost 2.0</td>
+                    </tr>
+                    <tr>
+                      <td>SO</td>
+                      <td>Windows 8 - 64bit</td>
+                    </tr>
+                    <tr>
+                      <td>CHIPSET</td>
+                      <td>P/D</td>
+                    </tr>
+                    <tr>
+                      <td>MEMORIA RAM</td>
+                      <td>8 GB Doble Canal - 1600 MHz DDR3</td>
+                    </tr>
+                    <tr>
+                      <td>VGA/GPU</td>
+                      <td>NVIDIA GeForce GTX 650 TI Boost 2GB GDDR5 PCIe 3.0</td>
+                    </tr>
+                    <tr>
+                      <td>REFRIGERACIÓN</td>
+                      <td>CPU: Especial, FRONTAL: Ventilador 120mm x 25mm, LATERAL: Ventilador80mm x 15mm, CAJA HDD: Ventilador 120mm x 25mm (opcional)</td>
+                    </tr>
+                    <tr>
+                      <td>ALMACENAMIENTO</td>
+                      <td>
+                        1 TB: 7500rpm <br>
+                        32 GB: SSD Cache
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>UNIDAD ÓPTICA</td>
+                      <td>Quemador de DVD 24x Doble Capa con tecnologia E-GREEN</td>
+                    </tr>
+                  </table>
+                </div>
+                <div id="pane3" class="tab-pane pane-tablet">
+                  <h4>Pane 3 Content</h4>
+                </div>
+              </div><!-- /.tab-content -->
+            </div><!-- /.tabbable -->
+            <button class="btn btn-warning pull-right">
+              <%= link_to '¿Dónde comprar?', comprar_path, class:'btn-comprar' %>
+            </button>
+            <%= render 'social' %>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<%= render 'zoom' %>

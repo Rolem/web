@@ -1,0 +1,12 @@
+<% if object.errors.any? %>
+    <div class="control-group">
+      <div class="alert alert-error">
+        <%= t 'misc.the form has.one', count: 1 %> <%= t 'misc.error', count: object.errors.count %>.
+      </div>
+      <ul>
+        <% object.errors.full_messages.each do |msg| %>
+            <li class="text-error"><%= msg %></li>
+        <% end %>
+      </ul>
+    </div>
+<% end %>

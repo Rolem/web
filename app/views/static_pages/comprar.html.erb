@@ -1,0 +1,52 @@
+<div class="container">
+  <div class="row">
+    <div class="span12 white-bg"style="margin-bottom:50px;">
+      <div class="row ">
+        <div class="span3">
+          <div class="direcciones">
+            <h3 style="color:#1F1E19;">Unilago</h3>
+            <p style="color:#1F1E19;">Carrera 15</p>
+            <h3 style="color:#1F1E19;">Unicentro</h3>
+            <p style="color:#1F1E19;">Carrera 15 con calle 127</p>
+            <h3 style="color:#1F1E19;">Bulevar</h3>
+            <p style="color:#1F1E19;">Avenida suba con calle 127</p>
+          </div>
+        </div>
+        <div class="span9">
+          <div id="map_canvas"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<script>
+    function initialize() {
+        // Inicialización del mapa
+        var map_canvas = document.getElementById('map_canvas');
+        var map_options = {
+            center: new google.maps.LatLng(4.664757, -74.058323),
+            zoom: 14,
+            mapTypeId: google.maps.MapTypeId.ROADMAP
+        }
+        var map = new google.maps.Map(map_canvas, map_options);
+
+        // Marcador
+        var image = '/assets/marcador.png';
+        var myLatlng = new google.maps.LatLng(4.664757, -74.058323);
+        var marker = new google.maps.Marker({
+            position: myLatlng,
+            map: map,
+            animation: google.maps.Animation.DROP,
+            icon: image
+        });
+
+        // Información del marcador
+        var infoWindow = new google.maps.InfoWindow({
+            content: 'Compra aquí. Carrera 15'
+        });
+        google.maps.event.addListener(marker, 'click', function () {
+            infoWindow.open(map, marker);
+        });
+    }
+    google.maps.event.addDomListener(window, 'load', initialize);
+</script>

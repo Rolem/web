@@ -1,0 +1,38 @@
+<div class="container">
+  <div class="row">
+    <div class="span12 text-center">
+      <div class="row">
+        <div class="span1">
+          <% if I18n.locale ==  :en %>
+              <%= link_to 'Español', root_path(locale: 'es'), class: 'locale' %>
+          <!-- <% lse %> -->
+              <%= link_to 'English', root_path(locale: 'en'), class: 'locale' %>
+          <% end %> 
+        </div>
+        <div class="offset8 span2">
+          <div class="dropdown">
+            <div class="btn-group">
+              <button class="btn btn-warning dropdown-toggle" data-toggle="dropdown">
+                <% if signed_in? %>
+                    Menú
+                <% else %>
+                    Registrarse/Ingresar
+                <% end %>
+              </button>
+              <ul class="dropdown-menu" role="menu">
+                <div class="formulario-login">
+                  <% if signed_in? %>
+                      <%= render 'shared/signout' %>
+                  <% else %>
+                      <%= render 'shared/login' %>
+                  <% end %>
+                </div>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <%= render 'layouts/social' %>
+      </div>
+    </div>
+  </div>
+</div>

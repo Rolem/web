@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta content="Rolem es una empresa Colombiana que diseña y ensambla PC Desktops para Gamers. Tú eliges, tú juegas,
+   tú ganas. ¡Súbele el nivel a tu juego!" name="description" />
+  <meta content="juegos, pc, rendimiento, calidad, tamaño, balance, gaming, gamers, desktop, tecnología, conveniencia,
+  comodidad, presupuesto, Gaming, Custom Built, Computer High Performance, Gaming Desktop, Rolem, rolem,
+  computador gamers, computador alto rendimiento, alto rendimiento, comprar computador" name="keywords" />
+  <meta property="og:image" content="http://www.rolem.co<%= image_path 'logo.png' %>"/>
+  <meta property="og:title" content="Rolem"/>
+  <meta property="og:url" content="http://www.rolem.co"/>
+  <meta property="og:site_name" content="Rolem"/>
+  <link rel="shortcut icon" href="http://www.rolem.co/assets/logo-c7a02cc253742368582b7d7047a7a26f.png">
+  <title>Rolem</title>
+  <%= stylesheet_link_tag    'application', :media => 'all' %>
+    <%= javascript_include_tag 'application' %>
+  <script src="http://maps.googleapis.com/maps/api/js?sensor=false"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <%= csrf_meta_tags %>
+  <script type="text/javascript">
+/* <![CDATA[ */
+    (function() {
+        var s = document.createElement('script'), t = document.getElementsByTagName('script')[0];
+        s.type = 'text/javascript';
+        s.async = true;
+        s.src = 'http://api.flattr.com/js/0.6/load.js?mode=auto';
+        t.parentNode.insertBefore(s, t);
+    })();
+/* ]]> */</script>
+</head>
+<body>
+<%= render 'shared/fb' %>
+<%= render 'shared/twitter' %>
+<%= render 'shared/gp' %>
+<!-- Header -->
+<%= render 'layouts/user' %>
+<%= render 'layouts/logo' %>
+<%= render 'layouts/navbar' %>
+<!-- Flash -->
+<%= render partial: 'shared/flash', locals: { flash: flash } %>
+<!-- Main -->
+<%= yield %>
+<!-- Footer -->
+<%= render 'layouts/footer' %>
+<%= render 'layouts/chat' %>
+<%= render 'layouts/feedback' %>
+<%= render 'layouts/ga' %>
+<aside class="container">
+  <%= debug(params) if Rails.env.development? %>
+</aside>
+</body>
+</html>

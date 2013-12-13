@@ -1,0 +1,80 @@
+<div class="container">
+  <div class="row">
+    <div class="span12 perfil-contenedor">
+      <div class="row">
+        <div class="span4">
+          <%= render partial: 'navigation', locals: { profile_option: false, receipt_option: false, edit_option: true } %>
+        </div>
+        <div class="span6">
+          <div class="perfil-informacion">
+            <h1><%= t('misc.edit profile.one', count: 1) %></h1>
+            <%= form_for @user, html: { class: 'formulario-general' } do |f| %>
+                <%= render 'shared/error_messages', object: f.object %>
+                <div class="control-group">
+                  <h4><%= t('misc.personal information.one', count: 1) %></h4>
+                  <%= f.text_field :first_name, placeholder: t('misc.form.names.one', count: 1) %>
+                  <%= f.text_field :last_name, placeholder: t('misc.form.last name.one', count: 1) %>
+                  <%= f.email_field :email, placeholder: t('misc.form.email.one', count: 1) %>
+                  <%= f.text_field :date_of_birth, placeholder:
+                          "#{t('misc.form.date of birth.one', count: 1)} #{t('misc.form.date format.one', count: 1)}", type: 'date' %>
+                  <%= f.text_field :city, placeholder: t('misc.form.city.one', count: 1) %>
+                  <%= f.select :social_level,
+                               options_for_select([[t('misc.form.social level.one', count: 1), 0], %w(6 6), %w(5 5), %w(4 4), %w(3 3),
+                                                   %w(2 2), %w(1 1)]) %>
+                  <label class="radio inline">
+                    <%= f.radio_button :gender, 'masculino' %>
+                    <%= t('misc.masculino.one', count: 1) %>
+                  </label>
+                  <label class="radio inline">
+                    <%= f.radio_button :gender, 'femenino' %>
+                    <%= t('misc.femenino.one', count: 1) %>
+                  </label>
+                </div>
+                <div class="control-group">
+                  <h4><%= t('misc.likes.one', count: 1) %></h4>
+                  <h5>
+                    <% if I18n.locale == :es %>
+                        ¿Cuál es tu género preferido?
+                    <% else %>
+                        Which is your favorite genre?
+                    <% end %>
+                  </h5>
+                  <%= f.select :game_genre,
+                               options_for_select([%w(Acción Accion), %w(Aventura Aventura), %w(Carreras Carreras),
+                                                   %w(Casual Casual), %w(Deportes Deportes), %w(FPS FPS),
+                                                   %w(Independiente Independiente), %w(MMO MMO), %w(MOBA MOBA),
+                                                   %w(RGP RGP), %w(RTS RTS), %w(Simulación Simulación) ]) %>
+                  <h5>
+                    <% if I18n.locale == :es %>
+                        ¿Qué clientes de juegos usas?
+                    <% else %>
+                        Which game clients do you use?
+                    <% end %>
+                  </h5>
+                  <% @game_client_list.each do |gc| %>
+                      <label class="radio">
+                        <%= check_box_tag "game_client[#{gc.id}]", gc.id, true %>
+                        <%= gc.name %>
+                      </label>
+                  <% end %>
+                  <% @game_client_list_unused.each do |gc| %>
+                      <label class="radio">
+                        <%= check_box_tag "game_client[#{gc.id}]", gc.id %>
+                        <%= gc.name %>
+                      </label>
+                  <% end %>
+                </div>
+                <div class="control-group">
+                  <h4><%= t('misc.form.confirm password.one', count: 1) %></h4>
+                  <%= f.password_field :password, placeholder: t('misc.form.password.one', count: 1) %>
+                </div>
+                <div class="control-group text-right">
+                  <%= f.submit 'Actualizar datos', class: 'btn btn-warning' %>
+                </div>
+            <% end %>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
