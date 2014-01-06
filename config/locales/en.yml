@@ -14,8 +14,8 @@ en:
         one: "WHERE TO BUY?"
       contact:
         one: "CONTACT"
-      news:
-        one: "NEWS"
+      blog:
+        one: "BLOG"
       porquepc:
         one: "WHY PC?"
     form:

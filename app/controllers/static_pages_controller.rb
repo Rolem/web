@@ -33,7 +33,7 @@ class StaticPagesController < ApplicationController
   def elemento
   end
 
-  def noticias
+  def blog
   end
 
   def submit_contact
