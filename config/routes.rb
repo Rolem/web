@@ -23,6 +23,9 @@ RolemWeb::Application.routes.draw do
     match '/productos/force', to: 'static_pages#force'
     match '/productos/elemento', to: 'static_pages#elemento'
     match '/privacidad', to: 'static_pages#privacidad'
+    match '/terminos_de_uso', to: 'static_pages#terminos_de_uso'
+    match '/terminos_y_condiciones', to: 'static_pages#terminos_y_condiciones'
+
 
     # -----------------
     # Controllers
