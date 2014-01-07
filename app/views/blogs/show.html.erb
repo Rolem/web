@@ -1,30 +1,38 @@
-<p id="notice"><%= notice %></p>
 
-<p>
-  <b>Titulo:</b>
-  <%= @blog.titulo %>
-</p>
-
-<p>
-  <b>Autor:</b>
-  <%= @blog.autor %>
-</p>
-
-<p>
-  <b>Texto:</b>
-  <%= @blog.texto %>
-</p>
-
-<p>
-  <b>Imagen:</b>
-  <%= @blog.imagen %>
-</p>
-
-<p>
-  <b>Tags:</b>
-  <%= @blog.tags %>
-</p>
-
-
-<%= link_to 'Edit', edit_blog_path(@blog) %> |
-<%= link_to 'Back', blogs_path %>
+<div class="container">
+  <div class="row">
+    <div class="span12 black-bg" >
+      <div class="row">
+        <div class="span4">
+          <div class="compania-navegacion">
+            <ul class="nav nav-tabs nav-stacked no-border">
+              <p id="notice"><%= notice %></p>
+                <p>
+                  <b>Titulo:</b>
+                  <%= @blog.titulo %>
+                </p>
+                <p>
+                  <b>Autor:</b>
+                  <%= @blog.autor %>
+                </p>
+                <p>
+                  <b>Texto:</b>
+                  <%= @blog.texto %>
+                </p>
+                <p>
+                  <b>Imagen:</b>
+                  < image_tag(blog.imagen)%>
+                </p>
+                <p>
+                  <b>Tags:</b>
+                  <%= @blog.tags %>
+                </p>
+                <%= link_to 'Edit', edit_blog_path(@blog) %> |
+                <%= link_to 'Back', blogs_path %>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

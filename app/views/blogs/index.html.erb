@@ -1,31 +1,39 @@
-<h1>Listing blogs</h1>
 
-<table>
-  <tr>
-    <th>Titulo</th>
-    <th>Autor</th>
-    <th>Texto</th>
-    <th>Imagen</th>
-    <th>Tags</th>
-    <th></th>
-    <th></th>
-    <th></th>
-  </tr>
+<div class="container">
+  <div class="row">
+    <div class="span12 black-bg" >
+      <div class="row">
+        <div class="span4">
+          <div class="compania-navegacion">
+            <ul class="nav nav-tabs nav-stacked no-border">
+                <h1>Blogs</h1>
 
-<% @blogs.each do |blog| %>
-  <tr>
-    <td><%= blog.titulo %></td>
-    <td><%= blog.autor %></td>
-    <td><%= blog.texto %></td>
-    <td><%= blog.imagen %></td>
-    <td><%= blog.tags %></td>
-    <td><%= link_to 'Show', blog %></td>
-    <td><%= link_to 'Edit', edit_blog_path(blog) %></td>
-    <td><%= link_to 'Destroy', blog, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-  </tr>
-<% end %>
-</table>
 
+
+                <% @blogs.each do |blog| %>
+               <table>
+                  <tr>
+                    <th style="width:700px;"><h3><%= blog.titulo %></h3></th>
+                  </tr>
+                  <tr>
+                  
+                    <td style="width:200px;"><%= image_tag(blog.imagen)%></td>
+                    <td style="width:700px;"><strong><%= blog.autor %></strong> <br><%= blog.texto %> <%= link_to 'Show', blog %> <br> <strong>tags: </strong> <%= blog.tags %> </td>
+
+      
+                  </tr>
+      
+                </table>
+                <% end %>
+                <BR>
+                    <%= link_to 'New Blog', new_blog_path %>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
 <br />
 
-<%= link_to 'New Blog', new_blog_path %>
+
