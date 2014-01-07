@@ -15,7 +15,7 @@
                   <tr>
                   
                     <td><%= image_tag(blog.imagen)%></td>
-                    <td style="width:700px;"><strong><%= blog.autor %></strong> | <%= blog.created_at.to_s(:db) %> <br><%= blog.texto %> <%= link_to '... Leer más.', blog %> <br> <strong>tags: </strong> <%= blog.tags %> </td>
+                    <td style="width:700px;"><strong><%= blog.autor %></strong> | <%= blog.created_at.to_s(:db) %> <br><%= truncate blog.texto, length: 50 %> <%= link_to 'Leer más. ', blog %> <br> <strong>tags: </strong> <%= blog.tags %> </td>
 
       
                   </tr>
