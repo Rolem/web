@@ -4,7 +4,6 @@ RolemWeb::Application.routes.draw do
   # Root
   # -----------------
   root to: 'static_pages#index'
-
   scope '(:locale)', :locale => /es|en/ do
     # -----------------
     # Static Pages
@@ -13,7 +12,6 @@ RolemWeb::Application.routes.draw do
     match '/compania', to: 'static_pages#compania'
     match '/comprar', to: 'static_pages#comprar'
     match '/contacto', to: 'static_pages#contacto'
-    match '/blog', to: 'static_pages#blog'
     match '/por_que_pc', to: 'static_pages#porquepc'
     match '/submit_contact', to: 'static_pages#submit_contact', via: :post, as: 'submit_contact'
 
@@ -25,7 +23,7 @@ RolemWeb::Application.routes.draw do
     match '/privacidad', to: 'static_pages#privacidad'
     match '/terminos_de_uso', to: 'static_pages#terminos_de_uso'
     match '/terminos_y_condiciones', to: 'static_pages#terminos_y_condiciones'
-
+    resources :blogs
 
     # -----------------
     # Controllers
