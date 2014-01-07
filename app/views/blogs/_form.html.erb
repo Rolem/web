@@ -12,23 +12,23 @@
   <% end %>
 
   <div class="field">
-    <%= f.label :titulo %><br />
+    <%= f.label :titulo %>
     <%= f.text_field :titulo %>
   </div>
   <div class="field">
-    <%= f.label :autor %><br />
+    <%= f.label :autor %>
     <%= f.text_field :autor %>
   </div>
   <div class="field">
-    <%= f.label :texto %><br />
-    <%= f.text_area :texto %>
+    <%= f.label :texto %>
+    <%= f.text_area :texto ,:cols => "30", :rows => "7"  %>
   </div>
   <div class="field">
-    <%= f.label :imagen %><br />
+    <%= f.label :imagen %>
     <%= f.text_field :imagen %>
   </div>
   <div class="field">
-    <%= f.label :tags %><br />
+    <%= f.label :tags %>
     <%= f.text_field :tags %>
   </div>
   <div class="actions">

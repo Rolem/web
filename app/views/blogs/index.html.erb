@@ -7,18 +7,15 @@
           <div class="compania-navegacion">
             <ul class="nav nav-tabs nav-stacked no-border">
                 <h1>Blogs</h1>
-
-
-
                 <% @blogs.each do |blog| %>
-               <table>
+               <table style="width:1000px;">
                   <tr>
-                    <th style="width:700px;"><h3><%= blog.titulo %></h3></th>
+                    <th style="width:200px;"><h3><%= blog.titulo %></h3></th>
                   </tr>
                   <tr>
                   
-                    <td style="width:200px;"><%= image_tag(blog.imagen)%></td>
-                    <td style="width:700px;"><strong><%= blog.autor %></strong> <br><%= blog.texto %> <%= link_to 'Show', blog %> <br> <strong>tags: </strong> <%= blog.tags %> </td>
+                    <td><%= image_tag(blog.imagen)%></td>
+                    <td style="width:700px;"><strong><%= blog.autor %></strong> | <%= blog.created_at.to_s(:db) %> <br><%= blog.texto %> <%= link_to '... Leer más.', blog %> <br> <strong>tags: </strong> <%= blog.tags %> </td>
 
       
                   </tr>

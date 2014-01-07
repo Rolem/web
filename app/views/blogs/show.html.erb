@@ -7,27 +7,19 @@
           <div class="compania-navegacion">
             <ul class="nav nav-tabs nav-stacked no-border">
               <p id="notice"><%= notice %></p>
-                <p>
-                  <b>Titulo:</b>
-                  <%= @blog.titulo %>
-                </p>
-                <p>
-                  <b>Autor:</b>
-                  <%= @blog.autor %>
-                </p>
-                <p>
-                  <b>Texto:</b>
-                  <%= @blog.texto %>
-                </p>
-                <p>
-                  <b>Imagen:</b>
-                  < image_tag(blog.imagen)%>
-                </p>
-                <p>
-                  <b>Tags:</b>
-                  <%= @blog.tags %>
-                </p>
-                <%= link_to 'Edit', edit_blog_path(@blog) %> |
+               <table style="width:1000px;">
+                  <tr>
+                    <th style="width:300x;"><h3><%= @blog.titulo %></h3></th>
+                  </tr>
+                  <tr>
+                  
+                    <td><%= image_tag(@blog.imagen)%></td>
+                    <td style="width:700px;"><strong><%= @blog.autor %></strong> | <%= @blog.created_at.to_s(:db) %> <br><%= @blog.texto %> <br> <strong>tags: </strong> <%= @blog.tags %> </td>
+
+      
+                  </tr>
+      
+                </table>
                 <%= link_to 'Back', blogs_path %>
             </ul>
           </div>
