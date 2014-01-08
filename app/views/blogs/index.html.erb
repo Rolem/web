@@ -10,20 +10,18 @@
                 <% @blogs.each do |blog| %>
                <table style="width:1000px;">
                   <tr>
-                    <th style="width:200px;"><h3><%= blog.titulo %></h3></th>
+                    <th></th>
+                    <th style="width:700px;"><h3><%= blog.titulo %></h3></th>
                   </tr>
                   <tr>
                   
                     <td><%= image_tag(blog.imagen)%></td>
-                    <td style="width:700px;"><strong><%= blog.autor %></strong> | <%= blog.created_at.to_s(:db) %> <br><%= truncate blog.texto, length: 160 %> <%= link_to 'Leer más. ', blog %> <br> <strong>tags: </strong> <%= blog.tags %> </td>
+                    <td style="width:700px;"><strong><%= blog.autor %></strong> | <%= blog.created_at.to_s(:db) %> <br><%= truncate blog.texto, length: 270 %> <%= link_to 'Leer más. ', blog %> <br><br> <strong>tags: </strong> <%= blog.tags %> </td>
 
-      
                   </tr>
-      
                 </table>
                 <% end %>
                 <BR>
-                    <%= link_to 'New Blog', new_blog_path %>
             </ul>
           </div>
         </div>

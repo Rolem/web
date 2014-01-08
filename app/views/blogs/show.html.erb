@@ -7,14 +7,14 @@
           <div class="compania-navegacion">
             <ul class="nav nav-tabs nav-stacked no-border">
               <p id="notice"><%= notice %></p>
-               <table style="width:1000px;">
+               <table style="width:auto;">
                   <tr>
                     <th style="width:300x;"><h3><%= @blog.titulo %></h3></th>
                   </tr>
                   <tr>
                   
                     <td><%= image_tag(@blog.imagen)%></td>
-                    <td style="width:700px;"><strong><%= @blog.autor %></strong> | <%= @blog.created_at.to_s(:db) %> <br><%= @blog.texto %> <br> <strong>tags: </strong> <%= @blog.tags %> </td>
+                    <td style="width:100%;"><strong><%= @blog.autor %></strong> | <%= @blog.created_at.to_s(:db) %> <br><%= @blog.texto %> <br> <strong>tags: </strong> <%= @blog.tags %> </td>
 
       
                   </tr>
@@ -22,7 +22,7 @@
                 </table>
 
 
-                <div style="width:700px;" id="disqus_thread"></div>
+                <div style="width:1000px;" id="disqus_thread"></div>
                   <script type="text/javascript">
                       /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
                       var disqus_shortname = 'rolem'; // required: replace example with your forum shortname
