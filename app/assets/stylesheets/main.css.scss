@@ -100,12 +100,13 @@ body {
 .navbar .navbar-inner {
   padding: 0;
   border:none;
+  font-size: 1em;
 }
 
 .navbar .nav {
   margin: 0;
   display: table;
-  width: 100%;
+  width: 1170px;
 }
 
 .navbar .nav li {
@@ -359,6 +360,17 @@ body {
       @extend .icon-white;
       opacity: 1;
     }
+  }
+  p {
+    text-align:justify;
+  }
+  img {
+    width: 100px;
+
+  }
+
+  h1 {
+    position: initial;
   }
 }
 

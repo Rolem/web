@@ -24,7 +24,7 @@ describe BlogsController do
   # Blog. As you add validations to Blog, be sure to
   # update the return value of this method accordingly.
   def valid_attributes
-    { "titulo" => "MyString" }
+    { "title" => "MyString" }
   end
 
   # This should return the minimal set of values that should be in the session
@@ -89,14 +89,14 @@ describe BlogsController do
       it "assigns a newly created but unsaved blog as @blog" do
         # Trigger the behavior that occurs when invalid params are submitted
         Blog.any_instance.stub(:save).and_return(false)
-        post :create, {:blog => { "titulo" => "invalid value" }}, valid_session
+        post :create, {:blog => { "title" => "invalid value" }}, valid_session
         assigns(:blog).should be_a_new(Blog)
       end
 
       it "re-renders the 'new' template" do
         # Trigger the behavior that occurs when invalid params are submitted
         Blog.any_instance.stub(:save).and_return(false)
-        post :create, {:blog => { "titulo" => "invalid value" }}, valid_session
+        post :create, {:blog => { "title" => "invalid value" }}, valid_session
         response.should render_template("new")
       end
     end
@@ -110,8 +110,8 @@ describe BlogsController do
         # specifies that the Blog created on the previous line
         # receives the :update_attributes message with whatever params are
         # submitted in the request.
-        Blog.any_instance.should_receive(:update_attributes).with({ "titulo" => "MyString" })
-        put :update, {:id => blog.to_param, :blog => { "titulo" => "MyString" }}, valid_session
+        Blog.any_instance.should_receive(:update_attributes).with({ "title" => "MyString" })
+        put :update, {:id => blog.to_param, :blog => { "title" => "MyString" }}, valid_session
       end
 
       it "assigns the requested blog as @blog" do
@@ -132,7 +132,7 @@ describe BlogsController do
         blog = Blog.create! valid_attributes
         # Trigger the behavior that occurs when invalid params are submitted
         Blog.any_instance.stub(:save).and_return(false)
-        put :update, {:id => blog.to_param, :blog => { "titulo" => "invalid value" }}, valid_session
+        put :update, {:id => blog.to_param, :blog => { "title" => "invalid value" }}, valid_session
         assigns(:blog).should eq(blog)
       end
 
@@ -140,7 +140,7 @@ describe BlogsController do
         blog = Blog.create! valid_attributes
         # Trigger the behavior that occurs when invalid params are submitted
         Blog.any_instance.stub(:save).and_return(false)
-        put :update, {:id => blog.to_param, :blog => { "titulo" => "invalid value" }}, valid_session
+        put :update, {:id => blog.to_param, :blog => { "title" => "invalid value" }}, valid_session
         response.should render_template("edit")
       end
     end

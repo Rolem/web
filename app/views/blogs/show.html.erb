@@ -6,20 +6,19 @@
         <div class="span4">
           <div class="compania-navegacion">
             <ul class="nav nav-tabs nav-stacked no-border">
-              <p id="notice"><%= notice %></p>
-               <table style="width:auto;">
-                  <tr>
-                    <th style="width:300x;"><h3><%= @blog.titulo %></h3></th>
-                  </tr>
-                  <tr>
-                  
-                    <td><%= image_tag(@blog.imagen)%></td>
-                    <td style="width:100%;"><strong><%= @blog.autor %></strong> | <%= @blog.created_at.to_s(:db) %> <br><%= @blog.texto %> <br> <strong>tags: </strong> <%= @blog.tags %> </td>
-
-      
-                  </tr>
-      
-                </table>
+                    <div class ="span10">
+                      <br><br>
+                      <h1><%= @blog.titulo %> </h1>
+                      <table>
+                        <tr>
+                          <td style="width:100px;"></td>
+                          <td> <p> <%= @blog.texto   %></p>
+                          <br><br>
+                          Publicado a las <%= @blog.created_at.to_s(:db) %> 
+                          <br>
+                          <strong>tags: </strong> <%= @blog.tags %> <div></td>
+                        </tr>
+                      </table>
 
 
                 <div style="width:1000px;" id="disqus_thread"></div>

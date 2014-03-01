@@ -4,18 +4,16 @@ describe "blogs/index" do
   before(:each) do
     assign(:blogs, [
       stub_model(Blog,
-        :titulo => "Titulo",
-        :autor => "Autor",
-        :texto => "MyText",
-        :imagen => "Imagen",
-        :tags => ""
+        :title => "Title",
+        :description => "MyText",
+        :image_url => "Image Url",
+        :tags => "Tags"
       ),
       stub_model(Blog,
-        :titulo => "Titulo",
-        :autor => "Autor",
-        :texto => "MyText",
-        :imagen => "Imagen",
-        :tags => ""
+        :title => "Title",
+        :description => "MyText",
+        :image_url => "Image Url",
+        :tags => "Tags"
       )
     ])
   end
@@ -23,10 +21,9 @@ describe "blogs/index" do
   it "renders a list of blogs" do
     render
     # Run the generator again with the --webrat flag if you want to use webrat matchers
-    assert_select "tr>td", :text => "Titulo".to_s, :count => 2
-    assert_select "tr>td", :text => "Autor".to_s, :count => 2
+    assert_select "tr>td", :text => "Title".to_s, :count => 2
     assert_select "tr>td", :text => "MyText".to_s, :count => 2
-    assert_select "tr>td", :text => "Imagen".to_s, :count => 2
-    assert_select "tr>td", :text => "".to_s, :count => 2
+    assert_select "tr>td", :text => "Image Url".to_s, :count => 2
+    assert_select "tr>td", :text => "Tags".to_s, :count => 2
   end
 end

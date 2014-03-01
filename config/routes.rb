@@ -1,5 +1,15 @@
 RolemWeb::Application.routes.draw do
 
+  resources :posters
+
+
+  get "news/index" 
+  match '/blogs', to: 'news#index'
+  match 'news', to: 'blogs#index'
+
+  resources :blogs
+
+
   # -----------------
   # Root
   # -----------------

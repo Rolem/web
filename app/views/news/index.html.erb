@@ -1,0 +1,25 @@
+<div class="container">
+	<div class="row">
+	    <div class="span12 black-bg" >
+	        <div class="span4">
+	          	<div class="compania-navegacion">
+	            	<ul class="nav nav-tabs nav-stacked no-border">
+						<% if notice %>
+							<p id="notice"><%= notice %></p>
+						<% end %>
+
+						<h1>Your Pragmatic Catalog</h1>
+
+						<% @blogs.each do |b| %>
+					  		<div class="entry">
+						    	<%= image_tag(b.image_url) %>
+						   		<h3><%= b.title %></h3>
+						   		<p><%= sanitize(b.description) %></p>
+					  		</div>
+						<% end %>
+					</ul>
+			  	</div>
+			</div>
+		</div>
+	</div>
+</div>

@@ -2,24 +2,30 @@
 <div class="container">
   <div class="row">
     <div class="span12 black-bg" >
-      <div class="row">
-        <div class="span4">
-          <div class="compania-navegacion">
-            <ul class="nav nav-tabs nav-stacked no-border">
-                <h1>Blogs</h1>
-                <% @blogs.each do |blog| %>
-               <table style="width:1000px;">
-                  <tr>
-                    <th></th>
-                    <th style="width:700px;"><h3><%= blog.titulo %></h3></th>
-                  </tr>
-                  <tr>
-                  
-                    <td><%= image_tag(blog.imagen)%></td>
-                    <td style="width:700px;"><strong><%= blog.autor %></strong> | <%= blog.created_at.to_s(:db) %> <br><%= truncate blog.texto, length: 270 %> <%= link_to 'Leer más. ', blog %> <br><br> <strong>tags: </strong> <%= blog.tags %> </td>
 
-                  </tr>
-                </table>
+          <div class="compania-navegacion">
+            <ul class="nav nav-tabs nav-stacked no-border"> 
+                <% @blogs.each do |blog| %>
+
+                  
+                    <div class ="span10">
+                      <br><br>
+                      <h1><%= blog.titulo %> </h1>
+                      <table>
+                        <tr>
+                          <td style="width:100px;"><%= link_to image_tag(blog.imagen) , blog %></td>
+                          <td> <%= truncate blog.texto, length: 500 %> <%= link_to 'Leer más. ', blog %>
+                          <br><br>
+                          Publicado a las <%= blog.created_at.to_s(:db) %> 
+                          <br>
+                          <strong>tags: </strong> <%= blog.tags %> <div></td>
+                        </tr>
+                      </table>
+                     
+                  
+
+                      <hr>
+                  
                 <% end %>
                 <BR>
             </ul>
