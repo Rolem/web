@@ -1,5 +1,8 @@
 RolemWeb::Application.routes.draw do
 
+  resources :news
+
+
   resources :posters
 
 
