@@ -3,3 +3,4 @@ class Blog < ActiveRecord::Base
   serialize :tags
 
 end
+ 
