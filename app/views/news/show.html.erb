@@ -20,7 +20,7 @@
               <% end %>
                 <br>
               <%= image_tag(@news.image_url) %>
-              <%= @news.description %>
+              <%= sanitize(@news.description) %>
                <%= link_to 'read more', @news %> 
 
                 <br><br><br>

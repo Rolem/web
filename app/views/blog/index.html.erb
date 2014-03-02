@@ -20,8 +20,8 @@
 							<% end %>
 								<br>
 							<%= image_tag(news.image_url) %>
-							<%= truncate news.description, length: 840%>					    
-						   <%= link_to 'read more', news %> 
+							<div><%= sanitize(truncate news.description, length: 850) %> </div>
+						    <%= link_to 'read more', news %> 
 
 						    <br>						    
 						    <br>
