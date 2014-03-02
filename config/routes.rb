@@ -1,5 +1,7 @@
 RolemWeb::Application.routes.draw do
 
+  get "blog/index"
+
   resources :news
 
 
@@ -7,8 +9,7 @@ RolemWeb::Application.routes.draw do
 
 
   get "news/index" 
-  match '/blogs', to: 'news#index'
-  match 'news', to: 'blogs#index'
+  match '/blog', to: 'blog#index'
 
   resources :blogs
 
