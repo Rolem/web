@@ -1,25 +1,39 @@
-<p id="notice"><%= notice %></p>
 
-<p>
-  <b>Title:</b>
-  <%= @news.title %>
-</p>
+<div class="container">
+    <div class="row blog">
+      <div class="span12 black-bg" style="margin-bottom:50px;">
+ 
+              <div class="compania-navegacion">
+                <ul class="nav nav-tabs nav-stacked no-border">
+                  <!--formato para post -->
 
-<p>
-  <b>Description:</b>
-  <%= @news.description %>
-</p>
-
-<p>
-  <b>Image url:</b>
-  <%= @news.image_url %>
-</p>
-
-<p>
-  <b>Tags:</b>
-  <%= @news.tags %>
-</p>
+              
+            
 
 
-<%= link_to 'Edit', edit_news_path(@news) %> |
-<%= link_to 'Back', news_index_path %>
+              <h1><%= @news.title %></h1>
+              <% if @news.created_at > Time.now.beginning_of_day %>
+                  <%="#{time_ago_in_words(@news.created_at)} atras"%>
+              <% else %>
+                  <%= @news.created_at.strftime("%b %d, %Y") %>
+                  <%= @news.updated_at.strftime("%b %d %Y") %>
+              <% end %>
+                <br>
+              <%= image_tag(@news.image_url) %>
+              <%= @news.description %>
+               <%= link_to 'read more', @news %> 
+
+                <br><br><br>
+
+              <hr>
+              <div class="offset1">
+              <h4>About</h4>
+              <p>Muy lejos, más allá de las montañas de palabras, alejados de los países de las vocales y las consonantes, viven los textos simulados. Viven aislados en casas de letras, en la costa de la semántica, un gran océano de lenguas. Un riachuelo llamado Pons fluye por su pueblo y los abastece con las normas necesarias. Hablamos de un país paraisomático en el que a uno le caen pedazos de frases asadas en la boca. Ni siquiera los todopoderosos signos de puntuación dominan a los textos simulados; una vida, se puede decir, poco ortográfica. Pero un buen día, una pequeña línea</p>
+
+          </ul>
+              </div>
+            </div>
+        </div>
+    </div>
+  </div>
+</div>

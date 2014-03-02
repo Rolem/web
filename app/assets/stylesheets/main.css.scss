@@ -171,7 +171,7 @@ body {
 }
 .carousel-indicators li {
   display: block;
-  float: left;
+  float: right;
   width: 10px;
   height: 10px;
   margin-left: 5px;
@@ -567,3 +567,18 @@ body {
 }
 
 
+//---------------
+//Blog for poster
+//---------------
+
+.blog {
+
+  img {
+     margin:20px;
+  }
+  ul {
+    margin-left: 40px;
+    text-align: justify;
+  }
+
+}

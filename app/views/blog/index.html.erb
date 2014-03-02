@@ -1,26 +1,31 @@
 
 <div class="container">
-  	<div class="row">
+  	<div class="row blog">
     	<div class="span12 black-bg" style="margin-bottom:50px;">
-      	<div class="row">
-        	<div class="span12">
+ 
 	          	<div class="compania-navegacion">
 		            <ul class="nav nav-tabs nav-stacked no-border">
 		            	<!--formato para post -->
 						<% @blog.each do |news| %>
 							
-							<br>
-							<h1><%= news.title %></h1>						    						   
-							<%= image_tag(news.image_url) %>					    
-						    <%= sanitize(news.description) %>
-						    <% if news.created_at > Time.now.beginning_of_day %>
+						
+
+
+							<h1><%= news.title %></h1>
+							<% if news.created_at > Time.now.beginning_of_day %>
 							    <%="#{time_ago_in_words(news.created_at)} atras"%>
 							<% else %>
-							    <%= news.created_at.strftime("%b %d, %Y") %> # Jun 29, 2012 
+							    <%= news.created_at.strftime("%b %d, %Y") %>
+							    <%= news.updated_at.strftime("%b %d %Y") %>
 							<% end %>
-							<br>						    
-						    <br>
+								<br>
+							<%= image_tag(news.image_url) %>
+							<%= truncate news.description, length: 840%>					    
+						   <%= link_to 'read more', news %> 
 
+						    <br>						    
+						    <br>
+<br><br><br>
 
 							<hr>
 						<% end %>

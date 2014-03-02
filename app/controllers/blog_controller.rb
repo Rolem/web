@@ -1,8 +1,6 @@
 class BlogController < ApplicationController
   def index
-  	@blog = News.order(:title)
+  	@blog = News.find( :all, :order => "id DESC" )
   end
-  def blogs
-  	@blog = News.order(:title)
-  end
+
 end
