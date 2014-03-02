@@ -11,43 +11,43 @@ $(function(){
             dbStyle.backgroundImage = backgnd[ 1 ]
 
         }
-         else if (document.URL.match(/productos\/volcano$/)) {
+        else if (document.URL.match(/productos\/volcano$/)) {
             dbStyle.backgroundImage = backgnd[ 1 ]
         }
-         else if (document.URL.match(/productos\/prodigy$/)) {
+        else if (document.URL.match(/productos\/prodigy$/)) {
             dbStyle.backgroundImage = backgnd[ 1 ]
         }
-         else if (document.URL.match(/productos\/optimus$/)) {
+        else if (document.URL.match(/productos\/optimus$/)) {
             dbStyle.backgroundImage = backgnd[ 1 ]
         }
-         else if (document.URL.match(/productos\/force$/)) {
+        else if (document.URL.match(/productos\/force$/)) {
             dbStyle.backgroundImage = backgnd[ 1 ]
         }
-         else if (document.URL.match(/productos\/elemento$/)) {
+        else if (document.URL.match(/productos\/elemento$/)) {
             dbStyle.backgroundImage = backgnd[ 1 ]
         }
-         else if (document.URL.match(/compania$/)) {
+        else if (document.URL.match(/compania$/)) {
             dbStyle.backgroundImage = backgnd[ 1 ]
         }
-         else if (document.URL.match(/noticias$/)) {
+        else if (document.URL.match(/noticias$/)) {
             dbStyle.backgroundImage = backgnd[ 1 ]
         }
-         else if (document.URL.match(/comprar$/)) {
+        else if (document.URL.match(/comprar$/)) {
             dbStyle.backgroundImage = backgnd[ 1 ]
         }
-         else if (document.URL.match(/contacto$/)) {
+        else if (document.URL.match(/contacto$/)) {
             dbStyle.backgroundImage = backgnd[ 1 ]
         }
-         else if (document.URL.match(/por_que_pc$/)) {
+        else if (document.URL.match(/por_que_pc$/)) {
             dbStyle.backgroundImage = backgnd[ 1 ]
         }
-         else if (document.URL.match(/users\/new$/)) {
+        else if (document.URL.match(/users\/new$/)) {
             dbStyle.backgroundImage = backgnd[ 1 ]
         }
-         else if (document.URL.match(/blog$/)) {
+        else if (document.URL.match(/blog$/)) {
             dbStyle.backgroundImage = backgnd[ 1 ]
         }
-         else {
+        else {
             dbStyle.backgroundImage = backgnd[ 0 ]
         }
 
