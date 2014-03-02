@@ -367,11 +367,6 @@ body {
   p {
     text-align:justify;
   }
-  img {
-    width: 120px;
-    float: left;
-
-  }
 
   h1 {
     position: initial;
@@ -574,7 +569,24 @@ body {
 .blog {
 
   img {
-     margin:20px;
+    margin:20px;
+    width: 120px;
+    float: left;
+
+  }
+  ul {
+    margin-left: 40px;
+    text-align: justify;
+  }
+
+}
+
+.show {
+
+  img {
+    margin:20px;
+    width: 240px;
+    float: left;    
   }
   ul {
     margin-left: 40px;

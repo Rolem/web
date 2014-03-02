@@ -5,11 +5,12 @@ RolemWeb::Application.routes.draw do
   # -----------------
   # Root
   # -----------------
-  root to: 'static_pages#index'
+  
   scope '(:locale)', :locale => /es|en/ do
     # -----------------
     # Static Pages
     # -----------------
+    root to: 'static_pages#index'
     match '/productos', to: 'static_pages#productos'
     match '/compania', to: 'static_pages#compania'
     match '/comprar', to: 'static_pages#comprar'
