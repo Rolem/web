@@ -1,17 +1,5 @@
 RolemWeb::Application.routes.draw do
 
-  get "blog/index"
-
-  resources :news
-
-
-  resources :posters
-
-
-  get "news/index" 
-  match '/blog', to: 'blog#index'
-
-  resources :blogs
 
 
   # -----------------
@@ -37,7 +25,8 @@ RolemWeb::Application.routes.draw do
     match '/privacidad', to: 'static_pages#privacidad'
     match '/terminos_de_uso', to: 'static_pages#terminos_de_uso'
     match '/terminos_y_condiciones', to: 'static_pages#terminos_y_condiciones'
-    resources :blogs
+    match '/blog', to: 'blog#index'
+    resources :news
 
     # -----------------
     # Controllers

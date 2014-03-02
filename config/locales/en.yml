@@ -15,7 +15,7 @@ en:
       contact:
         one: "CONTACT"
       blogs:
-        one: "BLOGS"
+        one: "BLOG"
       porquepc:
         one: "WHY PC?"
     form:

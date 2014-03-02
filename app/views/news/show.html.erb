@@ -13,9 +13,9 @@
 
               <h1><%= @news.title %></h1>
               <% if @news.created_at > Time.now.beginning_of_day %>
-                  <%="#{time_ago_in_words(@news.created_at)} atras"%> por Rolem.
+                  <%="#{time_ago_in_words(@news.created_at)} atras"%> en Rolem.
               <% else %>
-                  <%= @news.created_at.strftime("%b %d, %Y") %> por Rolem. 
+                  <%= @news.created_at.strftime("%b %d, %Y") %> en Rolem. 
               <% end %>
                 <br>
               <%= image_tag(@news.image_url) %>
