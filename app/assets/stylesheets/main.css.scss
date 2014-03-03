@@ -207,10 +207,17 @@ body {
   h1 {
     font-family: kautiva-black, helvetica;
     font-size: 3em;
+    color: #fe9c39;
+
   }
   img {
     height: 180px;
   }
+  p{
+    color: black;
+  }
+
+
 }
 
 .elemento-l {
@@ -343,7 +350,13 @@ body {
 .contenido-compania {
   padding-right: 30px;
   color:#B4B4B4;
+td{
+  width: 200px;
+  vertical-align: bottom;
 }
+
+}
+
 
 .compania-navegacion {
   margin: 0 30px;
@@ -371,6 +384,7 @@ body {
   h1 {
     position: initial;
   }
+
 }
 
 // --------
