@@ -356,7 +356,9 @@ td{
 }
 
 }
-
+.otros{
+  a{color:#B4B4B4;}
+}
 
 .compania-navegacion {
   margin: 0 30px;
@@ -592,19 +594,56 @@ td{
     margin-left: 40px;
     text-align: justify;
   }
+  h1{
+  color: #fe9c39;
+  }
+  strong{
+    color: #B4B4B4;
+  }
 
 }
 
 .show {
 
   img {
-    margin:20px;
-    width: 240px;
-    float: left;    
+    width: 480px;
+    margin-left: 220px;
   }
   ul {
     margin-left: 40px;
     text-align: justify;
   }
 
+}
+
+//-------------
+//DONDE comprar
+//-------------
+
+.comprar{
+  h1{
+    color:#fe9c39;
+
+  }
+  h3{
+    color: #fe9c39;
+  }
+  p{
+    color: #B4B4B4;
+  }
+  a{color: #B4B4B4;}
+}
+.contrato{
+  text-align: center;
+
+}
+
+//--------
+//CONTACTO
+//--------
+
+.contacto{
+  h4{
+    color: #B4B4B4;
+  }
 }

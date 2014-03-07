@@ -12,15 +12,15 @@
 
 
 							<h1><%= news.title %></h1>
-							<% if news.created_at > Time.now.beginning_of_day %>
+				<strong>			<% if news.created_at > Time.now.beginning_of_day %>
 							    <%="#{time_ago_in_words(news.created_at)} atras"%> por Rolem.
 							<% else %>
 							    <%= news.created_at.strftime("%b %d, %Y") %> por Rolem.
-							<% end %>
+							<% end %></strong>
 								<br>
 							<%= image_tag(news.image_url) %>
 							<div><%= sanitize(truncate news.description, length: 850) %> </div>
-						    <%= link_to 'read more', news %> 
+						    <strong><%= link_to 'leer mas', news %> </strong>
 
 						    <br>						    
 						    <br>
