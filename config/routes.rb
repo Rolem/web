@@ -19,10 +19,12 @@ RolemWeb::Application.routes.draw do
     match '/submit_contact', to: 'static_pages#submit_contact', via: :post, as: 'submit_contact'
 
     match '/productos/volcano', to: 'static_pages#volcano'
+    match '/productos/volcanoIN', to: 'static_pages#volcanoIN'
     match '/productos/prodigy', to: 'static_pages#prodigy'
     match '/productos/optimus', to: 'static_pages#optimus'
     match '/productos/force', to: 'static_pages#force'
     match '/productos/elemento', to: 'static_pages#elemento'
+    match '/productos/elementoM', to: 'static_pages#elementoM'
     match '/privacidad', to: 'static_pages#privacidad'
     match '/terminos_de_uso', to: 'static_pages#terminos_de_uso'
     match '/terminos_y_condiciones', to: 'static_pages#terminos_y_condiciones'
