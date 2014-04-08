@@ -7,8 +7,8 @@ es:
         one: "PRODUCTOS"
       company:
         one: "COMPAÑÍA"
-      where to buy:
-        one: "¿DÓNDE COMPRAR?"
+      howbuy:
+        one: "¿COMO COMPRAR?"
       contact:
         one: "CONTACTO"
       blogs:

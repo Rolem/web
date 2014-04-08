@@ -10,8 +10,8 @@ en:
         one: "PRODUCTS"
       company:
         one: "COMPANY"
-      where to buy:
-        one: "WHERE TO BUY?"
+      howbuy:
+        one: "HOW BUY?"
       contact:
         one: "CONTACT"
       blogs:
