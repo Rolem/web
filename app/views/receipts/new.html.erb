@@ -6,9 +6,7 @@
         <%= form_for @receipt, html: { class: 'formulario-general' } do |f| %>
             <%= render 'shared/error_messages', object: f.object %>
             <div class="control-group">
-              <%= f.select :model,
-                           options_for_select([%w(Elemento Elemento), %w(Volcano Volcano), %w(Force Force),
-                                               %w(Prodigy Prodigy), %w(Optimus Optimus)]) %>
+              <%= f.select :model, options_for_select([%w(Elemento Elemento), %w(Volcano Volcano), %w(Force Force), %w(Prodigy Prodigy), %w(Optimus Optimus)]) %><div style="height:10px;"> </div>
               <%= f.text_field :guarantee_number, placeholder: t('misc.form.serial number.one', count: 1) %>
               <%= f.text_field :city, placeholder: t('misc.form.city of purchase.one', count: 1) %>
               <%= f.text_field :place, placeholder: t('misc.form.place of purchase.one', count: 1) %>
