@@ -11,7 +11,6 @@ RolemWeb::Application.routes.draw do
     # Static Pages
     # -----------------
     root to: 'static_pages#index'
-    match '/startupranking1011448855041011', to: 'static_pages#startupranking1011448855041011'
     match '/productos', to: 'static_pages#productos'
     match '/compania', to: 'static_pages#compania'
     match '/como_comprar', to: 'static_pages#comprar'
