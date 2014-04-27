@@ -1,17 +1,42 @@
 
 <div class="container" >
 
+  <div class="row">
+    <%= link_to productos_elemento_path do %>
+    <div class="span12 products">
+      <div class="span4 pull-left text-center">
+        <%=  image_tag 'Elemento/main.jpg', alt: 'Elemento' %>
+      </div>
+      <div class="span7 pull-left">
+
+
+
+        <h1>Rolem Elemento</h1>
+<!--         <strong>Procesamiento sin ataduras</strong>
+        <p>Con  el   APU  AMD A10 de tercera generación a 3.9 GHz/4.1 GHz Turbo Core, podrás manejar prácticamente todo lo que ejecutes con el desempeño Quad-Core de élite. v</p>
+       <strong>Solo preocúpate por ganar</strong>
+        <p>No te preocupes por cual juego te funcionara o no, simplemente instala, juega y gana; Rolem Volcano está equipado con la tecnología gráfica Dual Graphics de AMD  la cual generara el empuje y el rendimiento necesarios para jugar al extremo, con la potencia de dos tarjetas AMD Radeon ™.</p>
+        <strong>Cada milímetro usado en rendimiento</strong>
+        <p>Rolem ha diseñado un sistema ideal para jugar, y cada milímetro de espacio está lleno de poder. Rolem Volcano está listo para ofrecerte el mejor rendimiento en el menor espacio. Será el orgullo de tu estación de juegos.</p> -->
+      </div>
+      <div class="span1"></div>
+    </div>
+    <% end -%>
+  </div>
+
+<div class="container" >
+
 
   <div class="row" >
-    <%= link_to productos_elemento_path do %>
+    <%= link_to productos_raven_path do %>
     <div class="span12 products">
       <div class="span4 pull-right text-center">
 
-        <%=  image_tag 'Elemento/main.jpg', alt: 'Elemento', class: 'pc' %>
+        <%=  image_tag 'Raven/main.jpg', alt: 'Raven', class: 'pc' %>
 
       </div>
       <div class="span7 volcano-l pull-left">
-        <h1>Rolem Elemento</h1>
+        <h1>Rolem Raven</h1>
 <!--         <strong>Procesamiento sin ataduras</strong>
         <p>Con  el   APU  AMD A10 de tercera  generación a 3.4 GHz/4.0 GHz Turbo Core, podrás manejar prácticamente todo lo que ejecutes con el desempeño Quad-Core de élite.</p>
         <strong>Potencia para jugar</strong>
