@@ -1,48 +1,66 @@
-<div class="container">
+  <div class="container">
   <div class="row">
-    <div class="span12 white-bg">
+
+    <div class="span12 white-bg" style='height:auto;margin-bottom:50px;'>
+
       <div class="row">
         <div class="span6">
           <div class="row text-center">
             <div class="span6 pc-title">
               <h2>ROLEM FORCE</h2>
             </div>
+            <br><br>
           </div>
           <div class="row text-center">
-            <div class="span6">
-              <a href="<%= image_path 'force1.jpg' %>" class="zoomableImage" rel="gal1" title="Force">
-                <%=	image_tag 'force1.jpg', alt: 'Force', class:'pc-height', title: 'Force' %>
+
+            <div class="span6" style="margin-left:150px;">
+              <a href="<%= image_path 'Force/1.jpg' %>" class="zoomableImage" rel="gal1" title="Force">
+                <%= image_tag 'Force/1.jpg', alt: 'Force', class:'pc-height', title: 'Force' %>
+
               </a>
             </div>
           </div>
-          <div class="row">
+          <div class="row ">
             <div class="span6">
               <div class="row">
                 <div class="offset1 span1">
                   <a class="zoomThumbActive" href="javascript:void(0);"
-                     rel="{gallery: 'gal1', smallimage:'<%= image_path('force1.jpg') %>', largeimage:'<%= image_path('force1.jpg') %>'}">
-                    <%=	image_tag 'force1.jpg', alt: 'Force', class:'thumbnail'  %>
+
+                     rel="{gallery: 'gal1', smallimage:'<%= image_path('Force/1.jpg') %>', largeimage:'<%= image_path('Force/1.jpg') %>'}">
+                    <%= image_tag 'Force/1.jpg', alt: 'Force', class:'thumbnail'  %>
+
                   </a>
                 </div>
                 <div class="span1">
                   <a href="javascript:void(0);"
-                     rel="{gallery: 'gal1', smallimage:'<%= image_path('force2.jpg') %>', largeimage:'<%= image_path('force2.jpg') %>'}">
-                    <%=	image_tag 'force2.jpg', alt: 'Force', class:'thumbnail'  %>
+
+                     rel="{gallery: 'gal1', smallimage:'<%= image_path('Force/2.jpg') %>', largeimage:'<%= image_path('Force/2.jpg') %>'}">
+                    <%= image_tag 'Force/2.jpg', alt: 'Force', class:'thumbnail'  %>
+
                   </a>
                 </div>
                 <div class="span1">
                   <a href="javascript:void(0);"
-                     rel="{gallery: 'gal1', smallimage:'<%= image_path('force3.jpg') %>', largeimage:'<%= image_path('force3.jpg') %>'}">
-                    <%=	image_tag 'force3.jpg', alt: 'Force', class:'thumbnail'  %>
+
+                     rel="{gallery: 'gal1', smallimage:'<%= image_path('Force/3.jpg') %>', largeimage:'<%= image_path('Force/3.jpg') %>'}">
+                    <%= image_tag 'Force/3.jpg', alt: 'Force', class:'thumbnail'  %>
+
                   </a>
                 </div>
                 <div class="span1">
                   <a href="javascript:void(0);"
-                     rel="{gallery: 'gal1', smallimage:'<%= image_path('force4.jpg') %>', largeimage:'<%= image_path('force4.jpg') %>'}">
-                    <%=	image_tag 'force4.jpg', alt: 'Force', class:'thumbnail'  %>
+
+                     rel="{gallery: 'gal1', smallimage:'<%= image_path('Force/main.jpg') %>', largeimage:'<%= image_path('Force/main.jpg') %>'}">
+                    <%= image_tag 'Force/main.jpg', alt: 'Force', class:'thumbnail'  %>
+
                   </a>
                 </div>
               </div>
+              <br>
+              <br><div class="span6"><strong>Precio:  $2.580.000</strong>  (IVA incluido)</div>
+              
+              <br>
+              <br>
             </div>
           </div>
         </div>
@@ -50,71 +68,98 @@
           <div class="tabs-margin">
             <div class="tabbable tabs-title">
               <ul class="nav nav-tabs no-border">
-                <li class="active border-tabs"><a href="#pane1" data-toggle="tab">DESCRIPTION</a></li>
-                <li><a href="#pane2" data-toggle="tab">SPECIFICATIONS</a></li>
-                <li><a href="#pane3" data-toggle="tab">DOWNLOADS</a></li>
+                <!-- <li class="active border-tabs"><a href="#pane1" data-toggle="tab">DESCRIPCIÓN</a></li> -->
+                <li class="active border-tabs"><a href="#pane2" data-toggle="tab">ESPECIFICACIONES</a></li>
+                <li><a href="#pane3" data-toggle="tab">DESCARGAS</a></li>
               </ul>
               <div class="tab-content tabs-bg">
-                <div id="pane1" class="tab-pane active pane-tablet">
+<!--                 <div id="pane1" class="tab-pane active pane-tablet">
                   <ul>
-                    <li>• High capacity HDD more Solid-State Cache For instant response times.</li>
-                    <li>• Easy upgrade to the GeForce ® GTX 650 TI Boost to enjoy the fastest games of last generation pc exceptional quality.</li>
-                    <li>• Chassis with only 24 cm.</li>
-                    <li>• High connectivity through Wi-Fi and USB 3.0.</li>
-                    <li>• DVD burner. Boundless Multimedia.</li>
+                    <li>• Disco Duro de alta capacidad más Solid-State Cache Para tiempos de respuesta instantáneos.</li>
+                    <li>• Da el salto a la GeForce® GTX 650 TI Boost para disfrutar de los más veloces juegos de pc de última generación a una calidad excepcional.</li>
+                    <li>• Chasis con tan solo 24 cm de altura.</li>
+                    <li>• Alta conectividad por medio de Wi-Fi y USB 3.0.</li>
+                    <li>• Reproductor de DVD con quemador. Multimedia sin límites.</li>
                   </ul>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-                </div>
-                <div id="pane2" class="tab-pane pane-tablet">
+                </div> -->
+                <div id="pane2" class="tab-pane active pane-tablet">
                   <table>
                     <tr>
-                      <td>3D SCORE MARK</td>
+                      <td>PUNTAJE 3D MARK</td>
                       <td>P/D</td>
                     </tr>
                     <tr>
-                      <td>PROCESSOR</td>
-                      <td>Intel Core i5 3470 Quad-Core 3.2 GHz/3.6 GHz Turbo Boost 2.0</td>
+                      <td>PROCESADOR</td>
+
+                      <td>Intel Core i5 4570 Quad-Core 3.2 GHz/3.6 GHz Turbo Boost</td>
                     </tr>
                     <tr>
-                      <td>OS</td>
-                      <td>Windows 8 - 64bit</td>
+                      <td>SO</td>
+                      <td>Windows 8.1 - 64bit Windows </td>
                     </tr>
                     <tr>
+                      <td>CHASSIS</td>
+                      <td>Cooler Master Elite 130</td>
+                    </tr>                  
+                    <tr>
+
                       <td>CHIPSET</td>
-                      <td>P/D</td>
+                      <td>Z87</td>
                     </tr>
                     <tr>
-                      <td>RAM MEMORY</td>
-                      <td>Dual Channel 8GB - DDR3 1600MHz</td>
+                      <td>MEMORIA RAM</td>
+
+                      <td>8 GB Doble Canal - 1600 MHz DDR3</td>
                     </tr>
                     <tr>
                       <td>VGA/GPU</td>
-                      <td>NVIDIA GeForce GTX 650 TI Boost 2GB GDDR5 PCIe 3.0</td>
+                      <td>NVIDIA GeForce GTX 760 2GB GDDR5 PCIe 3.0</td>
                     </tr>
                     <tr>
-                      <td>COOLING SYSTEM</td>
-                      <td>CPU: Special FRONT: 120mm x 25mm Fan, SIDE: Fan? 80mm x 15mm, BOX HDD: 120mm x 25mm Fan (optional)</td>
+                      <td>REFRIGERACIÓN</td>
+                      <td>Sistema de plaquetas de cobre</td>
                     </tr>
                     <tr>
-                      <td>STORAGE</td>
-                      <td>
-                        1 TB: 7500rpm <br>
-                        32 GB: SSD Cache
-                      </td>
+                      <td>ALMACENAMIENTO</td>
+                      <td> 1 TB - 5400rpm Híbrido SSHD <br> 8GB - SSD Cache </td>
                     </tr>
                     <tr>
-                      <td>OPTIC UNIT</td>
-                      <td>24x DVD burner with Double Layer technology E-GREEN</td>
+                      <td>UNIDAD ÓPTICA</td>
+                      <td>Quemador de DVD 24x Doble Capa </td>
                     </tr>
+                    <tr>
+                      <td>REDES</td>
+                      <td>Wi-Fi Integrado 802.11 b/g/n/ac <br> Bluetooth 4.0 <br> LAN (10/100/1000 Mbits/seg.)</td>
+                    </tr>
+                    <tr>
+                      <td>INTERFAZ</td>
+                      <td>P/D</td>
+                    </tr>
+                    <tr>
+                      <td>DIMENSIONES</td>
+                      <td>20.5cm (Alto) x 24cm (Ancho) x 37,7cm (Largo)</td>
+                    </tr> 
+                    <tr>
+                      <td>GARANTIA</td>
+                      <td>1 Año de garantia por partes defectuosas <br> Soporte tecnico Online</td>
+                    </tr>                                                                               
                   </table>
                 </div>
                 <div id="pane3" class="tab-pane pane-tablet">
-                  <h4>Pane 3 Content</h4>
+                  <h4>Programas</h4>
+                  <ul>
+                    <li>Drivers: <a href="http://www.geforce.com/drivers" target="_blank" style="color:#fe9c39;"><strong>http://www.geforce.com/drivers</strong></a></li>
+                    <li>Geforce Experience: <a href="http://www.geforce.com/geforce-experience" target="_blank" style="color:#fe9c39;"><strong>http://www.geforce.com/geforce-experience</strong></a></li>
+                    <li>Steam: <a href="http://store.steampowered.com/about/" target="_blank" style="color:#fe9c39;"><strong>http://store.steampowered.com/about/</strong></a></li>
+                    <li>Utilidades: <a href="http://ninite.com/" target="_blank" style="color:#fe9c39;"><strong>http://ninite.com/</strong></a></li>
+                    <li>3DMark: <a href="http://www.futuremark.com/benchmarks/3dmark#windows" target="_blank" style="color:#fe9c39;"><strong>http://www.futuremark.com/benchmarks/3dmark#windows</strong></a></li>
+                  </ul>
+
                 </div>
               </div><!-- /.tab-content -->
             </div><!-- /.tabbable -->
             <button class="btn btn-warning pull-right">
-              <%= link_to 'Where to buy?', comprar_path, class: 'btn btn-warning' %>
+              <%= link_to '¿Como comprar?', como_comprar_path, class:'btn-comprar' %>
             </button>
             <%= render 'social' %>
           </div>
