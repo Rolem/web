@@ -32,8 +32,9 @@ RolemWeb::Application.routes.draw do
     match '/terminos_y_condiciones', to: 'static_pages#terminos_y_condiciones'
     match '/blog', to: 'blog#index'
 
-    match "/*other" => redirect("/")
+
     resources :news
+    match '*path' => redirect('/')
 
     # -----------------
     # Controllers
