@@ -1,0 +1,69 @@
+
+
+<div class="container black-bg"style="margin-bottom:50px;">
+
+  <div class="row contacto">
+    <div class="span6 offset3">
+<!--
+      <center><h4>¿Tienes dudas?¿Quieres una mejor asesoría?</h4>
+        <h4>Contactanos!</h4></center>
+      <br><br>
+      <div class="formulario-usuario ">
+        <%= form_tag submit_contact_path, method: :post, class: 'formulario-general' do %>
+            <div class="control-group">
+              <%= text_field_tag :full_name, nil, placeholder: t('misc.form.full name.one', count: 1), required: true %>
+              <%= email_field_tag :email, nil, placeholder: t('misc.form.email.one', count: 1), required: true %>
+              <%= text_area_tag :message, nil, placeholder: t('misc.form.message.one', count: 1), rows: 5 ,required: true %>
+            </div>
+            <div class="control-group text-center">
+              <%= submit_tag t('misc.form.send.one', count: 1), class: 'btn btn-warning' %>
+            </div>
+        <% end %>
+      </div>
+-->
+
+        <center><h4>Si necesitas comunicarte con nosotros, por favor escríbenos al área de tu interés:</h4>
+      <br><br>
+      <table>
+        <tr>
+          <td>Asuntos generales:</td> <td> <strong>contact@rolem.co</strong> </td>
+        </tr>
+        <tr>
+          <td>Eventos:</td> <td> <strong>eventos@rolem.co</strong> </td>
+        </tr>
+        <tr>
+          <td>Área Financiera:</td> <td> <strong>finanzaz@rolem.co</strong> </td>
+        </tr>
+        <tr>
+          <td>Gerencia:</td> <td> <strong>gerencia@rolem.co</strong> </td>
+        </tr>
+        <tr>
+          <td>Relaciones Internacionales:</td> <td> <strong>international_business@rolem.co</strong> </td>
+        </tr>
+        <tr>
+          <td>Inversión:</td> <td> <strong>investors@rolem.co</strong> </td>
+        </tr>
+        <tr>
+          <td>Asuntos Legales:</td> <td> <strong>legal@rolem.co</strong> </td>
+        </tr>
+        <tr>
+          <td>Mercadeo:</td> <td> <strong>marketing@rolem.co</strong> </td>
+        </tr>
+        <tr>
+          <td>Prensa:</td> <td> <strong>prensa@rolem.co</strong> </td>
+        </tr>
+        <tr>
+          <td>Soprte Tecnico:</td> <td> <strong>soporte@rolem.co</strong> </td>
+        </tr>
+        <tr>
+          <td>Ventas:</td> <td> <strong>ventas@rolem.co</strong> </td>
+        </tr>
+        <tr>
+          <td>Webmaster:</td> <td> <strong>webmastert@rolem.co</strong> </td>
+        </tr>
+
+      </table>
+      </center>
+    </div>
+  </div>
+</div>
