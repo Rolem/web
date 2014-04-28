@@ -18,8 +18,10 @@
 							    <%= news.created_at.strftime("%b %d, %Y") %> por Rolem.
 							<% end %></strong>
 								<br>
+
 							<%= image_tag(news.image_url) %>
 							<div><%= sanitize(truncate news.description, length: 850) %> </div>
+							tags: <strong><%= news.tags %></strong><br>
 						    <strong><%= link_to 'leer mas', news %> </strong>
 
 						    <br>						    
