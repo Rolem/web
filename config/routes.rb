@@ -10,6 +10,7 @@ RolemWeb::Application.routes.draw do
     # -----------------
     # Static Pages
     # -----------------
+
     root to: 'static_pages#index'
     match '/productos', to: 'static_pages#productos'
     match '/compania', to: 'static_pages#compania'
@@ -30,6 +31,8 @@ RolemWeb::Application.routes.draw do
     match '/terminos_de_uso', to: 'static_pages#terminos_de_uso'
     match '/terminos_y_condiciones', to: 'static_pages#terminos_y_condiciones'
     match '/blog', to: 'blog#index'
+
+    match "/*other" => redirect("/")
     resources :news
 
     # -----------------
