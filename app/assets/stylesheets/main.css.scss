@@ -81,7 +81,7 @@ body {
 // --------
 .social {
   position: fixed;
-  right: 7%;
+  right: 20px;
   width: 60px;
 }
 
@@ -107,7 +107,7 @@ body {
 .navbar .navbar-inner {
   padding: 0px;
   border:none;
-  
+  min-width: 1170px;
 }
 
 .navbar .nav {
