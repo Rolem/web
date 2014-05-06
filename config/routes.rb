@@ -20,7 +20,7 @@ RolemWeb::Application.routes.draw do
     match '/submit_contact', to: 'static_pages#submit_contact', via: :post, as: 'submit_contact'
 
     match '/productos/raven', to:'static_pages#raven'
-    match '/productos/volcano', to: 'static_pages#volcano'
+    match '/productos/volcanoA', to: 'static_pages#volcanoA'
     match '/productos/volcanoIN', to: 'static_pages#volcanoIN'
     match '/productos/prodigy', to: 'static_pages#prodigy'
     match '/productos/optimus', to: 'static_pages#optimus'

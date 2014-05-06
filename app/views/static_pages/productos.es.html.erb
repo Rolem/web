@@ -1,141 +1,69 @@
 
-<div class="container" >
 
-  <div class="row">
-    <%= link_to productos_elemento_path do %>
-    <div class="span12 products">
-      <div class="span4 pull-left text-center">
+<div class="productos container" >
+
+  <div class="bloquep">
+    <ul class="derecha">
+    </ul>  
+    <ul class="nav nav-tabs no-border">
+      <li>
+        <%= link_to 'Elemento',productos_elemento_path %>
         <%=  image_tag 'Elemento/main.jpg', alt: 'Elemento' %>
-      </div>
-      <div class="span7 pull-left">
-
-
-
-        <h1>Rolem Elemento</h1>
-<!--         <strong>Procesamiento sin ataduras</strong>
-        <p>Con  el   APU  AMD A10 de tercera generación a 3.9 GHz/4.1 GHz Turbo Core, podrás manejar prácticamente todo lo que ejecutes con el desempeño Quad-Core de élite. v</p>
-       <strong>Solo preocúpate por ganar</strong>
-        <p>No te preocupes por cual juego te funcionara o no, simplemente instala, juega y gana; Rolem Volcano está equipado con la tecnología gráfica Dual Graphics de AMD  la cual generara el empuje y el rendimiento necesarios para jugar al extremo, con la potencia de dos tarjetas AMD Radeon ™.</p>
-        <strong>Cada milímetro usado en rendimiento</strong>
-        <p>Rolem ha diseñado un sistema ideal para jugar, y cada milímetro de espacio está lleno de poder. Rolem Volcano está listo para ofrecerte el mejor rendimiento en el menor espacio. Será el orgullo de tu estación de juegos.</p> -->
-      </div>
-      <div class="span1"></div>
-    </div>
-    <% end -%>
+      </li>
+    </ul>
   </div>
 
-
-
-
-
-
-
-  <div class="row" >
-    <%= link_to productos_volcano_path do %>
-    <div class="span12 products">
-      <div class="span4 pull-right text-center">
-
-        <%=  image_tag 'Volcano/1.jpg', alt: 'Volcano', class: 'pc' %>
-
-      </div>
-      <div class="span7 volcano-l pull-left">
-        <h1>Rolem Volcano</h1>
-<!--         <strong>Procesamiento sin ataduras</strong>
-        <p>Con  el   APU  AMD A10 de tercera  generación a 3.4 GHz/4.0 GHz Turbo Core, podrás manejar prácticamente todo lo que ejecutes con el desempeño Quad-Core de élite.</p>
-        <strong>Potencia para jugar</strong>
-        <p>Con la HD 7660D podrás jugar sin preocupaciones tus títulos preferidos si un alto costo.</p>
-        <strong>MInimo espacio</strong>
-        <p>La caja ISK 300-65 de Antec encierra grandes prestaciones en un tamaño reducido, ya que puede utilizarse como centro de entretenimiento doméstico silencioso o como equipo de sobremesa.</p> -->
-
-      </div>
-    </div>
-      <% end -%>
+  <div class="bloquep">
+    <ul class="nav nav-tabs no-border">
+      <li class="derecha">
+        <%= link_to 'Elemento Maximun Edition',productos_elementoM_path %>
+        <%=  image_tag 'Elemento/main.jpg', alt: 'Elemento Maximun Edition' %>
+      </li>
+    </ul>  
+  </div>
+    
+  <div class="bloquep">
+    <ul class="nav nav-tabs no-border">
+      <li class="derecha">
+        <%= link_to 'Volcano A',productos_volcanoA_path %>
+        <%=  image_tag 'Volcano/main.jpg', alt: 'VolcanoA' %>
+      </li>
+    </ul> 
   </div>
 
+  <div class="bloquep">
+    <ul class="nav nav-tabs no-border">
+      <li>
+        <%= link_to 'Volcano IN',productos_volcanoIN_path %>
+        <%=  image_tag 'Volcano/main.jpg', alt: 'VolcanoIN' %>
+      </li>
+    </ul> 
+  </div>
 
-
-  <div class="row">
-    <%= link_to productos_force_path do %>
-    <div class="span12 products">
-      <div class="span4 pull-left text-center">
+  <div class="bloqueg">
+    <ul class="nav nav-tabs no-border">
+      <li>
+        <%= link_to 'Force',productos_force_path %>
         <%=  image_tag 'Force/main.jpg', alt: 'Force' %>
-      </div>
-      <div class="span7 pull-left">
-
-
-
-        <h1>Rolem Force</h1>
-<!--         <strong>Procesamiento sin ataduras</strong>
-        <p>Con  el   APU  AMD A10 de tercera generación a 3.9 GHz/4.1 GHz Turbo Core, podrás manejar prácticamente todo lo que ejecutes con el desempeño Quad-Core de élite. v</p>
-       <strong>Solo preocúpate por ganar</strong>
-        <p>No te preocupes por cual juego te funcionara o no, simplemente instala, juega y gana; Rolem Volcano está equipado con la tecnología gráfica Dual Graphics de AMD  la cual generara el empuje y el rendimiento necesarios para jugar al extremo, con la potencia de dos tarjetas AMD Radeon ™.</p>
-        <strong>Cada milímetro usado en rendimiento</strong>
-        <p>Rolem ha diseñado un sistema ideal para jugar, y cada milímetro de espacio está lleno de poder. Rolem Volcano está listo para ofrecerte el mejor rendimiento en el menor espacio. Será el orgullo de tu estación de juegos.</p> -->
-      </div>
-      <div class="span1"></div>
-    </div>
-    <% end -%>
+      </li>
+    </ul> 
   </div>
 
-
-  <div class="row" >
-    <%= link_to productos_raven_path do %>
-    <div class="span12 products">
-      <div class="span4 pull-right text-center">
-
-        <%=  image_tag 'Raven/1.jpg', alt: 'Raven', class: 'pc' %>
-
-      </div>
-      <div class="span7 volcano-l pull-left">
-        <h1>Rolem Raven</h1>
-<!--         <strong>Procesamiento sin ataduras</strong>
-        <p>Con  el   APU  AMD A10 de tercera  generación a 3.4 GHz/4.0 GHz Turbo Core, podrás manejar prácticamente todo lo que ejecutes con el desempeño Quad-Core de élite.</p>
-        <strong>Potencia para jugar</strong>
-        <p>Con la HD 7660D podrás jugar sin preocupaciones tus títulos preferidos si un alto costo.</p>
-        <strong>MInimo espacio</strong>
-        <p>La caja ISK 300-65 de Antec encierra grandes prestaciones en un tamaño reducido, ya que puede utilizarse como centro de entretenimiento doméstico silencioso o como equipo de sobremesa.</p> -->
-
-      </div>
-    </div>
-      <% end -%>
+  <div class="bloqueg">
+    <ul class="nav nav-tabs no-border">
+      <li class="derecha">
+        <%= link_to 'Raven',productos_raven_path %>
+        <%=  image_tag 'Raven/main.jpg', alt: 'Raven' %>
+      </li>
+    </ul>
   </div>
 
-
-
-  <div class="row">
-    <%= link_to productos_prodigy_path do %>
-    <div class="span12 products"  style="margin-bottom:50px;">
-      <div class="span4 pull-left text-center">
-
-        <%=  image_tag 'Prodigy/main.png', alt: 'PRODIGY' %>
-
-      </div>
-      <div class="span7 pull-left">
-        <h1>Rolem Prodigy</h1>
-<!--         <strong>Maravillosamente compacto</strong>
-        <p>Con sus curvas sutiles y líneas limpias, Prodigy es claramente BitFenix. El cuerpo mini-ITX compacto está suspendido por dos asas elegante hecho a mano que dan Prodigy un aspecto sólido y moderno que hace que sea un complemento perfecto para cualquier entorno.</p>
-        <strong>Lo último en tecnología de refrigeración</strong>
-        <p>Incluye una unidad de refrigeración de diseño fino y ligero con una placa fría de cobre con microcanales y colector de flujo dividido. Este exhaustivo estudio de la dinámica de fluidos se traduce en una refrigeración de notable eficiencia, con un nivel total de ruido inferior al de la mayoría de ventiladores de CPU de serie.</p> -->
-      </div>
-      <div class="span1"></div>
-    </div>
-    <% end -%>
-  </div>
-
-
-  <!--<div class="row">
-    <div class="span12 products">
-      <div class="span4 pull-right text-center">
-        <%=	 image_tag 'optimus.jpg', alt: 'OPTIMUS' %>
-      </div>
-      <div class="span7 optimus-r pull-right">
-        <h1>OPTIMUS</h1>
-        <p>No te preocupes por cual juego te funcionara o no, simplemente instala, juega y gana; Rolem Volcano está equipado con la tecnología gráfica Dual Graphics de AMD  la cual generara el empuje y el rendimiento necesarios para jugar al extremo, con la potencia de dos tarjetas AMD Radeon ™.</p>
-        <div class="mas-info pull-right">
-          <%= link_to 'MÁS INFORMACIÓN',  productos_optimus_path %>
-        </div>
-      </div>
-    </div>-->
-  </div>
-
+  <div class="bloqueg">
+    <ul class="nav nav-tabs no-border">
+      <li>
+        <%= link_to 'Prodigy',productos_prodigy_path %>
+        <%=  image_tag 'Prodigy/main.png', alt: 'Prodigy' %>
+      </li>
+    </ul>
+  </div>  
 </div>

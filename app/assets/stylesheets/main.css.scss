@@ -48,6 +48,9 @@ body {
   font-family: Kautiva, Helvetica;
   font-smooth: always;
 }
+.container{
+  width: 1170px;
+}
 
 .field_with_errors {
   display: inline;
@@ -201,71 +204,42 @@ body {
 // --------
 // Productos
 // --------
+.productos {
+  width: 100%;
+  img{ height: 180px;}
+  color: black;
 
-
-.precio {
-  
-  color: #FE9C39;
-}
-.products {
-  background-color: white;
-  color: #B4B4B4;
-  margin-bottom: 2px;
-  padding: 40px 0;
-
-  h1 {
-    font-family: kautiva-black, helvetica;
-    font-size: 3em;
-    color: #fe9c39;
-
-  }
-  img {
-    height: 180px;
-  }
-  p{
-    color: black;
+  .derecha{
+    float:right;
   }
 
+  .bloquep{
+    float:left;
+    background: white;
+    width: 537px;
+    height: 220px;
+    padding: 20px;
+    margin: 4px;
 
-}
-
-.elemento-l {
-  padding-right: 5%;
-}
-
-.volcano-l {
-  padding-left: 5%;
-  text-align: justify;
-
-  h1 {
-    text-align: right;
   }
-}
-
-.force-r {
-  padding-right: 5%;
-}
-
-.prodigy-l {
-  text-align: right;
-}
-
-.optimus-r {
-  padding-right: 5%;
-  h1 {
-    text-align: left;
+  .bloqueg{
+    float: left;
+    background: white;
+    width: 1102px;
+    height: 220px;
+    padding: 30px;
+    margin: 4px;
   }
+
 }
 
-.mas-info {
-  a, a:hover, a:visited {
-    color: #FF9F12;
-  }
-}
 
 // --------
 // Producto Especifico
 // --------
+.precio { 
+  color: #FE9C39;
+}
 
 .white-bg {
   background-color: white;
@@ -561,34 +535,20 @@ td{
 }
 
 @media (max-width: 979px) {
-// Navbar
+
 
 }
 
 @media (min-width: 768px) and (max-width: 979px) {
 
+
+
+}
 // Social
 
   .social-tablet {
     width: 150px;
   }
-
-// Productos
-
-  .pane-tablet {
-    height: 280px;
-  }
-
-  .tabs-title {
-    a {
-      font-size: 0.9em;
-    }
-  }
-
-  .thumbnail {
-    height: 40px;
-  }
-}
 
 
 //---------------
