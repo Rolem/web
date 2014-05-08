@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html>
 <head>
+  <meta property="fb:app_id" content="484734861628216"/>
+  <meta property="fb:admins" content="100004734156798"/>
   <meta name="msvalidate.01" content="8B4AD1B71F2F84EE77B9BA4A30A213C3" />
   <meta name="google-translate-customization" content="2c9736fe0b54813a-c20b1c09dc51b89d-g17cc9ba8c4069508-d"></meta>
   <meta name="alexaVerifyID" content="SPuYp5KUO0V09b0aEPqb-pOtLzI"/>
@@ -26,18 +28,19 @@
   <script src="http://maps.googleapis.com/maps/api/js?sensor=false"></script>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <%= csrf_meta_tags %>
-  <script type="text/javascript">
-/* <![CDATA[ */
-    (function() {
-        var s = document.createElement('script'), t = document.getElementsByTagName('script')[0];
-        s.type = 'text/javascript';
-        s.async = true;
-        s.src = 'http://api.flattr.com/js/0.6/load.js?mode=auto';
-        t.parentNode.insertBefore(s, t);
-    })();
-/* ]]> */</script>
+
 </head>
 <body>
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/es_LA/sdk.js#xfbml=1&appId=484734861628216&version=v2.0";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+
 <%= render 'shared/fb' %>
 <%= render 'shared/twitter' %>
 <%= render 'shared/gp' %>
