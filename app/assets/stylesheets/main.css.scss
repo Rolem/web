@@ -47,6 +47,7 @@ body {
   color: white;
   font-family: Kautiva, Helvetica;
   font-smooth: always;
+
 }
 .container{
   width: 1170px;
@@ -340,31 +341,10 @@ body {
 // Compañia
 // --------
 
-.black-bg {
-  background-color: #1F1E19;
-  padding: 15px 0;
-}
-
-.contenido-compania {
-  padding-right: 30px;
-  color:#B4B4B4;
-td{
-  width: 200px;
-  vertical-align: bottom;
-}
-
-}
-.otros{
-  a{color:#B4B4B4;}
-}
-
-.logo-partner{
-  img{ max-width: 150px;}
-}
-
 .compania-navegacion {
-  margin: 0 30px;
 
+  margin: 0 30px;
+  font-size: 1.1em;
   .no-border li > a.sharp {
     border-radius: 0;
   }
@@ -390,6 +370,32 @@ td{
   }
 
 }
+
+.black-bg {
+  font-size: 1.1em;
+  background-color: #1F1E19;
+  padding: 15px 0;
+}
+
+.contenido-compania {
+  padding-right: 30px;
+  color:#B4B4B4;
+
+td{
+  width: 200px;
+  vertical-align: bottom;
+}
+
+}
+.otros{
+  a{color:#B4B4B4;}
+}
+
+.logo-partner{
+  img{ max-width: 150px;}
+}
+
+
 
 // --------
 // Sign Up / Login
