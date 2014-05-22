@@ -2,68 +2,85 @@
 
 <div class="productos container" >
 
-  <div class="bloquep">
-    <ul class="derecha">
-    </ul>  
-    <ul class="nav nav-tabs no-border">
-      <li>
-        <%= link_to 'Elemento',productos_elemento_path %>
-        <%=  image_tag 'Elemento/main.jpg', alt: 'Elemento' %>
-      </li>
-    </ul>
-  </div>
 
-  <div class="bloquep">
-    <ul class="nav nav-tabs no-border">
-      <li class="derecha">
-        <%= link_to 'Elemento Maximum Edition',productos_elementoM_path %>
-        <%=  image_tag 'Elemento/main.jpg', alt: 'Elemento Maximum Edition' %>
-      </li>
-    </ul>  
-  </div>
-    
-  <div class="bloquep">
-    <ul class="nav nav-tabs no-border">
-      <li class="derecha">
-        <%= link_to 'Volcano A',productos_volcanoA_path %>
-        <%=  image_tag 'Volcano/main.jpg', alt: 'VolcanoA' %>
-      </li>
-    </ul> 
-  </div>
+  <%= link_to productos_elemento_path do %>  
+    <div class="bloquep">
+      <ul class="derecha">
+      </ul>  
+      <ul class="nav nav-tabs no-border">
+        <li>     
+          <%=  image_tag 'Elemento/main.jpg', alt: 'Elemento' %>
+        </li>
+        <h1>Rolem Elemento</h1>
+      </ul>
+    </div>
+  <% end -%>
 
-  <div class="bloquep">
-    <ul class="nav nav-tabs no-border">
-      <li>
-        <%= link_to 'Volcano IN',productos_volcanoIN_path %>
-        <%=  image_tag 'Volcano/main.jpg', alt: 'VolcanoIN' %>
-      </li>
-    </ul> 
-  </div>
+  <%= link_to productos_elementoM_path do %>
+    <div class="bloquep">
+      <ul class="nav nav-tabs no-border">
+        <li class="derecha">
+          <%=  image_tag 'Elemento/main.jpg', alt: 'Elemento Maximum Edition' %>
+        </li>
+        <h1>Rolem Elemento</h1>
+        <h3>Maximun Edition</h3>
+      </ul>  
+    </div>
+  <% end -%>
 
-  <div class="bloqueg">
-    <ul class="nav nav-tabs no-border">
-      <li>
-        <%= link_to 'Force',productos_force_path %>
-        <%=  image_tag 'Force/main.jpg', alt: 'Force' %>
-      </li>
-    </ul> 
-  </div>
+  <%= link_to productos_volcanoA_path do %>
+    <div class="bloquep">
+      <ul class="nav nav-tabs no-border">
+        <li class="derecha">
+          <%=  image_tag 'Volcano/main.jpg', alt: 'VolcanoA' %>
+        </li>
+        <h1 style="margin-left:20px;">Rolem Volcano <strong>A</strong></h1>
+      </ul> 
+    </div>
+  <% end -%>
 
-  <div class="bloqueg">
-    <ul class="nav nav-tabs no-border">
-      <li class="derecha">
-        <%= link_to 'Raven',productos_raven_path %>
-        <%=  image_tag 'Raven/main.jpg', alt: 'Raven' %>
-      </li>
-    </ul>
-  </div>
+  <%= link_to productos_volcanoIN_path do %>
+    <div class="bloquep">
+      <ul class="nav nav-tabs no-border">
+        <li>        
+          <%=  image_tag 'Volcano/main.jpg', alt: 'VolcanoIN' %>
+        </li>
+        <h1>Rolem Volcano <strong>IN</strong> </h1>
+      </ul> 
+    </div>
+  <% end -%>
 
-  <div class="bloqueg">
-    <ul class="nav nav-tabs no-border">
-      <li>
-        <%= link_to 'Prodigy',productos_prodigy_path %>
-        <%=  image_tag 'Prodigy/main.png', alt: 'Prodigy' %>
-      </li>
-    </ul>
-  </div>  
+  <%= link_to productos_force_path do %>
+    <div class="bloqueg">
+      <ul class="nav nav-tabs no-border">
+        <li>
+          <%=  image_tag 'Force/main.jpg', alt: 'Force' %>
+        </li>
+        <h1 style="margin-left:300px;">Rolem Force</h1>
+      </ul> 
+    </div>
+  <% end -%>
+
+  <%= link_to productos_raven_path do %>
+    <div class="bloqueg">
+      <ul class="nav nav-tabs no-border">
+        <li class="derecha">
+          <%=  image_tag 'Raven/main.jpg', alt: 'Raven' %>
+        </li>
+        <h1 style="margin-left:700px;"> Rolem Raven</h1>
+      </ul>
+    </div>
+  <% end -%>
+
+  <%= link_to productos_prodigy_path do %>
+    <div class="bloqueg">
+      <ul class="nav nav-tabs no-border">
+        <li>
+          <%=  image_tag 'Prodigy/main.png', alt: 'Prodigy' %>
+        </li>
+        <h1 style="margin-left:300px;">Rolem Prodigy</h1>
+      </ul>
+    </div>  
+  <% end -%>
+
 </div>
