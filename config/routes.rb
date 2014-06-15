@@ -19,6 +19,8 @@ RolemWeb::Application.routes.draw do
     match '/por_que_pc', to: 'static_pages#porquepc'
     match '/submit_contact', to: 'static_pages#submit_contact', via: :post, as: 'submit_contact'
 
+    match '/productos/ZBOX-EN760', to: 'static_pages#ZBOX-EN760'
+    match '/productos/Nano-nT-A3800', to: 'static_pages#Nano-nT-A3800'
     match '/productos/raven', to:'static_pages#raven'
     match '/productos/volcanoA', to: 'static_pages#volcanoA'
     match '/productos/volcanoIN', to: 'static_pages#volcanoIN'
@@ -31,6 +33,7 @@ RolemWeb::Application.routes.draw do
     match '/terminos_de_uso', to: 'static_pages#terminos_de_uso'
     match '/terminos_y_condiciones', to: 'static_pages#terminos_y_condiciones'
     match '/blog', to: 'blog#index'
+
 
 
     resources :news
