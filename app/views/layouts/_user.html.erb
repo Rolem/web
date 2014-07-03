@@ -1,20 +1,26 @@
-<div class="container">
-  <div class="row">
-    <div class="span12 text-center">
-      <div class="row">
-        <div class="span1">
-          <div id="google_translate_element"></div><script type="text/javascript">
-function googleTranslateElementInit() {
- new google.translate.TranslateElement({pageLanguage: 'es', layout: google.translate.TranslateElement.InlineLayout.HORIZONTAL, multilanguagePage: true}, 'google_translate_element');
-}
-</script><script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+<div class="container" style="min-width:1170px;">
+
+          <div id="google_translate_element" class="span1"></div>
+            <script type="text/javascript">
+              function googleTranslateElementInit() {
+               new google.translate.TranslateElement({pageLanguage: 'es', layout: google.translate.TranslateElement.InlineLayout.HORIZONTAL, multilanguagePage: true}, 'google_translate_element');
+              }
+              </script><script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit">
+            </script>
+
+
+        <div class="span6">
+
 <!--        <% if I18n.locale ==  :en %>
               <%= link_to 'Español', root_path(locale: 'es'), class: 'locale' %>
           <% else %>
               <%= link_to 'English', root_path(locale: 'en'), class: 'locale' %>
           <% end %>  --> 
         </div>
-        <div class="offset6 span3">
+       
+        
+<div style="min-width:500px;" class="offset7">
+          <%= render 'layouts/social' %>
           <div class="dropdown">
             <div class="btn-group">
               <button class="btn btn-warning dropdown-toggle" data-toggle="dropdown">
@@ -35,9 +41,11 @@ function googleTranslateElementInit() {
               </ul>
             </div>
           </div>
-        </div>
-        <%= render 'layouts/social' %>
+
+</div>
+          
+        
       </div>
-    </div>
+
   </div>
 </div>

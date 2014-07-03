@@ -12,23 +12,35 @@ RolemWeb::Application.routes.draw do
     # -----------------
 
     root to: 'static_pages#index'
-    match '/productos', to: 'static_pages#productos'
+    
     match '/compania', to: 'static_pages#compania'
     match '/como_comprar', to: 'static_pages#comprar'
     match '/contacto', to: 'static_pages#contacto'
     match '/por_que_pc', to: 'static_pages#porquepc'
     match '/submit_contact', to: 'static_pages#submit_contact', via: :post, as: 'submit_contact'
 
-    match '/productos/ZBOX-EN760', to: 'static_pages#ZBOX-EN760'
-    match '/productos/Nano-nT-A3800', to: 'static_pages#Nano-nT-A3800'
-    match '/productos/raven', to:'static_pages#raven'
-    match '/productos/volcanoA', to: 'static_pages#volcanoA'
-    match '/productos/volcanoIN', to: 'static_pages#volcanoIN'
-    match '/productos/prodigy', to: 'static_pages#prodigy'
-    match '/productos/optimus', to: 'static_pages#optimus'
-    match '/productos/force', to: 'static_pages#force'
-    match '/productos/elemento', to: 'static_pages#elemento'
-    match '/productos/elementoM', to: 'static_pages#elementoM'
+
+    match '/productos', to: 'static_pages#productos'
+
+    match 'productos/Small', to: 'static_pages#Small-Form-Facto'
+    match 'productos/Tradicional', to: 'static_pages#Tradicional'
+
+    match '/productos/SmallFormFacto/ZBOX-EN760', to: 'static_pages#ZBOX-EN760'
+    match '/productos/SmallFormFacto/Nano-nT-A3800', to: 'static_pages#Nano-nT-A3800'
+    match '/productos/SmallFormFacto/raven', to:'static_pages#raven'
+    match '/productos/SmallFormFacto/volcanoA', to: 'static_pages#volcanoA'
+    match '/productos/SmallFormFacto/volcanoIN', to: 'static_pages#volcanoIN'
+    match '/productos/SmallFormFacto/prodigy', to: 'static_pages#prodigy'
+    match '/productos/SmallFormFacto/optimus', to: 'static_pages#optimus'
+    match '/productos/SmallFormFacto/force', to: 'static_pages#force'
+    match '/productos/SmallFormFacto/elemento', to: 'static_pages#elemento'
+    match '/productos/SmallFormFacto/elementoM', to: 'static_pages#elementoM'
+    match '/productos/SmallFormFacto/NanonTA3800', to: 'static_pages#Nano-nT-A3800'
+    match '/productos/SmallFormFacto/ZBOXEN760', to: 'static_pages#ZBOX-EN760'
+
+    match '/productos/Tradicional/ZBOX-EN760', to: 'static_pages#ZBOX-EN760'
+    
+
     match '/privacidad', to: 'static_pages#privacidad'
     match '/terminos_de_uso', to: 'static_pages#terminos_de_uso'
     match '/terminos_y_condiciones', to: 'static_pages#terminos_y_condiciones'
@@ -38,6 +50,8 @@ RolemWeb::Application.routes.draw do
 
     resources :news
     
+    resources :sitemaps, :only => :show
+    get "sitemap" => "sitemaps#show"
 
     # -----------------
     # Controllers
