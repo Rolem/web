@@ -4,11 +4,9 @@
 
 
   <%= link_to productos_Small_elemento_path do %>  
-    <div class="bloquep">
-      <ul class="derecha">
-      </ul>  
+    <div class="bloquep">  
       <ul class="nav nav-tabs no-border">
-        <li>     
+        <li class="izquierda">     
           <%=  image_tag 'Imagenes Productos\SmallFormFactor\Elemento/Rolem-Elemento-Thermaltake-SD101-angle-view.jpg', alt:'Rolem Elemento Thermaltake SD101 angle view' %>
         </li>
         <h1>Rolem Elemento</h1>
@@ -60,7 +58,7 @@
   <%= link_to productos_Small_volcanoIN_path do %>
     <div class="bloquep">
       <ul class="nav nav-tabs no-border">
-        <li>        
+        <li class="izquierda">        
           <%=  image_tag 'Imagenes Productos\SmallFormFactor\Volcano/Rolem-Volcano-cooler-master-elite-110-top-side-ports.jpg', alt: 'Rolem Volcano cooler master elite 110 top side ports' %>
         </li>
         <h1>Rolem Volcano <strong>IN</strong> </h1>
@@ -70,7 +68,7 @@
           <%=  image_tag 'Imagenes Productos\SmallFormFactor\portada\Volcano IN/NV_GPU_Boost.jpg', alt: 'NV GPU Boost' %>
 
           <br>
-          <%=  image_tag 'Imagenes Productos\SmallFormFactor\portada\Volcano IN/PhysXbyNV_Black.jpg',:style => "margin-left:-40px;" , alt: 'PhysXbyNV Black'   %>
+          <%=  image_tag 'Imagenes Productos\SmallFormFactor\portada\Volcano IN/PhysXbyNV_Black.jpg',:style => "margin-left:-20px;" , alt: 'PhysXbyNV Black'   %>
           <%=  image_tag 'Imagenes Productos\SmallFormFactor\portada\Volcano IN/NV_Adaptive_VSync.jpg' ,alt: 'NV Adaptive VSync' %>
 
         </div>        
@@ -81,7 +79,7 @@
   <%= link_to productos_Small_force_path do %>
     <div class="bloqueg">
       <ul class="nav nav-tabs no-border">
-        <li>
+        <li class="izquierda">
           <%=  image_tag 'Imagenes Productos\SmallFormFactor\Force/Rolem-Force-Cooler-master-elite-130-fron-angle-view.jpg', alt: 'Rolem Force Cooler master elite 130 front angle view', :style => "margin-left:20px;" %>
         </li>
         <h1 style="margin-left:200px;">Rolem Force</h1>
@@ -116,7 +114,7 @@
   <%= link_to productos_Small_prodigy_path do %>
     <div class="bloqueg">
       <ul class="nav nav-tabs no-border">
-        <li style="margin-left:30px;">
+        <li class="izquierda" style="margin-left:30px;">
           <%=  image_tag 'Imagenes Productos\SmallFormFactor\Prodigy/Rolem-Prodigy-Bitfenix-front-angle-view.png', alt: 'Rolem Prodigy Bitfenix front angle view' %>
         </li>
         <h1 style="margin-left:200px;">Rolem Prodigy</h1>
@@ -139,12 +137,13 @@
          <%=  image_tag 'Imagenes Productos\SmallFormFactor\ZBox en760\Rolem-ZBOX-EN760-top-horizontal-view.jpg', alt: 'Rolem ZBOX EN760 top horizontal view' %>
         </li>
         <h1 style="margin-left:550px;">Rolem ZBox en760</h1>
-        <div class="row logos" style="margin-top:25px; margin-left:300px;">
-          <%=  image_tag 'Imagenes Productos\SmallFormFactor\portada\Raven/52902B_AMD_A10_E_RGB.jpg', alt: '52902B AMD A10 E RGB' %>
-          <%=  image_tag 'Imagenes Productos\SmallFormFactor\portada\Raven/53878A_AMD_Rad_R9_E_RGB.jpg', alt: '53878A AMD Rad R9 E RGB' %>
-          <%=  image_tag 'Imagenes Productos\SmallFormFactor\portada\Raven/54220A_AMD_MANTLE_E_RGB.jpg', alt: '54220A AMD MANTLE E RGB' %>
-          <%=  image_tag 'Imagenes Productos\SmallFormFactor\portada\Raven/53890C_AMD_TrueAudio_E_RGB.jpg', alt: '53890C AMD TrueAudio E RGB' %>
-        </div>          
+        <div class="row logos" style="margin-top:25px; margin-left:200px;">
+          <%=  image_tag 'Imagenes Productos\SmallFormFactor\portada\Force/ci5_h_rgb_cl_128.png' ,:style => "margin-left:300pxpx;" ,alt: 'ci5 h rgb cl 128' %>
+          <%=  image_tag 'Imagenes Productos\SmallFormFactor\portada\Volcano IN/NV_GF_GTX_alternate_badge_FOR_WEB_ONLY.jpg', :style => "margin-left:300pxpx;", alt: 'NV GF GTX alternate badge FOR WEB ONLY' %>
+          <%=  image_tag 'Imagenes Productos\SmallFormFactor\portada\Volcano IN/NV_GPU_Boost.jpg' , :style => "margin-left:300pxpx;" ,alt: 'NV GPU Boost'%>
+          <%=  image_tag 'Imagenes Productos\SmallFormFactor\portada\Volcano IN/PhysXbyNV_Black.jpg', :style => "margin-left:300pxpx;" , alt: 'PhysXbyNV Black'%>
+          <%=  image_tag 'Imagenes Productos\SmallFormFactor\portada\Volcano IN/NV_Adaptive_VSync.jpg', :style => "margin-left:300pxpx;" , alt: 'NV Adaptive VSync' %>
+        </div>        
       </ul>
     </div>
   <% end -%>
@@ -153,17 +152,13 @@
 
     <%= link_to productos_Small_NanonTA3800_path do %>
     <div class="bloqueg">
-      <ul class="nav nav-tabs no-border">
-        <li style="margin-left:60px;">
+      <ul class="nav nav-tabs no-border" style="margin-left:170px;">
+        <li class="izquierda">
           <%=  image_tag 'Imagenes Productos\SmallFormFactor\NanoPC nT-A3800/Rolem-NanoPC-nT-A3800-front-vertical-angle-view.jpg', alt: 'Rolem NanoPC nT A3800 front vertical angle view' %>
         </li>
-        <h1 style="margin-left:200px;">Rolem Prodigy</h1>
-        <div class="row logos" style="margin-top:25px; margin-left:300px;">
-          <%=  image_tag 'Imagenes Productos\SmallFormFactor\portada\Force/ci5_h_rgb_cl_128.png' ,:style => "margin-left:300pxpx;" ,alt: 'ci5 h rgb cl 128' %>
-          <%=  image_tag 'Imagenes Productos\SmallFormFactor\portada\Volcano IN/NV_GF_GTX_alternate_badge_FOR_WEB_ONLY.jpg', :style => "margin-left:300pxpx;", alt: 'NV GF GTX alternate badge FOR WEB ONLY' %>
-          <%=  image_tag 'Imagenes Productos\SmallFormFactor\portada\Volcano IN/NV_GPU_Boost.jpg' , :style => "margin-left:300pxpx;" ,alt: 'NV GPU Boost'%>
-          <%=  image_tag 'Imagenes Productos\SmallFormFactor\portada\Volcano IN/PhysXbyNV_Black.jpg', :style => "margin-left:300pxpx;" , alt: 'PhysXbyNV Black'%>
-          <%=  image_tag 'Imagenes Productos\SmallFormFactor\portada\Volcano IN/NV_Adaptive_VSync.jpg', :style => "margin-left:300pxpx;" , alt: 'NV Adaptive VSync' %>
+        <h1 style="margin-left:225px;">Rolem Nano nT-A3800</h1>
+        <div class="row logos" style="margin-top:25px; margin-left:200px;">
+          <%=  image_tag 'Imagenes Productos\SmallFormFactor\portada\NanoPC nT-A3800/Steam-In-Home-Streaming.PNG' ,alt: 'Steam In Home Streaming' %>
         </div>            
       </ul>
     </div>  

@@ -1,7 +1,7 @@
 
 @import "bootstrap";
 
-// ----
+// ---- 
 //Font Faces
 // ----
 @font-face {
@@ -225,6 +225,11 @@ body {
 
   .derecha{
     float:right;
+    margin-top:25px;
+  }
+
+  .izquierda{
+    margin-top:25px;
   }
 
   .bloquep{
@@ -323,6 +328,24 @@ body {
 // --------
 // Producto Especifico
 // --------
+
+.zl{
+  width: 700px;
+  margin-left: 100px;
+}
+
+.zo{
+  margin-left: 50px;
+}
+
+.zO .zo {
+  margin-left: 5px;
+  margin-right: 5px;
+  
+}
+
+
+
 .precio { 
   color: #FE9C39;
 }
