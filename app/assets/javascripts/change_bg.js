@@ -11,19 +11,37 @@ $(function(){
             dbStyle.backgroundImage = backgnd[ 1 ]
 
         }
-        else if (document.URL.match(/productos\/volcano$/)) {
+        else if (document.URL.match(/productos\/Small$/)) {
             dbStyle.backgroundImage = backgnd[ 1 ]
         }
-        else if (document.URL.match(/productos\/prodigy$/)) {
+        else if (document.URL.match(/productos\/Small\/volcanoA$/)) {
             dbStyle.backgroundImage = backgnd[ 1 ]
         }
-        else if (document.URL.match(/productos\/optimus$/)) {
+        else if (document.URL.match(/productos\/Small\/volcanoIN$/)) {
             dbStyle.backgroundImage = backgnd[ 1 ]
         }
-        else if (document.URL.match(/productos\/force$/)) {
+        else if (document.URL.match(/productos\/Small\/prodigy$/)) {
             dbStyle.backgroundImage = backgnd[ 1 ]
         }
-        else if (document.URL.match(/productos\/elemento$/)) {
+        else if (document.URL.match(/productos\/Small\/optimus$/)) {
+            dbStyle.backgroundImage = backgnd[ 1 ]
+        }
+        else if (document.URL.match(/productos\/Small\/force$/)) {
+            dbStyle.backgroundImage = backgnd[ 1 ]
+        }
+        else if (document.URL.match(/productos\/Small\/elemento$/)) {
+            dbStyle.backgroundImage = backgnd[ 1 ]
+        }
+        else if (document.URL.match(/productos\/Small\/elementoM$/)) {
+            dbStyle.backgroundImage = backgnd[ 1 ]
+        }
+        else if (document.URL.match(/productos\/Small\/raven$/)) {
+            dbStyle.backgroundImage = backgnd[ 1 ]
+        }
+        else if (document.URL.match(/productos\/Small\/ZBOXEN760$/)) {
+            dbStyle.backgroundImage = backgnd[ 1 ]
+        }
+        else if (document.URL.match(/productos\/Small\/NanonTA3800$/)) {
             dbStyle.backgroundImage = backgnd[ 1 ]
         }
         else if (document.URL.match(/compania$/)) {

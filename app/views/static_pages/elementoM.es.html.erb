@@ -11,7 +11,7 @@
             </div>
           </div>
           <div class="row">
-
+<br><br>
             <div class="span6" style="margin-left:150px;">
               <a href="<%= image_path 'Elemento/4.jpg' %>" class="zoomableImage" rel="gal1" title="Elemento">
                 <%=	image_tag 'Elemento/4.jpg', alt: 'Elemento', class:'pc-height', title: 'Elemento' %>
@@ -58,8 +58,7 @@
               </div>
             </div>
           </div>
-              <br>
-              <br><div class="span6"><strong class="precio">Precio con Windows:  $2.170.000 </strong>  (IVA incluido)<br>
+              <br><div class="span6" style="margin-top: 15px;"><br> 	<strong class="precio">Precio con Windows:  $2.170.000 </strong>  (IVA incluido)<br>
                                      <strong class="precio">Precio sin OS:   $1.990.000 </strong>  (IVA incluido)</div>
               
               <br>
@@ -109,10 +108,6 @@
                           120 GB  - Boot Solid State Drive</td>
                     </tr>
                     <tr>
-                      <td>UNIDAD OPTICA</td>
-                      <td>P/D</td>
-                    </tr>
-                    <tr>
                       <td>CHIPSET</td>
                       <td>A88X</td>
                     </tr>
@@ -121,10 +116,6 @@
                       <td>Wi-Fi Integrado 802.11 b/g/n/ac <br>
                           Bluetooth 4.0 <br>
                           LAN (10/100/1000 Mbits/seg.)</td>
-                    </tr>
-                    <tr>
-                      <td>INTERFAZ</td>
-                      <td>P/D</td>
                     </tr>
                     <tr>
                       <td>CHASSIS</td>
@@ -162,10 +153,14 @@
                 </div>
               </div><!-- /.tab-content -->
             </div><!-- /.tabbable -->
-            <button class="btn btn-warning pull-right">
-              <%= link_to '¿Como comprar?', como_comprar_path, class:'btn-comprar' %>
-            </button>
+             <div>
+               <%= link_to como_comprar_path, class:'btn btn-warning pull-right', :style => 'width:300px; height:25px; font-size:2em;  ' do %>
+             	<span> ¿Cómo comprar?</span>
+             <%end%>
+             </div>
+
             <%= render 'social' %>
+            <br>
           </div>
 
         </div>

@@ -9,11 +9,10 @@
             <div class="span6 pc-title">
               <h2>ROLEM PRODIGY</h2>
             </div>
-            <br>
-            <br>
+           
           </div>
           <div class="row-center">
-
+		<br /><br>
             <div class=" span6" style="margin-left:150px;">
               <a href="<%= image_path 'Prodigy/1.png' %>" class="zoomableImage" rel="gal1" title="Prodigy">
                 <%=	image_tag 'Prodigy/1.png', alt: 'Prodigy', class:'pc-height', title: 'Prodigy' %>
@@ -51,8 +50,9 @@
 
                 
                 </div>
-                <br>
+                
                 <div class="span6">
+                	<br>
                 <div class="offset1 span1">
                   <a href="javascript:void(0);"
                      rel="{gallery: 'gal1', smallimage:'<%= image_path('Prodigy/4.png') %>', largeimage:'<%= image_path('Prodigy/4.png') %>'}">
@@ -76,8 +76,7 @@
 
 
               </div>
-              <br>
-              <br><div class="span6"><strong class="precio">Precio con Windows:  $3.960.000  </strong>  (IVA incluido)<br>
+             <div class="span6" style="margin-top: 20px;"><br><strong class="precio">Precio con Windows:  $3.960.000  </strong>  (IVA incluido)<br>
                                      <strong class="precio">Precio sin OS:   $3.780.000  </strong>  (IVA incluido)</div>
               
               <br>
@@ -141,10 +140,6 @@
                           LAN (10/100/1000 Mbits/seg.)</td>
                     </tr>
                     <tr>
-                      <td>INTERFAZ</td>
-                      <td>P/D</td>
-                    </tr>
-                    <tr>
                       <td>CHASSIS</td>
                       <td>Bitfenix Prodigy</td>
                     </tr>
@@ -183,10 +178,11 @@
                 </div>
               </div><!-- /.tab-content -->
             </div><!-- /.tabbable -->
-            <button class="btn btn-warning pull-right">
-              <%= link_to '¿Como comprar?', como_comprar_path, class:'btn-comprar' %>
-            </button>
+               <%= link_to como_comprar_path, class:'btn btn-warning pull-right', :style => 'width:300px; height:25px; font-size:2em;  ' do %>
+             	<span> ¿Cómo comprar?</span>
+             <%end%>
             <%= render 'social' %>
+            <br>
           </div>
         </div>
       </div>

@@ -9,9 +9,8 @@
             <div class="span6 pc-title">
               <h2>ROLEM VOLCANO A</h2>
             </div>
-            <br>
-            <br>
           </div>
+          <br /><br />
           <div class="row text-center">
             <div class="span6"  style="margin-left:150px;">
 
@@ -55,8 +54,7 @@
                 </div>
 
               </div>
-              <br>
-              <br><div class="span6"><strong class="precio">Precio con Windows:   $2.250.000  </strong>  (IVA incluido)<br>
+             <br><div class="span6"><strong class="precio">Precio con Windows:   $2.250.000  </strong>  (IVA incluido)<br>
                                      <strong class="precio">Precio sin OS:  $2.070.000 </strong>  (IVA incluido)</div>
               
               <br>
@@ -84,10 +82,6 @@
                 <div id="pane2" class="tab-pane active pane-tablet">
                   <table>
                     <tr>
-                      <td>PUNTAJE 3D MAR</td>
-                      <td>P/D</td>
-                    </tr>
-                    <tr>
                       <td>GPU</td>
                       <td>AMD Radeon R7 260x 2GB GDDR5 PCIe 3.0</td>
                     </tr>
@@ -105,10 +99,6 @@
                           8 GB  - Solid State Cache</td>
                     </tr>
                     <tr>
-                      <td>UNIDAD OPTICA</td>
-                      <td>P/D</td>
-                    </tr>
-                    <tr>
                       <td>CHIPSET</td>
                       <td>H87</td>
                     </tr>
@@ -119,20 +109,12 @@
                           LAN (10/100/1000 Mbits/seg.)</td>
                     </tr>
                     <tr>
-                      <td>INTERFAZ</td>
-                      <td>P/D</td>
-                    </tr>
-                    <tr>
                       <td>CHASSIS</td>
                       <td>Cooler Master Elite 110</td>
                     </tr>
                     <tr>
                       <td>DIMENSIONES </td>
                       <td>20.8cm (Alto) x 26cm (Ancho) x 28cm (Largo)</td>
-                    </tr>
-                    <tr>
-                      <td>REFRIGERACIÓN ADICIONAL</td>
-                      <td>P/D</td>
                     </tr>
                     <tr>
                       <td>SISTEMA OPERATIVO</td>
@@ -158,10 +140,12 @@
                 </div>
               </div><!-- /.tab-content -->
             </div><!-- /.tabbable -->
-            <button class="btn btn-warning pull-right">
-              <%= link_to '¿Como comprar?', como_comprar_path, class:'btn-comprar' %>
-            </button>
+            <br>
+               <%= link_to como_comprar_path, class:'btn btn-warning pull-right', :style => 'width:300px; height:25px; font-size:2em;  ' do %>
+             	<span> ¿Cómo comprar?</span>
+             <%end%>
             <%= render 'social' %>
+            <br />
           </div>
         </div>
       </div>

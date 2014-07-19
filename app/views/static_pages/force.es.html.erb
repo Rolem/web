@@ -9,8 +9,8 @@
             <div class="span6 pc-title">
               <h2>ROLEM FORCE</h2>
             </div>
-            <br><br>
           </div>
+          <br><br>
           <div class="row text-center">
 
             <div class="span6" style="margin-left:150px;">
@@ -56,8 +56,7 @@
                   </a>
                 </div>
               </div>
-              <br>
-              <br><div class="span6"><strong class="precio">Precio con Windows:   $2.670.000  </strong>  (IVA incluido)<br>
+              <br><div class="span6" style="margin-top: 20px;"><br><strong class="precio">Precio con Windows:   $2.670.000  </strong>  (IVA incluido)<br>
                                      <strong class="precio">Precio sin OS:   $2.490.000  </strong>  (IVA incluido)</div>
               
               <br>
@@ -85,10 +84,6 @@
                 </div> -->
                 <div id="pane2" class="tab-pane active pane-tablet">
                   <table>
-                    <tr>
-                      <td>PUNTAJE 3D MAR</td>
-                      <td>P/D</td>
-                    </tr>
                     <tr>
                       <td>GPU</td>
                       <td>NVIDIA GeForce GTX 760 2GB GDDR5 PCIe 3.0</td>
@@ -119,10 +114,6 @@
                       <td>Wi-Fi Integrado 802.11 b/g/n/ac <br>
                           Bluetooth 4.0 <br>
                           LAN (10/100/1000 Mbits/seg.)</td>
-                    </tr>
-                    <tr>
-                      <td>INTERFAZ</td>
-                      <td>P/D</td>
                     </tr>
                     <tr>
                       <td>CHASSIS</td>
@@ -160,10 +151,14 @@
                 </div>
               </div><!-- /.tab-content -->
             </div><!-- /.tabbable -->
-            <button class="btn btn-warning pull-right">
-              <%= link_to '¿Como comprar?', como_comprar_path, class:'btn-comprar' %>
-            </button>
+                         <div>
+               <%= link_to como_comprar_path, class:'btn btn-warning pull-right', :style => 'width:300px; height:25px; font-size:2em;  ' do %>
+             	<span> ¿Cómo comprar?</span>
+             <%end%>
+             </div>
+
             <%= render 'social' %>
+            <br>
           </div>
         </div>
       </div>
