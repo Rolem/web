@@ -38,7 +38,7 @@ RolemWeb::Application.routes.draw do
     match '/productos/Small/NanonTA3800', to: 'static_pages#Nano-nT-A3800'
     match '/productos/Small/ZBOXEN760', to: 'static_pages#ZBOX-EN760'
 
-    match '/productos/Tradicional/ZBOX-EN760', to: 'static_pages#ZBOX-EN760'
+    match '/productos/Tradicional/', to: 'static_pages#ZBOX-EN760'
     
 
     match '/privacidad', to: 'static_pages#privacidad'
