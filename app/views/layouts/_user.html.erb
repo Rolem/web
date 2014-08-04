@@ -2,7 +2,7 @@
 
          
 
-        <div class="span6">
+        <div>
 
 <!--        <% if I18n.locale ==  :en %>
               <%= link_to 'Español', root_path(locale: 'es'), class: 'locale' %>
@@ -12,10 +12,10 @@
         </div>
        
         
-<div style="min-width:100px;">
+<div >
           
           <div class="dropdown">
-            <div class="btn-group">
+            <div class="btn-group offset6">
               <button class="btn btn-warning dropdown-toggle" data-toggle="dropdown">
                 <% if signed_in? %>
                     Menú
@@ -23,8 +23,8 @@
                     Registrarse/Ingresar
                 <% end %>
               </button>
-              <ul class="dropdown-menu" role="menu">
-                <div class="formulario-login">
+              <ul class="dropdown-menu " role="menu">
+                <div class="formulario-login ">
                   <% if signed_in? %>
                       <%= render 'shared/signout' %>
                   <% else %>
