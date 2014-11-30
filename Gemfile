@@ -11,13 +11,13 @@ gem 'activeadmin'
 gem 'i18n'
 gem 'bcrypt-ruby', '~> 3.0.0'
 gem 'ayah_integration'
-
+gem 'jquery-rails', '2.3.0'
 
 group :development, :test do
   gem 'rspec-rails', '~> 2.12.2'
   gem 'annotate'
   gem 'sqlite3'
-  gem 'jquery-rails', '2.3.0'
+  
 end
 
 group :test do
