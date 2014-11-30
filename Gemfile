@@ -5,13 +5,14 @@ source 'https://rubygems.org'
 gem 'rake', '10.3.1'
 gem 'rails', '3.2.11'
 gem 'pg'
-gem 'jquery-rails', '2.3.0'
+gem 'jquery-rails'
 gem 'meta_search',    '>= 1.1.0.pre'
 gem 'meta-tags', :require => 'meta_tags'
 gem 'activeadmin'
 gem 'i18n'
 gem 'bcrypt-ruby', '~> 3.0.0'
 gem 'ayah_integration'
+
 
 group :development, :test do
   gem 'rspec-rails', '~> 2.12.2'
