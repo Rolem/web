@@ -79,7 +79,7 @@
     <div class="bloqueg">
       <ul class="nav nav-tabs no-border">
         <li class="izquierda">
-          <%=  image_tag 'SFF/Force/Rolem-Force-Cooler-master-elite-130-fron-angle-view.jpg', alt: 'Rolem Force Cooler master elite 130 front angle view', :style => "margin-left:20px;" %>
+          <%=  image_tag 'SFF/Force/rolem-force-thermaltake-core-v1-side-angle-view.jpg', alt: 'Rolem Force Cooler master elite 130 front angle view', :style => "margin-left:20px;" %>
         </li>
         <h1 style="margin-left:200px;">Rolem Force</h1>
         <div class="row logos" style="margin-top:25px; margin-left:300px;">
@@ -110,25 +110,64 @@
     </div>
   <% end -%>
 
-  <%= link_to productos_Small_prodigy_path do %>
+  <%= link_to productos_Small_hadron_path do %>
     <div class="bloqueg">
       <ul class="nav nav-tabs no-border">
-        <li class="izquierda" style="margin-left:30px;">
+        <li class="izquierda">
+          <%=  image_tag 'SFF/hadron/rolem-evga-hadron-angle-panel.jpg', alt: 'rolem evga hadron angle panel', :style => "margin-left:20px;" %>
+        </li>
+        <h1 style="margin-left:200px;">Rolem Hadron</h1>
+        <div class="row logos" style="margin-top:25px; margin-left:300px;">
+          <%=  image_tag 'portada/Force/ci5_h_rgb_cl_128.png' ,:style => "margin-left:300pxpx;" ,alt: 'ci5 h rgb cl 128' %>
+          <%=  image_tag 'portada/Volcano IN/NV_GF_GTX_alternate_badge_FOR_WEB_ONLY.jpg', :style => "margin-left:300pxpx;", alt: 'NV GF GTX alternate badge FOR WEB ONLY' %>
+          <%=  image_tag 'portada/Volcano IN/NV_GPU_Boost.jpg' , :style => "margin-left:300pxpx;" ,alt: 'NV GPU Boost'%>
+          <%=  image_tag 'portada/Volcano IN/PhysXbyNV_Black.jpg', :style => "margin-left:300pxpx;" , alt: 'PhysXbyNV Black'%>
+          <%=  image_tag 'portada/Volcano IN/NV_Adaptive_VSync.jpg', :style => "margin-left:300pxpx;" , alt: 'NV Adaptive VSync' %>
+        </div>          
+      </ul> 
+    </div>
+  <% end -%>
+
+  <%= link_to productos_Small_prodigy_path do %>  
+    <div class="bloquep">  
+      <ul class="nav nav-tabs no-border">
+        <li class="izquierda">
           <%=  image_tag 'SFF/Prodigy/Rolem-Prodigy-Bitfenix-front-angle-view.png', alt: 'Rolem Prodigy Bitfenix front angle view' %>
         </li>
         <h1 style="margin-left:200px;">Rolem Prodigy</h1>
-        <div class="row logos" style="margin-top:25px; margin-left:300px;">
+        <div class="row logos" style="margin-top:25px; margin-left:200px;">
           <%=  image_tag 'portada/Prodigy/ci7_h_rgb_cl_168.png', alt: 'ci7 h rgb cl 168' %>
           <%=  image_tag 'portada/Prodigy/NV_GF_GTX_alternate_badge_FOR_WEB_ONLY.jpg', alt: 'NV GF GTX alternate badge FOR WEB ONLY' %>
           <%=  image_tag 'portada/Prodigy/NV_GPU_Boost.jpg', alt: 'NV GPU Boost' %>
-          <%=  image_tag 'portada/Prodigy/PhysXbyNV_Black.jpg', alt: 'PhysXbyNV Black' %>
+          <%=  image_tag 'portada/Volcano IN/PhysXbyNV_Black.jpg', :style => "margin-left:300pxpx;" , alt: 'PhysXbyNV Black'%>
           <%=  image_tag 'portada/Prodigy/NV_Adaptive_VSync.jpg', alt: 'NV Adaptive VSync' %>
 
         </div>          
       </ul>
-    </div>  
+    </div>
+  <% end %>
+
+  <%= link_to productos_Small_prodigyE_path do %>
+    <div class="bloquep">
+      <ul class="nav nav-tabs no-border">
+        <h1  >Rolem Podigy </h1>
+        <h3>Extreme</h3>
+        <li class="derecha">
+          <%=  image_tag 'SFF/Prodigy/Rolem-Prodigy-Bitfenix-ports-angle-view.png', alt: 'Rolem Prodigy Bitfenix ports angle view',:style => "margin-top:-100px;" %>
+        </li>
+        
+        <div class="row logos" style="margin-left:35px;">
+          <%=  image_tag 'portada/Prodigy/ci7_h_rgb_cl_168.png', alt: 'ci7 h rgb cl 168' %>
+          <%=  image_tag 'portada/Prodigy/NV_GF_GTX_alternate_badge_FOR_WEB_ONLY.jpg', alt: 'NV GF GTX alternate badge FOR WEB ONLY' %>
+          <%=  image_tag 'portada/Prodigy/NV_GPU_Boost.jpg', alt: 'NV GPU Boost' %>
+          <%=  image_tag 'portada/Volcano IN/PhysXbyNV_Black.jpg', :style => "margin-left:300pxpx;" , alt: 'PhysXbyNV Black'%>
+          <%=  image_tag 'portada/Prodigy/NV_Adaptive_VSync.jpg', alt: 'NV Adaptive VSync' %>
+        </div>
+      </ul>  
+    </div>
   <% end -%>
 
+  
   <%= link_to productos_Small_ZBOXEN760_path do %>
     <div class="bloquep">
       <ul class="nav nav-tabs no-border">
@@ -149,20 +188,20 @@
 
   
 
-    <%= link_to productos_Small_NanonTA3800_path do %>
+    <%= link_to productos_Small_ZBOXAQ01_path do %>
     <div class="bloquep">
       <ul class="nav nav-tabs no-border" style="margin-left:40px;">
         <li class="izquierda">
-          
-          <%=  image_tag 'SFF/nano/Rolem-NanoPC-nT-A3800-front-vertical-angle-view.jpg', alt: 'Rolem NanoPC nT A3800 front vertical angle view' %>
+          <%=  image_tag 'SFF/nano/rolem-zotac-zbox-aq01-horizontal-view.jpg'%>
         </li>
         <h1 style="margin-left:30px;">Nano nT-A3800</h1>
-        <div class="row logos" style="margin-top:25px; margin-left:20px;">
-          <%=  image_tag 'portada/NanoPC nT-A3800/Steam-In-Home-Streaming.PNG' ,alt: 'Steam In Home Streaming' %>
-        </div>            
-      </ul>
-    </div>  
-  <% end -%>
+
+      <div class="row logos1" >
+        <%=  image_tag 'portada/NanoPC nT-A3800/Steam-In-Home-Streaming.png' ,alt:'Steam In Home Streaming' %> 
+      </div>
+      </ul>     
+    </div>
+    <% end -%>
 
 
 </div> 

@@ -1,14 +1,16 @@
 <div class="container">
   <div class="row">
+
     <div class="span12 white-bg" style='height:auto;margin-bottom:50px;'>
+
       <div class="row">
         <div class="span6">
           <div class="row text-center">
             <div class="span6 pc-title">
-              <h2>ROLEM VOLCANO IN</h2>              
+              <h2>ROLEM VOLCANO A</h2>
             </div>
           </div>
-          <br /><br>
+          <br /><br />
           <div class="row text-center">
             <div class="span6"  style="margin-left:150px;">
               <a href="<%= image_path 'SFF/Volcano/Rolem-Volcano-cooler-master-elite-110-front-view.jpg' %>" class="zoomableImage" rel="gal1" title="Volcano">
@@ -43,9 +45,12 @@
                     <%=	image_tag 'SFF/Volcano/Rolem-Volcano-cooler-master-elite-110-top-side-ports.jpg', alt: 'Rolem Volcano cooler master elite 110 side ports', class:'thumbnail'  %>
                   </a>
                 </div>
-              </div>             
-              <div class="span6"><br><strong class="precio">Precio con Windows:   $2.250.000 </strong>  (IVA incluido)<br>
-                                     <strong class="precio">Precio sin OS:   $2.070.000  </strong>  (IVA incluido)</div>              
+              </div>
+             <br>
+             <div class="span6">
+              <strong class="precio">Precio con Windows:    $2.298.000   </strong>  (IVA incluido)<br>
+              <strong class="precio">Precio sin OS:  $2.211.000  </strong>  (IVA incluido)
+            </div>              
               <br>
               <br>
             </div>
@@ -58,7 +63,7 @@
                 <!-- <li><a href="#pane1" data-toggle="tab">DESCRIPCIÓN</a></li> -->
                 <li class="active border-tabs"><a href="#pane2" data-toggle="tab">ESPECIFICACIONES</a></li>
                 <li><a href="#pane3" data-toggle="tab">DESCARGAS</a></li>
-                <li class="offset1"><%= link_to 'Volcano A', productos_Small_volcanoA_path %></li>
+                <li class="offset1"><%= link_to 'Volcano IN', productos_Small_volcanoIN_path %></li>
               </ul>
             <div class="tab-content tabs-bg">
                 <!--  <div id="pane1" class="tab-pane active pane-tablet">
@@ -72,11 +77,11 @@
                   <table>
                     <tr>
                       <td>GPU</td>
-                      <td>NVIDIA GeForce GTX 750Ti 2GB GDDR5 PCIe 3.0</td>
+                      <td>AMD Radeon R7 260x 2GB GDDR5 PCIe 3.0</td>
                     </tr>
                     <tr>
                       <td>CPU</td>
-                      <td>Intel Core i5 4430 Quad-Core 3.0 GHz/3.2 GHz Turbo Boost</td>
+                      <td>Intel Core i5 4570 Quad-Core 3.2 GHz/3.6 GHz Turbo Boost</td>
                     </tr>
                     <tr>
                       <td>RAM</td>
@@ -119,7 +124,7 @@
                 <div id="pane3" class="tab-pane pane-tablet">
                   <h4>Programas</h4>
                   <ul>
-                    <li>Geforce Experience: <a href="http://www.geforce.com/geforce-experience" target="_blank" style="color:#fe9c39;"><strong>http://www.geforce.com/geforce-experience</strong></a></li>
+                    <li>Drivers: <a href="http://support.amd.com/en-us/download/auto-detect-tool" target="_blank" style="color:#fe9c39;"><strong>http://support.amd.com/en-us/download/auto-detect-tool</strong></a></li>
                     <li>Raptr: <a href="http://raptr.com/amd"  target="_blank" style="color:#fe9c39;"><strong>http://raptr.com/amd</strong></a></li>
                     <li>Steam: <a href="http://store.steampowered.com/about/" target="_blank" style="color:#fe9c39;"><strong>http://store.steampowered.com/about/</strong></a></li>
                     <li>Utilidades: <a href="http://ninite.com/" target="_blank" style="color:#fe9c39;"><strong>http://ninite.com/</strong></a></li>
@@ -128,12 +133,10 @@
                 </div>
               </div><!-- /.tab-content -->
             </div><!-- /.tabbable -->
-             <div>
-             	<br>
+            <br>
                <%= link_to como_comprar_path, class:'btn btn-warning pull-right', :style => 'width:300px; height:25px; font-size:2em;  ' do %>
              	<span> ¿Cómo comprar?</span>
              <%end%>
-             </div>
             <%= render 'social' %>
             <br />
           </div>

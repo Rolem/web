@@ -12,10 +12,10 @@
            
           </div>
           <div class="row-center">
-		<br /><br>
+    <br /><br>
             <div class=" span6" style="margin-left:150px;">
               <a href="<%= image_path 'SFF/Prodigy/Rolem-Prodigy-Bitfenix-ports-angle-view.png' %>" class="zoomableImage" rel="gal1" title="Prodigy">
-                <%=	image_tag 'SFF/Prodigy/Rolem-Prodigy-Bitfenix-ports-angle-view.png', alt: 'Prodigy', class:'pc-height', title: 'Prodigy' %>
+                <%= image_tag 'SFF/Prodigy/Rolem-Prodigy-Bitfenix-ports-angle-view.png', alt: 'Prodigy', class:'pc-height', title: 'Prodigy' %>
 
               </a>
             </div>
@@ -52,7 +52,7 @@
                 </div>
                 
                 <div class="span6">
-                	<br>
+                  <br>
                 <div class="offset1 span1">
                   <a href="javascript:void(0);"
                      rel="{gallery: 'gal1', smallimage:'<%= image_path('SFF/Prodigy/Rolem-Prodigy-Bitfenix-side-ports.png') %>', largeimage:'<%= image_path('SFF/Prodigy/Rolem-Prodigy-Bitfenix-side-ports.png') %>'}">
@@ -76,8 +76,9 @@
 
 
               </div>
-             <div class="span6" style="margin-top: 20px;"><br><strong class="precio">Precio con Windows:  $3.960.000  </strong>  (IVA incluido)<br>
-                                     <strong class="precio">Precio sin OS:   $3.780.000  </strong>  (IVA incluido)</div>
+             <div class="span6" style="margin-top: 20px;"><br>
+              <strong class="precio">Precio con Windows:    $9.965.000    </strong>  (IVA incluido)<br>
+              <strong class="precio">Precio sin OS:     $9.878.000  </strong>  (IVA incluido)</div>
               
               <br>
               <br>
@@ -91,6 +92,7 @@
                 <!-- <li ><a href="#pane1" data-toggle="tab">DESCRIPCIÓN</a></li> -->
                 <li class="active border-tabs"><a href="#pane2" data-toggle="tab">ESPECIFICACIONES</a></li>
                 <li><a href="#pane3" data-toggle="tab">DESCARGAS</a></li>
+                <li class="offset1"><%= link_to 'Prodigy Extreme',productos_Small_prodigyE_path %></li>
               </ul>
               <div class="tab-content tabs-bg">
 <!--                 <div id="pane1" class="tab-pane active pane-tablet">
@@ -105,33 +107,25 @@
                 <div id="pane2" class="tab-pane active pane-tablet">
                   <table>
                     <tr>
-                      <td>PUNTAJE 3D MAR</td>
-                      <td>7333 - Fire Strike</td>
-                    </tr>
-                    <tr>
                       <td>GPU</td>
-                      <td>NVIDIA GeForce GTX 770 2GB GDDR5 con Overclock de fabrica</td>
+                      <td>NVIDIA GeForce GTX 980 4GB GDDR5</td>
                     </tr>
                     <tr>
                       <td>CPU</td>
-                      <td>Intel Core i7 4790k Quad-Core + Hyper Threading 4,0 GHz/4,4 GHz Turbo Boost</td>
+                      <td>Intel Core i7 5820k Hexa-Core + Hyper Threading 3,3 GHz/3,6 GHz Turbo Boost</td>
                     </tr>
                     <tr>
                       <td>RAM</td>
-                      <td>16 GB Doble Canal - 1600 MHz DDR3</td>
+                      <td>16 GB Dual Channel - 2400 MHz DDR4</td>
                     </tr>
                     <tr>
                       <td>ALMACENAMIENTO</td>
                       <td>2 TB - 5400rpm Solid State Hybrid Drive <br>
                           120 GB  - Boot Solid State Drive</td>
-                    </tr>
-                    <tr>
-                      <td>UNIDAD OPTICA</td>
-                      <td>Quemador de DVD 24x Doble Capa</td>
-                    </tr>
+                    </tr>                    
                     <tr>
                       <td>CHIPSET</td>
-                      <td>Z97</td>
+                      <td>X99</td>
                     </tr>
                     <tr>
                       <td>REDES</td>
@@ -149,7 +143,7 @@
                     </tr>
                     <tr>
                       <td>REFRIGERACIÓN ADICIONAL</td>
-                      <td>CPU: Refrigeracion Liquida</td>
+                      <td>Corsair Hydro High Performance H60 + Sistema de plaquetas de aluminio</td>
                     </tr>
                     <tr>
                       <td>SISTEMA OPERATIVO</td>
@@ -179,7 +173,7 @@
               </div><!-- /.tab-content -->
             </div><!-- /.tabbable -->
                <%= link_to como_comprar_path, class:'btn btn-warning pull-right', :style => 'width:300px; height:25px; font-size:2em;  ' do %>
-             	<span> ¿Cómo comprar?</span>
+              <span> ¿Cómo comprar?</span>
              <%end%>
             <%= render 'social' %>
             <br>
