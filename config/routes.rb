@@ -28,7 +28,7 @@ RolemWeb::Application.routes.draw do
     match '/productos/Small/ZBOX-EN760', to: 'static_pages#sff/ZBOX-EN760'
     match '/productos/Small/Nano-nT-A3800', to: 'static_pages#sff/Nano-nT-A3800'
     match '/productos/Small/raven', to:'static_pages#sff/raven'
-    match '/productos/Small/hadron  ', to:'static_pages#sff/hadron'
+    match '/productos/Small/hadron', to:'static_pages#sff/hadron'
     match '/productos/Small/volcanoA', to: 'static_pages#sff/volcanoA'
     match '/productos/Small/volcanoIN', to: 'static_pages#sff/volcanoIN'
     match '/productos/Small/prodigy', to: 'static_pages#sff/prodigy'
