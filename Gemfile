@@ -2,7 +2,7 @@ source 'https://rubygems.org'
 
 
 gem 'rake', '10.3.1'
-gem 'rails', '3.2.11'
+gem 'rails', '3.2.13'
 gem 'pg'
 gem 'jquery-rails', '2.3.0'
 gem 'meta_search',    '>= 1.1.0.pre'
