@@ -49,9 +49,7 @@ body {
   font-smooth: always;
 
 }
-.container{
-  min-width: 1170px;
-}
+
 
 .field_with_errors {
   display: inline;
@@ -99,10 +97,12 @@ body {
 // Logo
 // --------
 .logo {
+  text-align:center;
   margin-bottom: 1%;
   img{
     width: 100px
   }
+
 }
 
 

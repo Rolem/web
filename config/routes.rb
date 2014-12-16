@@ -18,35 +18,38 @@ RolemWeb::Application.routes.draw do
     match '/contacto', to: 'static_pages#contacto'
     match '/por_que_pc', to: 'static_pages#porquepc'
     match '/submit_contact', to: 'static_pages#submit_contact', via: :post, as: 'submit_contact'
-
-
-    match '/productos', to: 'static_pages#productos'
-
-    match 'productos/Small', to: 'static_pages#Small-Form-Facto'
-    match 'productos/Tradicional', to: 'static_pages#Tradicional'
-
-    match '/productos/Small/ZBOX-EN760', to: 'static_pages#sff/ZBOX-EN760'
-    match '/productos/Small/Nano-nT-A3800', to: 'static_pages#sff/Nano-nT-A3800'
-    match '/productos/Small/raven', to:'static_pages#sff/raven'
-    match '/productos/Small/hadron', to:'static_pages#sff/hadron'
-    match '/productos/Small/volcanoA', to: 'static_pages#sff/volcanoA'
-    match '/productos/Small/volcanoIN', to: 'static_pages#sff/volcanoIN'
-    match '/productos/Small/prodigy', to: 'static_pages#sff/prodigy'
-    match '/productos/Small/prodigyE', to: 'static_pages#sff/prodigyE'
-    match '/productos/Small/optimus', to: 'static_pages#sff/optimus'
-    match '/productos/Small/force', to: 'static_pages#sff/force'
-    match '/productos/Small/elemento', to: 'static_pages#sff/elemento'
-    match '/productos/Small/elementoM', to: 'static_pages#sff/elementoM'
-    match '/productos/Small/ZBOXAQ01', to: 'static_pages#sff/ZBOX-AQ01'
-    match '/productos/Small/ZBOXEN760', to: 'static_pages#sff/ZBOX-EN760'
-
-    match '/productos/Tradicional/', to: 'static_pages#ZBOX-EN760'
-    
-
     match '/privacidad', to: 'static_pages#privacidad'
     match '/terminos_de_uso', to: 'static_pages#terminos_de_uso'
     match '/terminos_y_condiciones', to: 'static_pages#terminos_y_condiciones'
     match '/blog', to: 'blog#index'
+    match '/terminos_y_condiciones', to: 'static_pages#terminos_y_condiciones'
+
+    match '/productos', to: 'static_pages#productos'
+
+      match 'productos/Small', to: 'static_pages#Small-Form-Facto'
+    
+
+        match '/productos/Small/ZBOX-EN760', to: 'static_pages#sff/ZBOX-EN760'
+        match '/productos/Small/Nano-nT-A3800', to: 'static_pages#sff/Nano-nT-A3800'
+        match '/productos/Small/raven', to:'static_pages#sff/raven'
+        match '/productos/Small/hadron', to:'static_pages#sff/hadron'
+        match '/productos/Small/volcanoA', to: 'static_pages#sff/volcanoA'
+        match '/productos/Small/volcanoIN', to: 'static_pages#sff/volcanoIN'
+        match '/productos/Small/prodigy', to: 'static_pages#sff/prodigy'
+        match '/productos/Small/prodigyE', to: 'static_pages#sff/prodigyE'
+        match '/productos/Small/optimus', to: 'static_pages#sff/optimus'
+        match '/productos/Small/force', to: 'static_pages#sff/force'
+        match '/productos/Small/elemento', to: 'static_pages#sff/elemento'
+        match '/productos/Small/elementoM', to: 'static_pages#sff/elementoM'
+        match '/productos/Small/ZBOXAQ01', to: 'static_pages#sff/ZBOX-AQ01'
+        match '/productos/Small/ZBOXEN760', to: 'static_pages#sff/ZBOX-EN760'
+
+      match 'productos/Tradicional', to: 'static_pages#Tradicional'
+        
+    
+
+    
+    
 
 
 
