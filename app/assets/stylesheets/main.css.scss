@@ -1,43 +1,58 @@
 
 @import "bootstrap";
 
-// ---- 
-//Font Faces
-// ----
-@font-face {
-  font-family: 'Kautiva';
-  src: url('Kautiva.ttf');
-  src: local('Kautiva'), local('Kautiva'), url(Kautiva.ttf) format('truetype')
+// --------
+// Social
+// --------
+.social {
+  position: fixed;
+  right: 20px;
+  width: 60px;
 }
-@font-face {
-  font-family: 'Kautiva-Bold';
-  src: url('Kautiva-Bold.ttf');
-  src: local('Kautiva-Bold'), local('Kautiva-Bold'), url(Kautiva-Bold.ttf) format('truetype')
+
+.social-spacing {
+  margin-right: 5px;
+ width: auto;
 }
-@font-face {
-  font-family: 'Kautiva-Italic';
-  src: url('Kautiva-Italic.ttf');
-  src: local('Kautiva-Italic'), local('Kautiva-Italic'), url(Kautiva-Italic.ttf) format('truetype')
+
+.soc {
+  height: 100px;
 }
-@font-face {
-  font-family: 'Kautiva-Black';
-  src: url('Kautiva-Black.ttf');
-  src: local('Kautiva-Black'), local('Kautiva-Black'), url(Kautiva-Black.ttf) format('truetype')
+
+.user{
+  right:0;
+  top:0;
+  position:absolute;
 }
-@font-face {
-  font-family: 'Kautiva-Black-Italic';
-  src: url('Kautiva-Black-Italic.ttf');
-  src: local('Kautiva-Black-Italic'), local('Kautiva-Black-Italic'), url(Kautiva-Black-Italic.ttf) format('truetype')
+
+
+
+// --------
+// Logo
+// --------
+.logo {
+  text-align: center;
+  margin-bottom: 1%;
+  img{
+    width: 120px;
+     
+  }
+
 }
-@font-face {
-  font-family: 'Kautiva-Bold-Italic';
-  src: url('Kautiva-Bold-Italic.ttf');
-  src: local('Kautiva-Bold-Italic'), local('Kautiva-Bold-Italic'), url(Kautiva-Bold-Italic.ttf) format('truetype')
-}
+
 
 // --------
 // General
 // --------
+
+
+.container{
+  width:940px;
+  position:relative;
+  margin: 0 auto;
+}
+
+
 body {
   background: no-repeat center center fixed;
   background-size: cover;
@@ -75,67 +90,28 @@ body {
   color:white ;
 }
 
-// --------
-// Social
-// --------
-.social {
-  position: fixed;
-  right: 20px;
-  width: 60px;
-}
 
-.social-spacing {
-  margin-right: 5px;
- width: auto;
-}
 
-.soc {
-  height: 100px;
-}
-
-// --------
-// Logo
-// --------
-.logo {
-  text-align:center;
-  margin-bottom: 1%;
-  img{
-    width: 100px
-  }
-
-}
 
 
 // --------
 // Navbar Justified
 // --------
-.nav1{
-  padding-top: 10px;
-  padding-bottom: 10px;
-  text-align: center;
-  
+
+#dropdownmenu > li:nth-child(2) > ul > a:nth-child(2){
+  pointer-events: none;
+  cursor: default;
 }
 
-    ul#dropdownmenu li ul {
-    display:none;
-
-    }
-    ul#dropdownmenu li:hover ul {
-    display:block;
-    position:absolute;
-    z-index: 1000000;
-    }
-
-.navbar .navbar-inner {
+.navbar .navbar-inner1 {
   padding: 0px;
   border:none;
-  min-width: 1170px;
+  min-width:900px;
 }
 
 .navbar .nav {
   margin: 0;
   display: table;
-  width: 1170px;
   
 }
 
@@ -149,14 +125,13 @@ body {
 .navbar .nav li ul li{
   width: 100%;
   display: block;
-  background-color: #23211C;
-  margin-bottom: 1px;
+  margin-top: 1px;
 }
 .navbar .nav li ul{
   width: 14.28571428571429%;
 }
 
-.navbar .nav li a {
+.navbar .nav >li> a {
   font-weight: bold;
   text-align: center;
   font-size: 0.95em;
@@ -184,14 +159,38 @@ body {
 // --------
 // Navbar
 // --------
+#dropdownmenu > li:nth-child(2) > ul > a > li{
+  padding-left:0px;
+  padding-right:0px;
+  text-align:center;
+  line-height: 40px;
+}
+#dropdownmenu > li:nth-child(2) > ul > a:hover{
+  color: #fe9c39;
+}
+
+ul#dropdownmenu li ul {
+  display:none;
+}
+
+ul#dropdownmenu li:hover ul {
+  
+  display:block;
+  position:absolute;
+  z-index: 1000000;
+}
+
+
 .navbar-inverse {
-  background-color: #23211C;
-  margin-bottom: 1  0px;
+
+  margin-bottom: 10px;
 
   .nav > li > a:hover, .nav > li > a:focus {
     background-color: #fe9c39;
   }
 }
+
+
 
 // --------
 // Index
@@ -223,22 +222,80 @@ body {
   cursor: pointer; cursor:hand;
 }
 
-// --------
-// Noticias
-// --------
-.noticias {
-  background-color: white;
-  color: #B4B4B4;
-  margin-bottom: 2px;
-  padding: 10px 25px;
+
+// ----------
+// Categorías
+// ----------
+
+.categorias{
+  img{
+    max-width:180px;
+    line-height: 40px;
+
+  }
+
+  
+  color: black;
+
+
+  .logos{
+    img{
+      height: 70px;
+      margin-left: 10px;
+      margin-bottom: 5px;
+
+    }
+  }
+
+
+
+  .derecha{
+    float:right;
+  }
+
+  .bloqueC{
+
+    float: left;
+    background: white;
+    min-width:468px;
+    max-width:468px;
+    margin:1px;
+    height: 350px;
+    .titulo{
+      text-align: center;
+    }
+  }
+
+  h1{
+    color: #fe9c39;
+    margin-top: 10px;
+    strong{
+        color: #777777;
+
+    }
+  }
+  .leyenda{
+    h4{
+      color: #777777;
+      margin-left: 10px;
+      margin-top:50px;
+    }
+  }
 }
+
+
 
 // --------
 // Productos
 // --------
+body > div > div.productos > a:nth-child(3) > div > ul > h1{
+    margin-left:20px;
+    width:600px;
+  }
 .productos {
-  min-width: 1170px;
-  img{ height: 180px;}
+
+
+
   color: black;
 
   .logos{
@@ -252,14 +309,14 @@ body {
   .logos1{
   img{
       height: 45px;
-      margin-right: 10px;
-      margin-top: 35px;
+      margin-left:240px;
+      margin-top:-150px;
   }
 }
 
   .derecha{
     float:right;
-    margin-top:25px;
+    margin-top:-30px;
   }
 
   .izquierda{
@@ -269,19 +326,17 @@ body {
   .bloquep{
     background: white;
     float:left;
-    width: 537px;
-    height: 220px;
-    padding: 20px;
-    margin: 4px;
-
+    width: 466px;
+    height: 260px;
+    margin: 2px;
+    padding-top:10px;
   }
   .bloqueg{
     float: left;
     background: white;
-    width: 1102px;
-    height: 220px;
-    padding: 30px;
-    margin: 4px;
+    width: 936px;
+    height: 24  0px;
+    margin: 2px;
   }
 
   h1{
@@ -298,65 +353,10 @@ body {
     margin-left: 83px;
 
   }
-
-}
-
-// ----------
-// Categorías
-// ----------
-
-.categorias{
-  min-width: 1170px;
   img{ height: 180px;}
-  color: black;
 
-
-  .logos{
-    img{
-      height: 70px;
-      margin-left: 10px;
-      margin-bottom: 5px;
-    }
-  }
-
-
-
-  .derecha{
-    float:right;
-  }
-
-  .bloqueC{
-    .titulo{
-      text-align: center;
-    }
-
-
-    float: left;
-    background: white;
-    width: 580px;
-    height: 340px;
-    margin: 2px;
-
-  }
-
-  h1{
-    color: #fe9c39;
-    margin-top: 10px;
-    strong{
-      color: #777777;
-
-    }
-  }
-  .leyenda{
-    h4 {
-      color: #777777;
-
-
-      margin-left: 30px;
-
-    }
-  }
 }
+
 
 
 
@@ -365,8 +365,9 @@ body {
 // Producto Especifico
 // --------
 
+
 .zl{
-  width: 700px;
+  width: 600px;
   margin-left: 100px;
 }
 
@@ -466,6 +467,26 @@ body {
   a:link {text-decoration: none; color:white;}
   a:visited {text-decoration: none; color:white;}
   a:hover {text-decoration: none; color:white;}
+
+
+
+
+
+
+
+
+
+
+// --------
+// Noticias
+// --------
+.noticias {
+  background-color: white;
+  color: #B4B4B4;
+  margin-bottom: 2px;
+  padding: 10px 25px;
+}
+
 
 // --------
 // Compañia
@@ -685,26 +706,7 @@ td{
 // ------------
 // Responsive
 // ------------
-@import "bootstrap-responsive";
 
-@media (min-width: 1200px) {
-
-}
-
-@media (min-width: 980px) and (max-width: 1199px) {
-
-}
-
-@media (max-width: 979px) {
-
-
-}
-
-@media (min-width: 768px) and (max-width: 979px) {
-
-
-
-}
 // Social
 
   .social-tablet {
@@ -810,3 +812,44 @@ footer{
     color: #f89406 
   }
 }
+
+
+
+
+
+
+// ----     
+//Font Faces
+// ----
+@font-face {
+  font-family: 'Kautiva';
+  src: url('Kautiva.ttf');
+  src: local('Kautiva'), local('Kautiva'), url(Kautiva.ttf) format('truetype')
+}
+@font-face {
+  font-family: 'Kautiva-Bold';
+  src: url('Kautiva-Bold.ttf');
+  src: local('Kautiva-Bold'), local('Kautiva-Bold'), url(Kautiva-Bold.ttf) format('truetype')
+}
+@font-face {
+  font-family: 'Kautiva-Italic';
+  src: url('Kautiva-Italic.ttf');
+  src: local('Kautiva-Italic'), local('Kautiva-Italic'), url(Kautiva-Italic.ttf) format('truetype')
+}
+@font-face {
+  font-family: 'Kautiva-Black';
+  src: url('Kautiva-Black.ttf');
+  src: local('Kautiva-Black'), local('Kautiva-Black'), url(Kautiva-Black.ttf) format('truetype')
+}
+@font-face {
+  font-family: 'Kautiva-Black-Italic';
+  src: url('Kautiva-Black-Italic.ttf');
+  src: local('Kautiva-Black-Italic'), local('Kautiva-Black-Italic'), url(Kautiva-Black-Italic.ttf) format('truetype')
+}
+@font-face {
+  font-family: 'Kautiva-Bold-Italic';
+  src: url('Kautiva-Bold-Italic.ttf');
+  src: local('Kautiva-Bold-Italic'), local('Kautiva-Bold-Italic'), url(Kautiva-Bold-Italic.ttf) format('truetype');
+}
+
+

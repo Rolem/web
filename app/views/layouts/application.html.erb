@@ -29,21 +29,23 @@
 
 </head>
 <body>
-  <%= render 'shared/fb' %>
-  <%= render 'shared/twitter' %>
-  <%= render 'shared/gp' %>
-  <!-- Header -->
-  <%= render 'layouts/user' %>
-  <%= render 'layouts/logo' %>
-  <%= render 'layouts/navbar' %>
-  <!-- Flash -->
-  <%= render partial: 'shared/flash', locals: { flash: flash } %>
-  <!-- Main -->
-  <%= yield %>
-  <!-- Footer -->
-  <%= render 'layouts/footer' %>
-
-  <%= render 'layouts/ga' %>
+  <div class="container">
+    <%= render 'shared/fb' %>
+    <%= render 'shared/twitter' %>
+    <%= render 'shared/gp' %>
+    <!-- Header -->
+    <%= render 'layouts/user' %>
+    <%= render 'layouts/logo' %>
+    <%= render 'layouts/navbar' %>
+    <!-- Flash -->
+    <%= render partial: 'shared/flash', locals: { flash: flash } %>
+    <!-- Main -->
+    <%= yield %>
+    <!-- Footer -->
+    
+  </div>
+    <%= render 'layouts/footer' %>
+    <%= render 'layouts/ga' %>  
   <aside class="container">
     <%= debug(params) if Rails.env.development? %>
   </aside>
