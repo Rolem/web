@@ -98,10 +98,10 @@ body {
 // Navbar Justified
 // --------
 
-#dropdownmenu > li:nth-child(2) > ul > a:nth-child(2){
+/* #dropdownmenu > li:nth-child(2) > ul > a:nth-child(2){
   pointer-events: none;
   cursor: default;
-}
+}*/
 
 .navbar .navbar-inner1 {
   padding: 0px;
@@ -246,7 +246,7 @@ ul#dropdownmenu li:hover ul {
 
     }
   }
-
+  
 
 
   .derecha{
@@ -311,8 +311,8 @@ body > div > div.productos > a:nth-child(3) > div > ul > h1{
       height: 45px;
       margin-left:240px;
       margin-top:-150px;
+    }
   }
-}
 
   .derecha{
     float:right;
@@ -375,7 +375,7 @@ body > div > div.productos > a:nth-child(3) > div > ul > h1{
   margin-left: 50px;
 }
 
-.zO .zo {
+.zO, .zo {
   margin-left: 5px;
   margin-right: 5px;
   
@@ -468,9 +468,41 @@ body > div > div.productos > a:nth-child(3) > div > ul > h1{
   a:visited {text-decoration: none; color:white;}
   a:hover {text-decoration: none; color:white;}
 
+.tra-tex{
+  display:inline-block;}
 
 
+.btn1{
+  background: #D6A028;
+}
+.btn2 {
+  background: #B97B11;
+}
+.btn3 {
+  background: #D87638;
+}
+.btn4 {
+  background: #CC6635;
+}
 
+.btn1 ,.btn2, .btn3 ,.btn4{
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+  display: inline-block;
+  font-family: Kautiva;
+  color: #ffffff;
+  font-size: 20px;
+  
+  width:50px;
+  float:right;
+  margin-top:10px;
+  margin-right:10px;
+} 
+
+.btn1:hover ,.btn2:hover, .btn3:hover ,.btn4:hover {
+  background: #FE9C39;
+  text-decoration: none;
+}
 
 
 
@@ -851,5 +883,3 @@ footer{
   src: url('Kautiva-Bold-Italic.ttf');
   src: local('Kautiva-Bold-Italic'), local('Kautiva-Bold-Italic'), url(Kautiva-Bold-Italic.ttf) format('truetype');
 }
-
-
