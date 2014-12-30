@@ -472,6 +472,24 @@ body > div > div.productos > a:nth-child(3) > div > ul > h1{
   display:inline-block;}
 
 
+//------------
+// Tradicional
+//------------
+
+.center {
+  margin-left:7%;
+}
+.right{float:right;margin-right:30px;}
+.left{float:left; margin-left:40px;}
+
+.btnintel{
+  background: #1073B4;
+}
+
+.btnamd{
+  background:#D3181F;
+}
+
 .btn1{
   background: #D6A028;
 }
@@ -484,28 +502,40 @@ body > div > div.productos > a:nth-child(3) > div > ul > h1{
 .btn4 {
   background: #CC6635;
 }
-
-.btn1 ,.btn2, .btn3 ,.btn4{
-  padding: 10px 20px 10px 20px;
+.btn1 ,.btn2, .btn3 ,.btn4 ,.btnintel ,.btnamd{
   text-decoration: none;
   display: inline-block;
   font-family: Kautiva;
   color: #ffffff;
-  font-size: 20px;
-  
-  width:50px;
-  float:right;
   margin-top:10px;
   margin-right:10px;
 } 
+
+.btnintel, .btnamd{
+  font-size:30px;
+  padding:20px 20px 20px 20px;  
+}
+
+.btnintel:hover{
+  background:#10A3B6;
+}
+.btnamd:hover{
+  background:#D3581F;
+}
+
+.btn1 ,.btn2, .btn3 ,.btn4{
+  font-size:20px;
+  padding: 10px 20px 10px 20px;
+}
 
 .btn1:hover ,.btn2:hover, .btn3:hover ,.btn4:hover {
   background: #FE9C39;
   text-decoration: none;
 }
 
-
-
+.btn1, .btn2 ,.btn3,.btn4,.btnintel,.btnamd{
+  cursor: default;
+}
 
 
 
