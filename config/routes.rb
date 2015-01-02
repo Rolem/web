@@ -46,6 +46,8 @@ RolemWeb::Application.routes.draw do
 
       match 'productos/Tradicional', to: 'static_pages#Tradicional'
         
+        match 'productos/Tradicional/Pentakill_Blue_Team', to: 'static_pages#tradicional/pentakillintel' 
+        match 'productos/Tradicional/Pentakill_Red_Team', to: 'static_pages#tradicional/pentakillamd' 
     
 
     
