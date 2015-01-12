@@ -11,8 +11,7 @@ RolemWeb::Application.routes.draw do
     # Static Pages
     # -----------------
 
-    root to: 'static_pages#index'
-    
+    root to: 'static_pages#index'    
     match '/compania', to: 'static_pages#compania'
     match '/como_comprar', to: 'static_pages#comprar'
     match '/contacto', to: 'static_pages#contacto'
@@ -23,12 +22,8 @@ RolemWeb::Application.routes.draw do
     match '/terminos_y_condiciones', to: 'static_pages#terminos_y_condiciones'
     match '/blog', to: 'blog#index'
     match '/terminos_y_condiciones', to: 'static_pages#terminos_y_condiciones'
-
     match '/productos', to: 'static_pages#productos'
-
       match 'productos/Small', to: 'static_pages#Small-Form-Facto'
-    
-
         match '/productos/Small/ZBOX-EN760', to: 'static_pages#sff/ZBOX-EN760'
         match '/productos/Small/Nano-nT-A3800', to: 'static_pages#sff/Nano-nT-A3800'
         match '/productos/Small/raven', to:'static_pages#sff/raven'
@@ -43,20 +38,18 @@ RolemWeb::Application.routes.draw do
         match '/productos/Small/elementoM', to: 'static_pages#sff/elementoM'
         match '/productos/Small/ZBOXAQ01', to: 'static_pages#sff/ZBOX-AQ01'
         match '/productos/Small/ZBOXEN760', to: 'static_pages#sff/ZBOX-EN760'
-
-      match 'productos/Tradicional', to: 'static_pages#Tradicional'
-        
+     match 'productos/Tradicional', to: 'static_pages#Tradicional'        
         match 'productos/Tradicional/Pentakill_Blue_Team', to: 'static_pages#tradicional/pentakillintel' 
         match 'productos/Tradicional/Pentakill_Red_Team', to: 'static_pages#tradicional/pentakillamd' 
-    
-
-    
-    
-
-
-
-    resources :news
-    
+        match 'productos/Tradicional/Vision_10', to: 'static_pages#tradicional/visionlvl10' 
+        match 'productos/Tradicional/Vision_25', to: 'static_pages#tradicional/visionlvl25' 
+        match 'productos/Tradicional/Vision_35', to: 'static_pages#tradicional/visionlvl35' 
+        match 'productos/Tradicional/Vision_40', to: 'static_pages#tradicional/visionlvl40' 
+        match 'productos/Tradicional/Ignition25', to: 'static_pages#tradicional/ignitionlvl25' 
+        match 'productos/Tradicional/Ignition30', to: 'static_pages#tradicional/ignitionlvl30' 
+        match 'productos/Tradicional/Ignition40', to: 'static_pages#tradicional/ignitionlvl40' 
+        match 'productos/Tradicional/Ignition50', to: 'static_pages#tradicional/ignitionlvl50' 
+    resources :news    
     resources :sitemaps, :only => :show
     get "sitemap" => "sitemaps#show"
 
