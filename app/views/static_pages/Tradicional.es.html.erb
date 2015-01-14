@@ -3,10 +3,18 @@
 
   <div class="bloqueg">
     <div class="right">
-      <div class="btn1">Lvl 25</div>
-      <div class="btn2">Lvl 30</div>
-      <div class="btn3">Lvl 40</div>
-      <div class="btn4">Lvl 50</div>  
+      <%= link_to productos_Tradicional_Ignition_25_path do %>
+        <div class="btn1">Lvl 25</div>
+      <% end -%>
+      <%= link_to productos_Tradicional_Ignition_30_path do %>
+        <div class="btn2">Lvl 30</div>
+      <% end -%>
+      <%= link_to productos_Tradicional_Ignition_40_path do %>
+        <div class="btn3">Lvl 40</div>
+      <% end -%>
+      <%= link_to productos_Tradicional_Ignition_50_path do %>
+        <div class="btn4">Lvl 50</div>  
+      <% end -%>
 
     </div>
     <div class="nav nav-tabs no-border">
@@ -49,12 +57,16 @@
 
   <div class="bloqueg" style="padding-bottom:20px;">
 
-    <div class="btnintel left" >Blue Team</div>
+    <%= link_to productos_Tradicional_Pentakill_Blue_Team_path do %>
+      <div class="btnintel left" >Blue Team</div>
+    <% end -%>
     <div class="logos left" style="margin-top:120px; margin-left:-120px;">
       <%=  image_tag 'portada/Tradicional/pp_a_rgb_46.png' ,alt: 'pp a rgb 46',:style=>"height:50px;" %>
       <%=  image_tag 'Partners/nVIDIA_Logo.png', alt: 'NV GF GTX alternate badge FOR WEB ONLY' %>
     </div>
+    <%= link_to productos_Tradicional_Pentakill_Red_Team_path do %>
     <div class="btnamd right" style="margin-right:40px;">Red Team</div> 
+    <% end -%>
     <div class="logos right" style="margin-top:120px; margin-right:-90px;">
 
         <%=  image_tag 'portada/Tradicional/53054B_AMD_A4elite_E_RGB.png', alt:'53054B AMD A4elite E RGB' %>

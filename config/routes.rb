@@ -45,10 +45,10 @@ RolemWeb::Application.routes.draw do
         match 'productos/Tradicional/Vision_25', to: 'static_pages#tradicional/visionlvl25' 
         match 'productos/Tradicional/Vision_35', to: 'static_pages#tradicional/visionlvl35' 
         match 'productos/Tradicional/Vision_40', to: 'static_pages#tradicional/visionlvl40' 
-        match 'productos/Tradicional/Ignition25', to: 'static_pages#tradicional/ignitionlvl25' 
-        match 'productos/Tradicional/Ignition30', to: 'static_pages#tradicional/ignitionlvl30' 
-        match 'productos/Tradicional/Ignition40', to: 'static_pages#tradicional/ignitionlvl40' 
-        match 'productos/Tradicional/Ignition50', to: 'static_pages#tradicional/ignitionlvl50' 
+        match 'productos/Tradicional/Ignition_25', to: 'static_pages#tradicional/ignitionlvl25' 
+        match 'productos/Tradicional/Ignition_30', to: 'static_pages#tradicional/ignitionlvl30' 
+        match 'productos/Tradicional/Ignition_40', to: 'static_pages#tradicional/ignitionlvl40' 
+        match 'productos/Tradicional/Ignition_50', to: 'static_pages#tradicional/ignitionlvl50' 
     resources :news    
     resources :sitemaps, :only => :show
     get "sitemap" => "sitemaps#show"
