@@ -102,7 +102,17 @@ body {
   pointer-events: none;
   cursor: default;
 }*/
-
+#dropdownmenu{
+}
+#dropdownmenu > li:nth-child(2) > ul{
+  width:105px;
+}
+#dropdownmenu > li{
+  width:14%;
+}
+#dropdownmenu > li:nth-child(6){
+  width:200px;
+}
 .navbar .navbar-inner1 {
   padding: 0px;
   border:none;
@@ -117,8 +127,9 @@ body {
 
 .navbar .nav li {
   display: table-cell;
-  width: 14.28571428571429%;
   float: none;
+
+
   
 }
 
