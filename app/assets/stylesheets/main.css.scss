@@ -102,10 +102,9 @@ body {
   pointer-events: none;
   cursor: default;
 }*/
-#dropdownmenu{
-}
+
 #dropdownmenu > li:nth-child(2) > ul{
-  width:105px;
+  width:131px;
 }
 #dropdownmenu > li{
   width:14%;
@@ -116,7 +115,7 @@ body {
 .navbar .navbar-inner1 {
   padding: 0px;
   border:none;
-  min-width:900px;
+
 }
 
 .navbar .nav {
@@ -138,9 +137,7 @@ body {
   display: block;
   margin-top: 1px;
 }
-.navbar .nav li ul{
-  width: 14.28571428571429%;
-}
+
 
 .navbar .nav >li> a {
   font-weight: bold;
